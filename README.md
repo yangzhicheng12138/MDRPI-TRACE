@@ -17,7 +17,16 @@ MDRPI-TRACE 将本地语言模型、知识库检索、网页取证与教学练�
 
 ## Demo
 
-以下截图来自本仓库实际前端，使用专门编写的示例对话和公开教学样例展示交互，不包含真实用户记录，也不代表模型效果评价结果。
+约 21 秒的交互演示：**普通问答 → 深浅主题切换 → 教学练习 → 查看完整题目与提示 → 编辑作答草稿**。
+
+![MDRPI-TRACE 动态交互演示](docs/assets/demo.gif)
+
+[下载 MP4 清晰版（可暂停、拖动进度）](https://github.com/yangzhicheng12138/MDRPI-TRACE/raw/refs/heads/main/docs/assets/demo.mp4)
+
+录屏与截图均来自本仓库实际前端，使用预置示例对话和公开教学样例展示交互；未调用真实模型，不代表推理速度或模型效果评价结果。
+
+<details>
+<summary>查看静态截图：普通问答、教学练习、深色主题与手机布局</summary>
 
 ### 普通问答
 
@@ -31,8 +40,7 @@ MDRPI-TRACE 将本地语言模型、知识库检索、网页取证与教学练�
 
 ![教学练习 Demo](docs/assets/teaching-light.png)
 
-<details>
-<summary>查看深色主题和手机布局</summary>
+### 深色主题和手机布局
 
 ![深色主题](docs/assets/chat-dark.png)
 
