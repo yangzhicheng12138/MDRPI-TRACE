@@ -1,51 +1,53 @@
-# MDRPI-TRACE 系统架构
+# MDRPI-TRACE architecture
 
-## 交互与状态
+## Interaction and state
 
-FastAPI 提供 API 与静态网页，LangGraph 管理回合状态，SQLite 保存会话和教学检查点。普通问答使用任务规划选择工具；教学使用题目、学习者作答、提示曝光和反馈记录组织交互。学生作答与教师讲解分开记录。
+FastAPI serves the API and static interface. LangGraph manages turn state; SQLite stores sessions and teaching checkpoints. Chat uses a task planner to select tools. Guided practice organizes questions, learner answers, hint exposure and feedback, recording student work separately from teacher explanations.
 
-前端以 HTML、CSS 和 ES Modules 实现，包含普通问答、教学练习和独立出题工作台；不需要 Node 构建。研究性能流程仍可通过开发接口调用，不作为学习者模式展示。
+The frontend uses HTML, CSS and ES modules with no build step. It provides Chat, Guided practice and a separate Question Studio. Research performance workflows remain accessible through development interfaces, outside the learner mode menu.
 
-## 证据获取
+The English/Chinese interface uses a local message catalog and a persistent browser preference. Localization updates UI labels and accessibility attributes while preserving editable values, backend enum values and generated content. Response language is an independent session preference. Async panel loading uses stable internal identifiers, not translated display text.
 
-MEA 指本项目中的 Multi-source Evidence Augmentation（多元证据增强），包含本地审核知识库和外部网页证据。
+## Evidence acquisition
 
-- 本地：Qdrant 向量检索与 BM25 词法检索，RRF 合并候选，再通过重排器排序。
-- 适用性：审核准入、人群、器械、材料类型与来源范围参与过滤。成人、儿童和新生儿证据保留适用范围。
-- 联网：搜索候选网页、读取正文、保留出处，再选择可支持当前任务的片段。DeepSeek Search/Fetch 为默认适配器，百度为备用。
-- 可追溯：文献元数据、来源位置、证据文本、检索事件和运行快照分别保存。
+**MEA** means **Multi-source Evidence Augmentation** in this project: a reviewed local knowledge base plus external web evidence.
 
-## 推理、教学和反思
+- **Local retrieval:** Qdrant vector search and BM25 lexical search, RRF candidate fusion, then reranking.
+- **Applicability:** review admission, population, device, material type and source scope filter the evidence. Adult, pediatric and neonatal applicability is retained.
+- **Web evidence:** search candidate pages, read their text, retain provenance and select passages relevant to the current task. DeepSeek Search/Fetch is the default adapter; Baidu is the fallback.
+- **Traceability:** document metadata, source locations, evidence text, retrieval events and run snapshots are stored separately.
 
-本地模型生成回答或教学反馈。六步任务将临床推理组织成识别、分析、排序、方案、行动和评价。审查与修订是可配置的流程，而不是每条聊天消息都会运行的固定步骤。
+## Reasoning, teaching and reflection
 
-教学按题目评分点接收等价表达，保留原始作答和提示记录。三级提示与完整参考答案的访问规则分开。讲解不会被当成学生能力证据。明显停在引导语的教学回复会自动补全一次。
+The local model generates answers and teaching feedback. Six-step tasks organize clinical reasoning into recognition, analysis, prioritization, solutions, action and evaluation. Review and revision are configurable workflows rather than mandatory steps for every chat message.
 
-## 教学命题
+Teaching accepts equivalent expressions against question-specific scoring points and preserves raw learner answers and hint records. Three-level hints and full reference answers have separate access rules. Teacher explanations are not counted as evidence of student competence. Explanations that visibly stop at an introductory lead-in receive one completion attempt.
+
+## Question authoring
 
 ```mermaid
 sequenceDiagram
-    participant U as 出题工作台
-    participant C as 命题控制器
-    participant E as 证据获取
-    participant G as 本地出题模型
-    participant R as 独立审核模型
-    U->>C: 目标、题型、难度、材料
-    C->>E: 核对材料并检索补充证据
-    E-->>C: 证据与出处
-    C->>G: 命题要求与固定证据
-    G-->>C: 题干、答案、评分点、提示
-    C->>R: 独立作答与质量审核
-    R-->>C: 问题与证据
-    opt 需要修订
-        C->>G: 已核查的修订要求
-        G-->>C: 修订题目
+    participant U as Question Studio
+    participant C as Authoring controller
+    participant E as Evidence acquisition
+    participant G as Local authoring model
+    participant R as Independent reviewer
+    U->>C: Objective, type, difficulty, materials
+    C->>E: Validate materials and retrieve evidence
+    E-->>C: Evidence with provenance
+    C->>G: Authoring requirements and fixed evidence
+    G-->>C: Stem, answer, scoring points, hints
+    C->>R: Independent solving and quality review
+    R-->>C: Issues and supporting evidence
+    opt Revision needed
+        C->>G: Checked revision requirements
+        G-->>C: Revised question
     end
-    C-->>U: 题目、答案、审核与版本记录
+    C-->>U: Question, answer, reviews and versions
 ```
 
-命题材料必须独立登记，不从学习者会话中自动抽取，也不将正式测试病例混入开发材料。生成结果保留在开发工作区，不自动写入正式题库。
+Authoring materials are registered independently. They are not automatically extracted from learner conversations, and formal test cases are kept separate from development materials. Generated questions remain in the development workspace; they are not automatically published to the teaching bank.
 
-## 运行边界
+## Process boundaries
 
-网页、模型和知识库为独立进程。仓库保留原生工具调用与编排代码；不要求启动独立 MCP 服务。可选文件生成和计算由隔离工作进程处理，配置见部署文档。
+Web, model and knowledge services run as separate processes. The repository includes native tool calls and orchestration; a separate MCP server is not required. Optional file-generation and computation tools run through an isolated worker. See [deployment](DEPLOYMENT.md).

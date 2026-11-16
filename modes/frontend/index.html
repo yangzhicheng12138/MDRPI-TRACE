@@ -7,11 +7,12 @@
   <title>MDRPI · 智能工作台</title>
   <link rel="icon" type="image/svg+xml" sizes="any" href="/ui/assets/brand-care-t.svg">
   <script src="/ui/assets/theme.js"></script>
-  <link rel="stylesheet" href="/ui/assets/styles.css?v=20261116-teaching-help">
+  <link rel="stylesheet" href="/ui/assets/styles.css?v=20261116-i18n">
+  <link rel="stylesheet" href="/ui/assets/i18n.css?v=20261116-i18n">
   <script defer src="/ui/assets/vendor/marked.min.js"></script>
   <script defer src="/ui/assets/vendor/purify.min.js"></script>
   <script defer src="/ui/assets/vendor/highlight.min.js"></script>
-  <script type="module" src="/ui/assets/app.js?v=20261116-teaching-help"></script>
+  <script type="module" src="/ui/assets/app.js?v=20261116-i18n"></script>
 </head>
 <body>
   <a class="skip-link" href="#composer-input">跳到输入框</a>
@@ -33,7 +34,7 @@
       <header class="topbar">
         <button class="icon-button" data-command="sidebar" aria-label="切换侧栏" aria-controls="sidebar" aria-expanded="true" data-icon="panel"></button>
         <div class="heading"><div class="heading-top"><span id="header-title">新对话</span><span class="mode-pill" id="mode-pill">普通问答</span></div><span id="header-subtitle">从一个问题开始</span></div>
-        <div class="header-tools"><button class="icon-button" data-command="theme" aria-label="切换明暗主题" data-icon="sun"></button><button class="icon-button" data-command="conversation-menu" aria-label="对话选项" aria-haspopup="menu" data-icon="more"></button></div>
+        <div class="header-tools"><label class="language-picker" for="interface-language"><span class="language-label">界面语言</span><select id="interface-language" data-interface-language><option value="en" lang="en" translate="no">English</option><option value="zh" lang="zh-CN" translate="no">中文</option></select></label><button class="icon-button" data-command="theme" aria-label="切换明暗主题" data-icon="sun"></button><button class="icon-button" data-command="conversation-menu" aria-label="对话选项" aria-haspopup="menu" data-icon="more"></button></div>
       </header>
       <div class="service-notice" id="service-notice" hidden><span id="service-notice-text" role="status" aria-live="polite"></span><button type="button" data-command="check-service">重新检查</button></div>
       <div class="stage-strip" id="stage-strip" hidden></div>

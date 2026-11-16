@@ -1,4 +1,4 @@
-import {escape} from './markdown.js?v=20261011-teaching-ux';
+import {escape} from './markdown.js?v=20261116-i18n';
 import {icon} from './icons.js';
 
 // Structured audit fields remain in the API. This is the reader's bibliography:

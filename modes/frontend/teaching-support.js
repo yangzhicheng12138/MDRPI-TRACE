@@ -1,4 +1,4 @@
-import {escape,markdown} from './markdown.js?v=20261013-teaching-panels';
+import {escape,markdown} from './markdown.js?v=20261116-i18n';
 
 const placements=new Set(['hint','explanation','reference']);
 const actions={hint:'hint',stuck:'hint',hint_detail:'hint',explain:'explanation',reference:'reference'};

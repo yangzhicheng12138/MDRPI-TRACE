@@ -1,11 +1,19 @@
-# 参与贡献
+# Contributing
 
-提交前运行 `python -m pytest -q` 和 `python scripts/check_release.py`。
+Before submitting, run:
 
-Issue 请描述操作步骤、预期结果、实际结果，以及脱敏后的错误信息。请勿上传密钥、患者可识别信息或未获授权的文献全文。
+```bash
+python -m pytest -q
+node --test tests_frontend/*.test.mjs
+python scripts/check_release.py
+```
 
-界面改动应检查桌面和手机宽度、深浅主题、键盘操作。教学逻辑改动应检查学生作答、教师讲解和参考材料的区分，以及提示次数、修订和步骤推进的行为。
+For issues, include reproduction steps, expected and actual behavior, and redacted error details. Do not upload credentials, identifiable patient information or document full texts without permission.
 
-涉及模型效果的贡献，请说明模型、病例、知识库与网页证据条件，以及比较方法。单元测试证明程序行为，不代替模型质量评价。
+For UI changes, check desktop and mobile widths, light/dark themes, keyboard navigation, and English/Chinese switching. Keep user drafts, model output and backend option values intact. UI translations live in `modes/frontend/messages-en.js`; dynamic message formats and localization boundaries live in `i18n.js`. Browser code runs without a build step; frontend unit tests require Node.js 22+.
 
-新增第三方代码时保留原许可证并更新 `THIRD_PARTY_NOTICES.md`；新增教学内容时保留作者、来源链接、许可及审核范围。
+For teaching changes, check the distinction between student answers, teacher explanations and source materials, plus hint counts, revision and step progression.
+
+For model-quality changes, document the model, cases, knowledge and web evidence conditions, and comparison method. Unit tests verify program behavior; they do not replace model-quality evaluation.
+
+Preserve licenses for third-party code and update `THIRD_PARTY_NOTICES.md`. Preserve authors, source URLs, licenses and review scope for new teaching content.

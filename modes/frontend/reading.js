@@ -1,4 +1,4 @@
-import {escape} from './markdown.js?v=20261116-brand';
+import {escape} from './markdown.js?v=20261116-i18n';
 
 // Only pass HTML produced by the existing sanitized Markdown renderer or our
 // escaped UI templates. Preserve unchanged nodes and text selection on append.

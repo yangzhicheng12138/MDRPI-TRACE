@@ -1,10 +1,11 @@
-import {CHAT_TASKS} from './chat-tasks.js';
+import {getChatTasks} from './chat-tasks.js?v=20261116-i18n';
+import {startLocalization,localize,t,interfaceLanguage,interfaceLocale,bilingualTitle} from './i18n.js';
 import {icon,hydrateIcons} from './icons.js';
-import {escape,markdown,renderMessage} from './markdown.js?v=20261116-brand';
+import {escape,markdown,renderMessage} from './markdown.js?v=20261116-i18n';
 import {patchHTML,moveElement,highlightedExcerpt,createReadingNavigation,locateSearchResult} from './reading.js?v=20261116-brand';
 import {api,stream} from './api.js';
-import {createPanels} from './panels.js?v=20261116-public-modes';
-import {createTeachingWorkspace,teachingFeedback,teachingClinicalFlow,teachingReferenceAccess} from './teaching-workspace.js?v=20261013-teaching-panels';
+import {createPanels} from './panels.js?v=20261116-i18n';
+import {createTeachingWorkspace,teachingFeedback,teachingClinicalFlow,teachingReferenceAccess} from './teaching-workspace.js?v=20261116-i18n';
 import {createTeachingSupport} from './teaching-support.js?v=20261116-teaching-help';
 import {createWorkspaceFeatures} from './workspace-features.js?v=20261012-issue-repairs';
 
@@ -24,7 +25,7 @@ const fileQueues=new Map();
 const inputLimit=()=>S.mode==='performance'?1000:12000;
 const inputLength=value=>Array.from(value).length;
 const busy=()=>Boolean(currentJob()||S.view?.active||S.navigating||S.preparing);
-function defaults(mode=S.mode){return {mode,policy:mode==='performance'?'none':'web',web_mode:'live',timezone:'Asia/Shanghai',response_language:'auto',memory_profile:'',learning_profile:'',...read('defaults.'+mode,{}),...(mode==='performance'?{}:{policy:'web'})};}
+function defaults(mode=S.mode){return {mode,policy:mode==='performance'?'none':'web',web_mode:'live',timezone:'Asia/Shanghai',response_language:interfaceLanguage(),memory_profile:'',learning_profile:'',...read('defaults.'+mode,{}),...(mode==='performance'?{}:{policy:'web'})};}
 function saveDefaults(mode,value){write('defaults.'+mode,value);}
 function saveDraft(){const values=read('drafts',{});values[draftKey()]={text:$('#composer-input').value,at:Date.now()};const trimmed=Object.fromEntries(Object.entries(values).sort((a,b)=>b[1].at-a[1].at).slice(0,50));const saved=write('drafts',trimmed);$('#draft-note').textContent=saved&&$('#composer-input').value?'草稿已保存':'';}
 function loadDraft(){const value=read('drafts',{})[draftKey()]?.text||'';$('#composer-input').value=value;$('#draft-note').textContent=value?'草稿已保存':'';resizeInput();}
@@ -50,7 +51,7 @@ if(!nativeFieldSizing){
 }
 function toast(message,error=false){const node=document.createElement('div');node.className='toast'+(error?' error':'');node.textContent=message;$('#toasts').append(node);setTimeout(()=>node.remove(),error?6500:3200);}
 function closeDialog(){$('#dialog').close();}
-function openDialog(title,body,wide=false){closeMobileSidebar();closePopover();const node=$('#dialog');node.classList.toggle('wide',wide);$('#dialog-title').textContent=title;$('#dialog-body').innerHTML=body;if(!node.open)node.showModal();}
+function openDialog(title,body,wide=false){closeMobileSidebar();closePopover();const node=$('#dialog');node.dataset.panelTitle=title;node.classList.toggle('wide',wide);$('#dialog-title').textContent=title;$('#dialog-body').innerHTML=body;if(!node.open)node.showModal();}
 function closePopover(){$('#popover').hidden=true;}
 function appearance(){try{return localStorage.getItem('mdrpi.appearance')||'system';}catch(_){return 'system';}}
 function setTheme(value){try{localStorage.setItem('mdrpi.appearance',value);}catch(_){}document.documentElement.dataset.theme=value==='system'?(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'):value;document.querySelectorAll('[data-theme-value]').forEach(node=>node.classList.toggle('selected',node.dataset.themeValue===value));const themeButton=$('[data-command="theme"]');themeButton.innerHTML=icon(document.documentElement.dataset.theme==='dark'?'sun':'moon');}
@@ -123,11 +124,11 @@ function renderHistory(){let previous='';$('#history-label').textContent=S.searc
 function renderQuickTasks(){
   const block=$('#chat-shortcuts'),hasMessages=(S.view?.messages||[]).some(message=>message.kind!=='welcome');
   block.hidden=S.mode!=='chat'||(!hasMessages&&!currentJob());
-  if(!block.hidden)block.innerHTML=CHAT_TASKS.map(task=>`<button type="button" data-command="prompt" data-value="${escape(task.prompt)}">${escape(task.title)}</button>`).join('');
+  if(!block.hidden)block.innerHTML=getChatTasks().map(task=>`<button type="button" data-command="prompt" data-value="${escape(task.prompt)}">${escape(task.title)}</button>`).join('');
 }
 
 function renderWelcome(){const block=$('#welcome'),state=S.view?.state;const empty=!currentJob()&&(!state||!(S.view.messages||[]).some(message=>message.kind!=='welcome'));block.hidden=!empty;if(!empty)return;
-  const content={chat:{kicker:'YOUR EVERYDAY ASSISTANT',title:'把问题交给我，<br><em>一起找到答案。</em>',intro:'从日常问答到专业护理，从一份资料到一个想法。<br>随时提问，也可以带上文件一起聊。',cards:CHAT_TASKS.map(task=>[task.icon,task.title,task.note,'prompt',task.prompt])},teaching:{kicker:'MDRPI · PBL · 六步临床推理',title:'从一个MDRPI案例开始，<br><em>完成六步临床推理。</em>',intro:'先独立判断，再获得分层提示与针对性反馈；<br>案例按六步推理，知识题按题型作答；完成后复盘。',cards:[['book','标准化案例训练','从题库选择案例与知识练习','catalog',''],['edit','导入自有案例','带入脱敏案例，练习分析与判断','turn','choose_case'],['spark','定制案例训练','选择主题，准备适合你的案例','turn','choose_topic'],['clock','复盘与学习档案','查看训练记录，继续练习与复习','learning-profile','']]},performance:{kicker:'REVIEW & EVALUATE',title:'让一次测试，<br><em>留下完整记录。</em>',intro:'提交病例，运行六步回答与反思流程。<br>完成后可查看结果并导出测试记录。',cards:[['file','输入测试病例','将病例正文粘贴到下方输入框','focus',''],['settings','设置证据方式','实时联网、关闭联网或回放证据','settings','']]}}[S.mode];
+  const content={chat:{kicker:'YOUR EVERYDAY ASSISTANT',title:'把问题交给我，<br><em>一起找到答案。</em>',intro:'从日常问答到专业护理，从一份资料到一个想法。<br>随时提问，也可以带上文件一起聊。',cards:getChatTasks().map(task=>[task.icon,task.title,task.note,'prompt',task.prompt])},teaching:{kicker:'MDRPI · PBL · 六步临床推理',title:'从一个MDRPI案例开始，<br><em>完成六步临床推理。</em>',intro:'先独立判断，再获得分层提示与针对性反馈；<br>案例按六步推理，知识题按题型作答；完成后复盘。',cards:[['book','标准化案例训练','从题库选择案例与知识练习','catalog',''],['edit','导入自有案例','带入脱敏案例，练习分析与判断','turn','choose_case'],['spark','定制案例训练','选择主题，准备适合你的案例','turn','choose_topic'],['clock','复盘与学习档案','查看训练记录，继续练习与复习','learning-profile','']]},performance:{kicker:'REVIEW & EVALUATE',title:'让一次测试，<br><em>留下完整记录。</em>',intro:'提交病例，运行六步回答与反思流程。<br>完成后可查看结果并导出测试记录。',cards:[['file','输入测试病例','将病例正文粘贴到下方输入框','focus',''],['settings','设置证据方式','实时联网、关闭联网或回放证据','settings','']]}}[S.mode];
   block.innerHTML=`<div class="welcome-kicker">${content.kicker}</div><h1>${content.title}</h1><p class="welcome-intro">${content.intro}</p><div class="starter-grid">${content.cards.map(([shape,title,note,command,value])=>`<button class="starter" data-command="${command}" data-value="${escape(value)}"><span class="starter-icon">${icon(shape)}</span><span><strong>${title}</strong><small>${note}</small></span><span class="starter-arrow">${icon('arrow')}</span></button>`).join('')}</div><div class="welcome-footer">${icon('shield')}对话会保存，可从侧栏随时继续。</div>`;}
 
 function renderStage(){const block=$('#stage-strip'),state=S.view?.state;block.hidden=S.mode!=='teaching'||!state||['setup','case','topic'].includes(state.stage);if(block.hidden)return;
@@ -137,7 +138,7 @@ function renderStage(){const block=$('#stage-strip'),state=S.view?.state;block.h
     stableHTML(block,`<span class="stage-description">${state.case_origin==='generated_case'?'AI生成·仅供练习':state.case_origin==='user_deidentified_case'?'自有脱敏案例':state.bank_item?.kind==='standardized_case'?'标准化案例·形成性练习':'六步练习'} · ${flow.status==='interrupted'?'已中断':flow.status==='completed'?'已完成':'当前 '+(flow.current_step+1)+'/6'}<button data-command="learning-progress">学习进度</button></span><div class="clinical-steps">${flow.steps.map((row,index)=>`<button data-command="step-record" data-step="${index}" class="stage-step ${index===flow.current_step?'current':''}"><i>${['passed','awaiting_next'].includes(row.status)?'✓':index+1}</i>${titles[index]}</button>`).join('')}</div>`);
     return;
   }
-  const step=state.stage==='complete'?3:['probe','hint','reflect'].includes(state.stage)?2:1;stableHTML(block,['选题','作答','反馈','总结'].map((title,index)=>`<span class="stage-step ${index===step?'current':''}"><i>${index<step?'✓':index+1}</i>${title}</span>`).join('')+`<span class="stage-description">${state.bank_item?.title?escape(state.bank_item.title.split(' / ')[0]):'当前练习'}<button data-command="learning-progress">学习进度</button></span>`);}
+  const step=state.stage==='complete'?3:['probe','hint','reflect'].includes(state.stage)?2:1;stableHTML(block,['选题','作答','反馈','总结'].map((title,index)=>`<span class="stage-step ${index===step?'current':''}"><i>${index<step?'✓':index+1}</i>${title}</span>`).join('')+`<span class="stage-description">${state.bank_item?.title?escape(bilingualTitle(state.bank_item.title)):'当前练习'}<button data-command="learning-progress">学习进度</button></span>`);}
 
 const isObjectiveQuestion=state=>!teachingClinicalFlow(state)&&['single_choice','multiple_choice','true_false','ordering'].includes(state?.bank_item?.question_type);
 function objectiveLayout(state){
@@ -164,7 +165,7 @@ async function submitObjective(answer){
   if(S.view?.state.error||S.view?.connection_error)throw new Error(S.view.state.error||S.view.connection_error);
   return (S.view.answer_count??S.view.state.attempts.length)>before;
 }
-function render(){const state=S.view?.state;renderQuickTasks();document.title=`${S.view?.title||modes[S.mode]} · MDRPI`;$('#header-title').textContent=S.view?.title||{chat:'新对话',teaching:'新的教学练习',performance:'新的性能测试'}[S.mode];$('#mode-pill').textContent=modes[S.mode];$('#header-subtitle').textContent=state?.learning_profile?'学习档案 · '+state.learning_profile:state?.memory_profile?'偏好档案 · '+state.memory_profile:{chat:'从一个问题开始',teaching:'尝试作答，按自己的节奏学习',performance:'六步回答与反思评测'}[S.mode];document.querySelectorAll('[data-mode]').forEach(node=>node.classList.toggle('active',node.dataset.mode===S.mode));$('#composer-input').removeAttribute('maxlength');$('#composer-input').placeholder=S.mode==='teaching'?state?.stage==='complete'?isObjectiveQuestion(state)?'本题已总结，选择下一道练习继续':'可以继续追问，或选择下一道练习…':state&&['answer','probe','hint','reflect'].includes(state.stage)?isObjectiveQuestion(state)?'请选择选项或输入字母…':'可以作答，也可以求助、追问或让我讲详细一些…':'输入练习主题，或选择上方的练习方式…':S.mode==='performance'?'在这里粘贴病例正文…':'有问题，尽管问…';objectiveLayout(state);features.sync();renderWelcome();renderStage();renderMessages();renderAttachments();renderActions();renderError();renderFiles();renderHistory();loadDraft();teachingWorkspace.render();renderLive();setTheme(appearance());}
+function render(){const state=S.view?.state;renderQuickTasks();document.title=`${S.view?.title||t(modes[S.mode])} · MDRPI`;$('#header-title').textContent=S.view?.title||t({chat:'新对话',teaching:'新的教学练习',performance:'新的性能测试'}[S.mode]);$('#mode-pill').textContent=modes[S.mode];$('#header-subtitle').textContent=state?.learning_profile?'学习档案 · '+state.learning_profile:state?.memory_profile?'偏好档案 · '+state.memory_profile:{chat:'从一个问题开始',teaching:'尝试作答，按自己的节奏学习',performance:'六步回答与反思评测'}[S.mode];document.querySelectorAll('[data-mode]').forEach(node=>node.classList.toggle('active',node.dataset.mode===S.mode));$('#composer-input').removeAttribute('maxlength');$('#composer-input').placeholder=S.mode==='teaching'?state?.stage==='complete'?isObjectiveQuestion(state)?'本题已总结，选择下一道练习继续':'可以继续追问，或选择下一道练习…':state&&['answer','probe','hint','reflect'].includes(state.stage)?isObjectiveQuestion(state)?'请选择选项或输入字母…':'可以作答，也可以求助、追问或让我讲详细一些…':'输入练习主题，或选择上方的练习方式…':S.mode==='performance'?'在这里粘贴病例正文…':'有问题，尽管问…';objectiveLayout(state);features.sync();renderWelcome();renderStage();renderMessages();renderAttachments();renderActions();renderError();renderFiles();renderHistory();loadDraft();teachingWorkspace.render();renderLive();setTheme(appearance());}
 
 let messagesSession;
 function renderMessages(){
@@ -429,7 +430,7 @@ document.addEventListener('click',async event=>{
     if(target.dataset.themeValue){setTheme(target.dataset.themeValue);return;}
     if(target.dataset.category){panels.chooseCategory(target.dataset.category);return;}
     if(target.dataset.case){if(S.selectingCase||busy())return;S.selectingCase=true;try{closeDialog();if(S.mode==='teaching'&&S.view?.state.case&&!['setup','case','topic'].includes(S.view.state.stage))await newConversation();await startTurn(target.dataset.case,'library_case');}finally{S.selectingCase=false;}return;}
-    if(target.dataset.rating){target.disabled=true;try{const result=await api(`/sessions/${sid()}/learning-profile/rating`,{rating:Number(target.dataset.rating)});await refresh();toast('自评已保存，下次复习：'+new Date(result.next_due).toLocaleString('zh-CN'));}finally{target.disabled=false;}return;}
+    if(target.dataset.rating){target.disabled=true;try{const result=await api(`/sessions/${sid()}/learning-profile/rating`,{rating:Number(target.dataset.rating)});await refresh();toast('自评已保存，下次复习：'+new Date(result.next_due).toLocaleString(interfaceLocale()));}finally{target.disabled=false;}return;}
     await command(target.dataset.command,target);
   }catch(error){toast(error.message,true);}
 });
@@ -508,3 +509,11 @@ async function boot(){hydrateIcons();if(read('collapsed',false)&&!matchMedia('(m
   if(sid()){const pending=read('submission.'+sid());if(pending&&!S.view.active&&!S.view.state.pending){const accepted=S.view.state.messages.some(message=>message.role==='user'&&message.content===pending.text&&new Date(message.at).getTime()>=pending.at-1000);if(!accepted&&!pending.from_controls&&!$('#composer-input').value&&pending.text){$('#composer-input').value=pending.text;saveDraft();resizeInput();toast('上次待发送内容已恢复到输入框');}write('submission.'+sid(),null);}}
   await loadHistory();syncSidebarState();setInterval(()=>{if(currentJob()||S.view?.active)renderLive();},1000);setInterval(poll,2000);$('#composer-input').focus();}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>boot().catch(error=>toast(error.message,true)),{once:true});else boot().catch(error=>toast(error.message,true));
+
+startLocalization();
+window.addEventListener('mdrpi:languagechange',()=>{
+  const field=document.activeElement,selection=field instanceof HTMLTextAreaElement?[field.selectionStart,field.selectionEnd]:null;
+  const draft=$('#composer-input').value;
+  saveDraft();render();$('#composer-input').value=draft;resizeInput();localize(document.body);
+  if(selection&&field.isConnected)field.setSelectionRange(...selection);
+});

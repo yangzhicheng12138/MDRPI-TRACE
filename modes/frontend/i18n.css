@@ -1,0 +1,11 @@
+.language-picker{display:inline-flex;align-items:center;flex-shrink:0;gap:6px;font-size:13px}
+.language-picker select{font:inherit;color:inherit;background:var(--surface,#fff);border:1px solid var(--border,#dce5e1);border-radius:9px;min-block-size:36px;max-inline-size:116px;padding:5px 8px;cursor:pointer;color-scheme:inherit}
+.language-picker select:focus-visible{outline:2px solid var(--accent,#157568);outline-offset:3px}
+html[data-theme="dark"] .language-picker select{background:#1c2926;color:#edf4f0;border-color:#3d4b46}
+.studio-tools{display:flex;align-items:center;gap:18px}
+.language-label{position:absolute;inline-size:1px;block-size:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+html[lang="en"] .teaching-focus-top{flex-wrap:wrap;gap:4px 12px}
+html[lang="en"] .stage-description{min-inline-size:0}
+html[lang="en"] .teaching-panel-count{white-space:nowrap}
+@media(pointer:coarse){.language-picker select{min-block-size:44px}}
+@media(max-width:520px){.header-tools{gap:2px}.language-picker select{max-inline-size:95px;font-size:12px;padding-inline:5px}.studio-tools{gap:10px}.studio-tools .back-link{font-size:12px}}

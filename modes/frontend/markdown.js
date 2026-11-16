@@ -1,4 +1,5 @@
 import {icon} from './icons.js';
+import {interfaceLanguage,interfaceLocale} from './i18n.js';
 export function escape(value='') { return String(value).replace(/[&<>"']/g, value=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[value])); }
 const markdownCache=new Map();let cachedCharacters=0;
 export function markdown(text='') {
@@ -55,14 +56,17 @@ function annotatedAnswer(content,annotations) {
 
 export function renderMessage(message,index,options={}) {
   const content=message.display_content??message.content??'';
+  // Translate only service-generated setup labels, never a learner's answer.
+  let userContent=message.content||'';
+  if(message.kind==='setup'&&interfaceLanguage()==='en')userContent=userContent.replace(/^选择练习：/,'Selected exercise: ').replace(/^我提供案例$/,'Use my own case').replace(/^按主题出题$/,'Create a case by topic');
   if(message.kind==='welcome') return '';
   if(message.kind==='learning_section') return `<div class="exercise-separator">${escape(content.replace(/^###\s*/,''))}</div>`;
   const user=message.role==='user';
   const labels={feedback:'作答反馈',hint:'提示',summary:'练习总结',recheck:'重新核对',case:'练习题',cancelled:'已停止',teaching_dialogue:'教学讲解',clarification:'确认与说明',social:'交流'};
-  let time='';try{time=new Date(message.at).toLocaleTimeString('zh-CN',{hour:'2-digit',minute:'2-digit'});}catch(_){}
+  let time='';try{time=new Date(message.at).toLocaleTimeString(interfaceLocale(),{hour:'2-digit',minute:'2-digit'});}catch(_){}
   return `<article class="message ${user?'user':'assistant'}" data-message-index="${index}">
     ${user?'':`<div class="message-meta"><img src="/ui/assets/brand-care-t.svg" alt="" width="26" height="26"><strong>MDRPI</strong>${labels[message.kind]?`<span class="message-kind">${labels[message.kind]}</span>`:''}<time class="message-time">${escape(time)}</time></div>`}
-    <div class="message-body ${user?'':'markdown'}">${user?options.mode==='teaching'&&message.kind==='student'?annotatedAnswer(message.content||'',message.annotations):escape(message.content||''):options.teachingFeedback&&message.kind!=='summary'&&(message.feedback_view||['feedback','recheck'].includes(message.kind))?options.teachingFeedback(content,message.feedback_view,{messages:options.messages,index}):markdown(content)}</div>
+    <div class="message-body ${user?'':'markdown'}">${user?options.mode==='teaching'&&message.kind==='student'?annotatedAnswer(message.content||'',message.annotations):escape(userContent):options.teachingFeedback&&message.kind!=='summary'&&(message.feedback_view||['feedback','recheck'].includes(message.kind))?options.teachingFeedback(content,message.feedback_view,{messages:options.messages,index}):markdown(content)}</div>
     ${options.editor||''}
     <div class="message-actions"><button type="button" data-command="copy-message" data-index="${index}" aria-label="复制${user?'我的消息':'回答'}">${icon('copy')}复制</button>${options.canEdit?`<button type="button" data-command="edit-message" data-index="${index}" aria-label="${options.mode==='teaching'?'补充更正作答':'编辑消息'}">${icon('edit')}${options.mode==='teaching'?'补充更正':'编辑'}</button>`:user?`<button type="button" data-command="reuse-message" data-index="${index}" aria-label="将这条消息放回输入框">${icon('edit')}放入输入框</button>`:''}</div>
   </article>`;

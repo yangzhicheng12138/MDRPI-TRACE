@@ -1,4 +1,4 @@
-import {escape} from './markdown.js';
+import {escape} from './markdown.js?v=20261116-i18n';
 
 const labels={recognize:'识别线索',analyze:'分析线索',prioritize:'确定优先问题',solutions:'制定解决方案',action:'采取行动',evaluate:'评价结果'};
 const populationLabels={adult:'成人',pediatric:'儿童',neonatal:'新生儿'};

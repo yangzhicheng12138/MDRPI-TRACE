@@ -1,7 +1,7 @@
-# 安全报告
+# Security reports
 
-请不要在公共 Issue 中提交密钥、密码、会话数据库或含个人信息的日志。
+Do not post credentials, session databases or logs containing personal information in public issues.
 
-可通过仓库的私密漏洞报告功能联系维护者；如果该功能尚未开启，请先提交不包含攻击细节和敏感资料的 Issue 请求联系渠道。
+Contact the maintainer through GitHub's private vulnerability reporting feature when available. If it is not enabled, open an issue requesting a contact channel without exploit details or sensitive information.
 
-默认服务监听本机回环地址。公网使用需要额外的认证、HTTPS 和隔离部署；内置学习档案标识不替代完整的访问控制。报告内容应注明相关版本、接口和复现条件。
+The service listens on loopback by default. Public access requires additional authentication, HTTPS and deployment isolation. Learner-profile identifiers do not replace full access control. Include the affected version, endpoint and reproduction conditions in a report.

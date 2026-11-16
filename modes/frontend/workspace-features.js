@@ -1,5 +1,5 @@
 import {icon} from './icons.js';
-import {escape,markdown} from './markdown.js';
+import {escape,markdown} from './markdown.js?v=20261116-i18n';
 
 export function createWorkspaceFeatures({S,api,sid,busy,read,write,toast,navigate,startTurn,learningAction,renderMessages,saveDraft,resizeInput}) {
   const $=selector=>document.querySelector(selector);

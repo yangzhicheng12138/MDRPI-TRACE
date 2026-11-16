@@ -1,26 +1,26 @@
-# 部署
+# Deployment
 
-## 三个服务
+## Three services
 
-| 服务 | 默认地址 | 环境 |
+| Service | Default address | Environment |
 |---|---|---|
-| 网页与教学状态管理 | `127.0.0.1:8021` | Python 3.10+，CPU |
-| 本地模型 | `127.0.0.1:8001/v1` | 独立 vLLM / 模型环境 |
-| 审核知识库 | `127.0.0.1:8020` | 独立检索环境，可选 GPU |
+| Web and teaching state | `127.0.0.1:8021` | Python 3.10+, CPU |
+| Local model | `127.0.0.1:8001/v1` | Separate vLLM/model environment |
+| Reviewed knowledge base | `127.0.0.1:8020` | Separate retrieval environment; optional GPU |
 
-网页启动脚本会读取根目录 `.env`，路径均相对仓库解析。默认回环监听，远程个人访问可通过 SSH 转发；多人公网部署应在前面增加 HTTPS、登录认证和访问限制。内置学习档案隔离不是完整的多人租户认证系统。
+The web launcher reads `.env` from the repository root and resolves project paths relative to the repository. It listens on loopback by default. Use SSH forwarding for personal remote access; shared public deployments need HTTPS, authentication and access limits. Built-in learner-profile isolation is not a complete multi-tenant authentication system.
 
 ```bash
 ssh -N -L 19021:127.0.0.1:8021 your-user@your-server
 ```
 
-然后访问本机 `http://127.0.0.1:19021/ui/`。本机端口不可用时选择其他可监听端口。
+Then open `http://127.0.0.1:19021/ui/` locally. Choose another available local port if necessary.
 
-## 模型
+## Model
 
-项目默认模型服务名是 `ministral-3-14b`。权重不随仓库分发，应从发布方下载并遵守模型许可。原研究部署使用过 NF4 单卡量化；具体显存取决于模型、量化方式、上下文长度和并发。
+The default served model name is `ministral-3-14b`. Download weights separately from their publisher and observe the model license. Research deployments have used single-GPU NF4 quantization; actual VRAM needs depend on weights, quantization, context length and concurrency.
 
-在独立模型环境中准备与权重兼容的 vLLM，启动方式示例：
+Install a compatible vLLM release in a separate model environment. Example:
 
 ```bash
 CUDA_VISIBLE_DEVICES=0 vllm serve /path/to/your/model \
@@ -28,32 +28,32 @@ CUDA_VISIBLE_DEVICES=0 vllm serve /path/to/your/model \
   --served-model-name ministral-3-14b --max-model-len 32768
 ```
 
-这条命令没有自动开启量化。量化加载参数应按所选权重和 vLLM 版本设置。项目需要 `/v1/chat/completions`、`/v1/models`、`/tokenize`，并使用流式输出和 JSON Schema 约束；仅“兼容聊天接口”不一定满足全部功能。
+This command does not enable quantization. Set quantized-loading arguments for your weights and vLLM version. The project uses `/v1/chat/completions`, `/v1/models`, `/tokenize`, streaming and JSON Schema constraints; a chat-compatible endpoint alone may not support every feature.
 
 ```bash
 curl http://127.0.0.1:8001/v1/models
 python scripts/19_check_model_contract.py --help
 ```
 
-`LocalLLM` 当前只连接回环地址。如模型位于另一台机器，可通过 SSH 转发到本机。
+`LocalLLM` currently accepts loopback endpoints only. Forward a remote model endpoint to the local machine when needed.
 
-仓库也保留了 NF4 专用启动脚本 `scripts/17_serve_local_model.py`。使用它之前，在 `config.yaml` 的 `local_model` 中填写独立模型环境的 Python 路径和权重目录，并在该环境安装兼容的 vLLM、bitsandbytes 等依赖。该脚本采用单请求配置，需要显式指定空闲 GPU 和新的日志路径：
+The repository also retains `scripts/17_serve_local_model.py` for NF4 deployments. Before using it, set the model-environment Python path and weights directory under `local_model` in `config.yaml`, then install compatible vLLM and bitsandbytes dependencies in that environment. This launcher uses a single-request configuration; explicitly choose an available GPU and a new log path:
 
 ```bash
 python scripts/17_serve_local_model.py --gpu 0 --log logs/model-nf4.log
 ```
 
-## 知识库
+## Knowledge service
 
-在独立环境安装 `requirements-rag.txt`，按照 [DATA.md](DATA.md) 准备审核语料与索引，然后启动：
+Install `requirements-rag.txt` in a separate environment, prepare reviewed documents and indexes as described in [DATA.md](DATA.md), then run:
 
 ```bash
 python scripts/15_serve_rag.py --config config.yaml --device cpu
 ```
 
-`--device cuda:0` 可将检索模型放在该进程可见的第一张 GPU；不会自动结束其他进程。不要在生产环境中同时用多个进程写入同一个本地 Qdrant 目录。
+`--device cuda:0` places retrieval models on the first GPU visible to that process. It does not terminate other processes. Avoid concurrent writers to the same local Qdrant directory in production.
 
-## 网页与外部服务
+## Web and external services
 
 ```bash
 python scripts/start_web.py
@@ -61,14 +61,16 @@ curl http://127.0.0.1:8021/api/health
 curl http://127.0.0.1:8021/api/readiness
 ```
 
-`health` 表示网页进程存活；`readiness` 分别报告模型和知识库状态。服务配置可以通过 `MDRPI_MODES_CONFIG`、`MDRPI_MODES_DATA`、`MDRPI_MODES_PORT`、`MDRPI_RAG_URL` 覆盖。不要让测试与正式网页共用会话数据库。
+`health` reports web-process availability. `readiness` reports model and knowledge-service status separately. Override configuration with `MDRPI_MODES_CONFIG`, `MDRPI_MODES_DATA`, `MDRPI_MODES_PORT` and `MDRPI_RAG_URL`. Keep test and production session databases separate.
 
-搜索与独立命题审核使用 `.env` 中的外部凭据。动态页面读取可选安装 `requirements-web.txt` 并配置独立浏览器解释器；普通 HTTP 正文读取不依赖该环境。
+Search and independent authoring review use external credentials from `.env`. For optional dynamic-page reading, install `requirements-web.txt` and configure a separate browser interpreter. Ordinary HTTP page reading does not require that environment.
 
-## 可选工具工作进程
+The interface supports English and Chinese through the top-right language selector. Language preferences are stored in the browser; response language is set separately in Preferences & settings.
 
-`tools/` 提供隔离文件与计算工具代码及 Dockerfile。主进程将工具任务作为受限操作处理；启用前需自行构建镜像并配置运行环境。基本问答和教学不要求 Docker。
+## Optional tool worker
 
-## 第三方许可
+`tools/` contains isolated file/computation tools and a Dockerfile. The main process treats tool tasks as restricted operations. Build the image and configure the runtime before enabling them. Basic Chat and Guided practice do not require Docker.
 
-项目代码为 MIT。PDF 处理依赖 PyMuPDF（AGPL 或商业许可），教学内容以及其他依赖也有独立许可，详见第三方声明。分发或部署包含这些组件的完整服务时，需要遵守相应组件的条件。
+## Third-party licenses
+
+Project code is MIT. PDF processing uses PyMuPDF (AGPL or commercial license); teaching content and other dependencies retain separate terms. See [third-party notices](../THIRD_PARTY_NOTICES.md) before distributing or deploying a service that includes these components.

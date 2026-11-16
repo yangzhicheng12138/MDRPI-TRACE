@@ -1,4 +1,6 @@
 // Deliberately use textContent for all model- and material-supplied text.
+import {startLocalization,interfaceLanguage,interfaceLocale,t} from '/ui/assets/i18n.js';
+startLocalization();
 const $ = selector => document.querySelector(selector);
 const API = '/api/question-generation';
 const statusNames = {
@@ -26,6 +28,22 @@ let pollFailures = 0;
 let posting = false;
 let batchPlanSignature = '';
 let batchPlanJobId = '';
+const seedGoal={zh:'识别器械相关压力损伤风险，提出兼顾局部组织保护与器械治疗的护理措施。',en:'Identify device-related pressure injury risks and propose nursing measures that protect local tissue while preserving device therapy.'};
+const editedSeeds=new Set();
+let previousGoal=$('[name=learning_objective]').value;
+for(const name of ['topic','learning_objective'])$(`[name=${name}]`).addEventListener('input',()=>editedSeeds.add(name));
+function localizeSeeds(){
+  const topic=$('[name=topic]'),goal=$('[name=learning_objective]');
+  if(!editedSeeds.has('topic')&&topic.value===suggestedTopic){
+    const device=$('[name=device_type]').value;
+    const label=deviceLabels[device]||'无创通气面罩';
+    suggestedTopic=interfaceLanguage()==='en'?`${t(label)}-related pressure injury`:`${label}相关压力性损伤`;
+    topic.value=suggestedTopic;
+  }
+  if(!editedSeeds.has('learning_objective')&&goal.value===previousGoal){previousGoal=seedGoal[interfaceLanguage()];goal.value=previousGoal;}
+}
+localizeSeeds();
+window.addEventListener('mdrpi:languagechange',localizeSeeds);
 
 function node(tag, className, text) {
   const element = document.createElement(tag);
@@ -135,8 +153,8 @@ function renderMaterials() {
   if (!container.childElementCount) container.append(node('p', 'muted', '该人群与器械暂无匹配材料，请更换选择或先登记开发材料。'));
   $('#generate').disabled = posting || !container.querySelector('input');
   const topic = $('[name=topic]');
-  if (device && topic.value === suggestedTopic) {
-    suggestedTopic = `${deviceLabels[device] || device}相关压力性损伤`;
+  if (device && !editedSeeds.has('topic') && topic.value === suggestedTopic) {
+    suggestedTopic = interfaceLanguage()==='en'?`${t(deviceLabels[device] || device)}-related pressure injury`:`${deviceLabels[device] || device}相关压力性损伤`;
     topic.value = suggestedTopic;
   }
 }
@@ -144,7 +162,7 @@ function renderMaterials() {
 function localDate(value) {
   if (!value) return '';
   const date = new Date(value);
-  return Number.isNaN(date.getTime()) ? '' : date.toLocaleString('zh-CN', {month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit'});
+  return Number.isNaN(date.getTime()) ? '' : date.toLocaleString(interfaceLocale(), {month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit'});
 }
 
 async function loadJobs() {
@@ -222,7 +240,7 @@ function evidenceBlock(container, evidence) {
     const location = [source.location, source.page && `第 ${source.page} 页`, source.population && `人群：${populationNames[source.population] || source.population}`, source.device_type].filter(Boolean).join(' · ');
     if (location) item.append(node('p', 'muted', location));
     const excerpt = source.quote || source.excerpt || source.text || source.content;
-    if (excerpt) item.append(node('p', '', readableEvidenceText(excerpt)));
+    if (excerpt) item.append(node('p', 'source-excerpt', readableEvidenceText(excerpt)));
     if (source.supports || source.supported_claim) item.append(node('p', '', `支持内容：${text(source.supports || source.supported_claim)}`));
     container.append(item);
   });

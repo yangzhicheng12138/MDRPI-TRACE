@@ -7,11 +7,12 @@
   <title>出题工作室 · MDRPI</title>
   <link rel="icon" type="image/svg+xml" sizes="any" href="/ui/assets/brand-care-t.svg">
   <link rel="stylesheet" href="/question-studio/question-studio.css?v=20261116-brand">
-  <script type="module" src="/question-studio/question-studio.js"></script>
+  <link rel="stylesheet" href="/ui/assets/i18n.css?v=20261116-i18n">
+  <script type="module" src="/question-studio/question-studio.js?v=20261116-i18n"></script>
 </head>
 <body>
   <a class="skip-link" href="#blueprint">跳到出题要求</a>
-  <header class="topbar"><a class="brand" href="/ui/"><img class="brand-mark" src="/ui/assets/brand-care-t.svg" alt="" width="38" height="38"><span>MDRPI <small>教学工作台</small></span></a><a class="back-link" href="/ui/">返回对话 <span aria-hidden="true">↗</span></a></header>
+  <header class="topbar"><a class="brand" href="/ui/"><img class="brand-mark" src="/ui/assets/brand-care-t.svg" alt="" width="38" height="38"><span>MDRPI <small>教学工作台</small></span></a><div class="studio-tools"><label class="language-picker" for="interface-language"><span class="language-label">界面语言</span><select id="interface-language" data-interface-language><option value="en" lang="en" translate="no">English</option><option value="zh" lang="zh-CN" translate="no">中文</option></select></label><a class="back-link" href="/ui/">返回对话 <span aria-hidden="true">↗</span></a></div></header>
   <main class="shell">
     <section class="intro"><div><span class="eyebrow">QUESTION STUDIO · 开发工作区</span><h1>从可靠材料，走向好问题。</h1><p>指定学习目标，结合已有材料与联网证据出题，再由独立智能体审核。</p></div><span class="development-tag">开发题目 · 不自动入库</span></section>
     <div class="workspace">
@@ -21,7 +22,7 @@
           <label class="field">出题主题<input name="topic" required minlength="1" maxlength="120" value="无创通气面罩相关压力性损伤" placeholder="例如：面罩相关压力性损伤"></label>
           <label class="field">学习目标<textarea name="learning_objective" required minlength="1" maxlength="400" rows="3" placeholder="例如：根据局部皮肤线索进行判断，并提出兼顾减压与通气效果的措施。">识别器械相关压力损伤风险，提出兼顾局部组织保护与器械治疗的护理措施。</textarea></label>
           <div class="field-pair"><label class="field">适用人群<select name="population"><option value="adult">成人</option><option value="pediatric">儿童</option><option value="neonatal">新生儿</option></select></label><label class="field">器械<select name="device_type" required disabled><option value="">正在加载…</option></select></label></div>
-          <div class="field-pair"><label class="field">预期难度<select name="difficulty"><option>基础</option><option selected>进阶</option><option>复杂</option></select></label><label class="field">题型<select name="question_type"><option value="short_answer">简答题</option><option value="single_choice">单项选择题</option></select></label></div>
+          <div class="field-pair"><label class="field">预期难度<select name="difficulty"><option value="基础">基础</option><option value="进阶" selected>进阶</option><option value="复杂">复杂</option></select></label><label class="field">题型<select name="question_type"><option value="short_answer">简答题</option><option value="single_choice">单项选择题</option></select></label></div>
           <label class="field count-field">题目数量<select name="count"><option value="1">1 道 · 建议先试一道</option><option value="2">2 道</option><option value="3">3 道</option><option value="4">4 道</option><option value="5">5 道</option></select></label>
           <fieldset class="material-field"><legend>选择已有材料 <span>必选</span></legend><p class="field-note">仅展示已登记的开发材料；检索时仍会核对人群和器械适用性。</p><div id="materials" class="materials" aria-live="polite"><p class="muted">正在加载材料…</p></div></fieldset>
           <label class="field">补充要求 <span class="optional">可选</span><textarea name="requirements" maxlength="2000" rows="2" placeholder="例如：重点考查鉴别，不在题干中直接提示答案。"></textarea></label>

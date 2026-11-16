@@ -1,4 +1,5 @@
-import {escape,markdown} from './markdown.js?v=20261013-teaching-panels';
+import {escape,markdown} from './markdown.js?v=20261116-i18n';
+import {bilingualTitle} from './i18n.js';
 
 const stepTitles=['识别线索','分析线索','确定优先问题','制定解决方案','采取行动','评价结果'];
 const types={single_choice:'单选题',multiple_choice:'多选题',true_false:'判断题',ordering:'排序题',short_answer:'简答题',concept_card:'概念卡',six_step_case:'六步案例'};
@@ -179,10 +180,10 @@ export function createTeachingWorkspace(C) {
     let body;
     if(kind==='ordering'){
       const order=orderFor(state,row);
-      body=`<ol class="answer-order" aria-label="当前答案顺序">${order.map((key,index)=>`<li><span><b>${escape(key)}</b>${escape(state.bank_item.options[key])}</span><div><button type="button" data-command="answer-move" data-key="${key}" data-direction="-1" aria-label="上移选项${key}" ${locked||index===0?'disabled':''}>↑</button><button type="button" data-command="answer-move" data-key="${key}" data-direction="1" aria-label="下移选项${key}" ${locked||index===order.length-1?'disabled':''}>↓</button></div></li>`).join('')}</ol>`;
+      body=`<ol class="answer-order" aria-label="当前答案顺序">${order.map((key,index)=>`<li><span><b>${escape(key)}</b><span data-no-i18n>${escape(state.bank_item.options[key])}</span></span><div><button type="button" data-command="answer-move" data-key="${key}" data-direction="-1" aria-label="上移选项${key}" ${locked||index===0?'disabled':''}>↑</button><button type="button" data-command="answer-move" data-key="${key}" data-direction="1" aria-label="下移选项${key}" ${locked||index===order.length-1?'disabled':''}>↓</button></div></li>`).join('')}</ol>`;
     }else{
       const values=kind==='true_false'?[['正确','该表述正确'],['错误','该表述错误']]:rows;
-      body=`<fieldset class="answer-choices" ${locked?'disabled':''}><legend class="sr-only">${escape(types[kind])}选项</legend>${values.map(([key,label])=>`<label class="answer-choice ${row.selected.includes(key)?'selected':''}"><input type="${kind==='multiple_choice'?'checkbox':'radio'}" name="teaching-answer" value="${escape(key)}" ${row.selected.includes(key)?'checked':''}><span><b>${escape(key)}</b>${escape(label)}</span></label>`).join('')}</fieldset>`;
+      body=`<fieldset class="answer-choices" ${locked?'disabled':''}><legend class="sr-only">${escape(types[kind])}选项</legend>${values.map(([key,label])=>`<label class="answer-choice ${row.selected.includes(key)?'selected':''}"><input type="${kind==='multiple_choice'?'checkbox':'radio'}" name="teaching-answer" value="${escape(key)}" ${row.selected.includes(key)?'checked':''}><span><b>${escape(key)}</b><span ${kind==='true_false'?'':'data-no-i18n'}>${escape(label)}</span></span></label>`).join('')}</fieldset>`;
     }
     const html=`<div class="answer-tools-heading"><strong>${escape(types[kind])}作答</strong><button type="button" data-command="answer-clear" ${locked?'disabled':''}>${kind==='ordering'?'重置顺序':'清除选择'}</button></div><div class="objective-stem">${markdown(stem)}</div><p class="objective-help">${help}</p>${body}<div class="objective-submit-row"><button type="button" class="button primary objective-submit" data-command="objective-submit" aria-describedby="objective-feedback" ${locked||!valid?'disabled':''}>${waiting?'正在提交…':feedback.correct?'已答对':state.stage==='complete'?'本轮已结束':'提交答案'}</button><span class="objective-keyboard-hint">也可按 Enter 提交</span></div>`;
     if(!block.querySelector('.objective-controls')){
@@ -244,7 +245,7 @@ export function createTeachingWorkspace(C) {
     if(!name.startsWith('teaching-')&&!name.startsWith('answer-')&&name!=='objective-submit')return false;
     if(!state)return true;
     if(name==='teaching-case'||name==='teaching-task'){
-      openDialog(name==='teaching-task'?'本步任务':teachingClinicalFlow(state)?'病例原文':'完整题目',`<p class="panel-note">${escape(state.bank_item?.title?.split(' / ')[0]||'当前教学练习')}</p><div class="markdown">${markdown(name==='teaching-task'?task(state):state.case)}</div>${name==='teaching-task'?'<p class="panel-note">只需回答当前步骤。已经答对的内容会继续保留，可以分多次补充。</p>':''}`);
+      openDialog(name==='teaching-task'?'本步任务':teachingClinicalFlow(state)?'病例原文':'完整题目',`<p class="panel-note">${escape(bilingualTitle(state.bank_item?.title)||'当前教学练习')}</p><div class="markdown">${markdown(name==='teaching-task'?task(state):state.case)}</div>${name==='teaching-task'?'<p class="panel-note">只需回答当前步骤。已经答对的内容会继续保留，可以分多次补充。</p>':''}`);
       return true;
     }
     if(name==='objective-submit'){void submit();return true;}

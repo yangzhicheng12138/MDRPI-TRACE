@@ -1,6 +1,7 @@
+import {bilingualTitle,interfaceLocale,t} from './i18n.js';
 import {icon} from './icons.js';
-import {escape,markdown,renderMessage} from './markdown.js?v=20261013-teaching-panels';
-import {teachingFeedback} from './teaching-workspace.js?v=20261013-teaching-panels';
+import {escape,markdown,renderMessage} from './markdown.js?v=20261116-i18n';
+import {teachingFeedback} from './teaching-workspace.js?v=20261116-i18n';
 import {renderLearningAnalytics} from './learning-visuals.js?v=20261009-guided-learning';
 import {teachingReferenceCards,bibliographyText,updateReferenceLinks} from './reference-cards.js?v=20261011-reference-cleanup';
 
@@ -11,7 +12,7 @@ const devices={niv_mask:'无创通气面罩',nasogastric_tube:'鼻胃管',endotr
 const options=(values,selected)=>Object.entries(values).map(([value,title])=>`<option value="${escape(value)}" ${value===selected?'selected':''}>${escape(title)}</option>`).join('');
 const field=(id,title,value,help='')=>`<label class="field"><span>${escape(title)}</span><input id="${id}" value="${escape(value||'')}" maxlength="80">${help?`<small>${escape(help)}</small>`:''}</label>`;
 const button=(label,command,extra='',primary=false)=>`<button type="button" class="button ${primary?'primary':''}" data-command="${command}" ${extra}>${label}</button>`;
-const when=value=>value?new Date(value).toLocaleString('zh-CN',{year:'numeric',month:'long',day:'numeric',hour:'2-digit',minute:'2-digit',timeZoneName:'short'}):'尚未安排';
+const when=value=>value?new Date(value).toLocaleString(interfaceLocale(),{year:'numeric',month:'long',day:'numeric',hour:'2-digit',minute:'2-digit',timeZoneName:'short'}):'尚未安排';
 const emptyCatalogFilters=()=>({population:'',device_type:'',difficulty:'',question_type:'',learning_topic:''});
 
 export function createPanels(C) {
@@ -97,7 +98,8 @@ export function createPanels(C) {
       <form id="settings-form"><div class="settings-section">${mode==='teaching'?'教学设置':mode==='performance'?'测试设置':'回答设置'}</div>
       ${mode==='performance'?`<label class="field"><span>联网方式</span><select id="setting-web-mode">${options({live:'实时联网',off:'关闭联网',replay:'使用已保存证据'},values.web_mode||'live')}</select></label>${field('setting-replay','回放记录编号',values.replay_run_id,'选择使用已保存证据时填写原始运行编号。')}`:'<p class="panel-note">资料范围：网页＋知识库。</p>'}
       ${mode==='chat'?field('setting-timezone','时间显示时区',values.timezone||'Asia/Shanghai','默认北京时间。也可填写 UTC、Europe/London 等时区。')+field('setting-memory','偏好档案名称（可选）',values.memory_profile,'同名会话共用偏好。只保存你明确要求记住的内容。'):''}
-      ${mode==='teaching'?`<label class="field"><span>回复语言</span><select id="setting-language">${options({auto:'跟随我的输入',zh:'中文',en:'English'},values.response_language||'auto')}</select></label>`+field('setting-learning','学习档案名称（可选）',values.learning_profile,'填写后可跨会话续学并安排复习。开始作答后，需完成本题才能切换。'):''}
+      ${mode!=='performance'?`<label class="field"><span>回复语言</span><select id="setting-language">${options({auto:'跟随我的输入',zh:'中文',en:'English'},values.response_language||'auto')}</select><small>回复语言可独立于界面语言设置。</small></label>`:''}
+      ${mode==='teaching'?field('setting-learning','学习档案名称（可选）',values.learning_profile,'填写后可跨会话续学并安排复习。开始作答后，需完成本题才能切换。'):''}
       ${mode==='teaching'?`<label class="field"><span>学习档案访问码</span><input id="setting-access-code" type="password" value="${escape(openedAccessCode)}" maxlength="64" minlength="64" pattern="[a-f0-9]{64}" autocomplete="off" spellcheck="false" required><small>在另一浏览器输入相同访问码和档案名称，可恢复你的学习记录。请妥善保存；持有此码可访问相应档案。更换访问码会开启新会话，旧记录保留。</small></label><div class="action-row">${button('显示访问码','toggle-learning-access','aria-controls="setting-access-code" aria-pressed="false"')}${button('复制访问码','copy-learning-access')}</div>`:''}
       <div id="settings-error" class="inline-error" hidden></div><div class="form-footer">${button('取消','close-dialog')}<button type="submit" class="button primary">保存设置</button></div></form>`);
     document.querySelector('#settings-form').addEventListener('submit',async event=>{
@@ -108,7 +110,8 @@ export function createPanels(C) {
         const body={policy:mode==='performance'?(values.policy||'none'):'web',web_mode:read('setting-web-mode')||values.web_mode||'live',replay_run_id:read('setting-replay')??values.replay_run_id??''};
         if(mode==='performance'&&body.web_mode==='replay'&&!body.replay_run_id.trim())throw new Error('使用已保存证据时，请填写原始运行编号。');
         if(mode==='chat')Object.assign(body,{timezone:read('setting-timezone'),memory_profile:read('setting-memory')});
-        if(mode==='teaching')Object.assign(body,{response_language:read('setting-language'),learning_profile:read('setting-learning')});
+        if(mode!=='performance')body.response_language=read('setting-language');
+        if(mode==='teaching')body.learning_profile=read('setting-learning');
         const accessCode=mode==='teaching'?read('setting-access-code').trim():'',changed=mode==='teaching'&&accessCode!==openedAccessCode;
         if(mode==='teaching'&&!/^[a-f0-9]{64}$/.test(accessCode))throw new Error('访问码应为64位小写十六进制字符。');
         if(mode==='teaching'&&localStorage.getItem('mdrpi.learner-key')!==openedAccessCode)throw new Error('访问身份已改变，请重新打开教学设置。');
@@ -152,14 +155,15 @@ export function createPanels(C) {
       document.querySelector('#dialog-body').innerHTML=`<p class="inline-error" role="alert">题库未能加载：${escape(error.message)}</p><div class="action-row">${button('重新加载题库','catalog')}${button('清除搜索与筛选','catalog-reset')}</div>`;
     }
   }
-  function catalogActive(){return document.querySelector('#dialog').open&&document.querySelector('#dialog-title').textContent==='选择一道练习';}
+  function catalogActive(){return document.querySelector('#dialog').open&&document.querySelector('#dialog').dataset.panelTitle==='选择一道练习';}
   function catalogSelect(key,title,rows=[]) {
     const disabled=key==='device_type'&&!rows.length;
     return `<label class="field"><span>${title}</span><select id="catalog-${key}" data-catalog-filter="${key}" ${disabled?'disabled':''}><option value="">${disabled?'当前人群暂无器械':'全部'}</option>${rows.map(row=>`<option value="${escape(row.id)}" ${filters[key]===row.id?'selected':''}>${escape(row.label)} · ${key==='learning_topic'&&Number(row.count)===0?'当前筛选暂无题':row.count}</option>`).join('')}</select></label>`;
   }
   function catalogMatches(item) {
     const normalize=value=>String(value||'').normalize('NFKC').toLocaleLowerCase().replace(/[\s·／/—-]+/g,'');
-    const haystack=normalize([item.id,item.title,...(item.population_labels||[]),...(item.device_labels||[]),item.question_type_label,item.learning_topic_label,item.topic_label,item.difficulty].join(' '));
+    const terms=[item.id,item.title,...(item.population_labels||[]),...(item.device_labels||[]),item.question_type_label,item.learning_topic_label,item.topic_label,item.difficulty];
+    const haystack=normalize([...terms,...terms.map(value=>t(value))].join(' '));
     return catalogQuery.trim().split(/\s+/).every(part=>haystack.includes(normalize(part)));
   }
   function renderCatalogResults() {
@@ -173,7 +177,7 @@ export function createPanels(C) {
       const source=item.kind==='standardized_case'?'标准化案例':['','textbook_key','project_adapted_source_reference'].includes(item.answer_origin||'')&&item.has_reference_answer?'教材配套练习':item.has_reference_answer?'项目练习':'项目自编开放练习';
       const scope=[item.population_labels?.join('、'),item.device_labels?.join('、')].filter(Boolean).join(' · ')||(item.kind==='knowledge_card'?'通用概念卡':'练习情境');
       const label=item.learning_topic_pending?'待归类':item.learning_topic_label||(specialty?item.topic_label:'待归类');
-      return `<button type="button" class="exercise-card ${specialty?'':'foundation-card'}" data-case="${escape(item.id)}" ${catalogLoading?'disabled':''}>${!specialty?`<span class="exercise-topic">${escape(label)}</span>`:''}<div class="exercise-tags"><span>${escape(item.difficulty)}</span><span>${escape(item.question_type_label||'练习')}</span>${specialty?`<span>${escape(scope)}</span>`:''}</div><strong>${escape(item.title.split(' / ')[0])}</strong><small>${specialty?escape(label)+' · ':''}${source}</small>${item.source_difficulty!==item.difficulty?`<small>原始难度：${escape(item.source_difficulty)}</small>`:''}${!specialty&&item.learning_topic_pending?'<small>知识分类待核对，不限定分类时可查看本题。</small>':specialty&&item.classification_pending?'<small>人群和器械分类待核对</small>':''}</button>`;
+      return `<button type="button" class="exercise-card ${specialty?'':'foundation-card'}" data-case="${escape(item.id)}" ${catalogLoading?'disabled':''}>${!specialty?`<span class="exercise-topic">${escape(label)}</span>`:''}<div class="exercise-tags"><span>${escape(item.difficulty)}</span><span>${escape(item.question_type_label||'练习')}</span>${specialty?`<span>${escape(scope)}</span>`:''}</div><strong>${escape(bilingualTitle(item.title))}</strong><small>${specialty?escape(label)+' · ':''}${source}</small>${item.source_difficulty!==item.difficulty?`<small>原始难度：${escape(item.source_difficulty)}</small>`:''}${!specialty&&item.learning_topic_pending?'<small>知识分类待核对，不限定分类时可查看本题。</small>':specialty&&item.classification_pending?'<small>人群和器械分类待核对</small>':''}</button>`;
     }).join('')||`<div class="catalog-empty"><p>${!specialty&&topic&&!searched?'“'+escape(topic.label)+'”在当前条件下暂无练习。':'没有找到符合条件的练习。'}</p><p class="panel-note">${specialty?'可换个关键词、放宽筛选，或切换到另一题库模块。':'可调整关键词、题型或难度，或选择其他知识分类。'}</p><div class="action-row">${!specialty&&filters.learning_topic?button('保留分类，清除其他筛选','catalog-clear-refinements'):''}${button('清除全部筛选','catalog-reset')}</div></div>`;
   }
   function availableCatalogTopics() {
@@ -217,7 +221,7 @@ export function createPanels(C) {
     if(profile&&!state.learning_profile){C.openDialog('学习档案',`<p class="panel-note">在设置中填写一个档案名称，就能跨会话保存已完成练习，并按自己的回忆情况安排复习。</p>${button('填写档案名称','settings','',true)}`);return;}
     const title=profile?'学习档案':'本次学习进度';
     C.openDialog(title,'<p class="panel-note">正在读取真实学习记录…</p>',true);
-    const active=()=>request===learningRequest&&C.S.view?.state.session_id===learningSid&&document.querySelector('#dialog').open&&document.querySelector('#dialog-title').textContent===title;
+    const active=()=>request===learningRequest&&C.S.view?.state.session_id===learningSid&&document.querySelector('#dialog').open&&document.querySelector('#dialog').dataset.panelTitle===title;
     let data;
     try{data=await C.api(`/sessions/${learningSid}/${profile?'learning-profile':'learning'}`);}
     catch(error){if(active())document.querySelector('#dialog-body').innerHTML=`<p class="inline-error" role="alert">${escape(error.message)}</p>`;return;}
@@ -271,7 +275,7 @@ export function createPanels(C) {
   async function recommendations() {
     const state=await C.ensureSession(),recommendSid=state.session_id,request=++recommendationRequest,title='推荐下一次练习';
     C.openDialog(title,'<p class="panel-note">正在根据真实训练记录选择案例…</p>',true);
-    const active=()=>request===recommendationRequest&&C.S.view?.state.session_id===recommendSid&&document.querySelector('#dialog').open&&document.querySelector('#dialog-title').textContent===title;
+    const active=()=>request===recommendationRequest&&C.S.view?.state.session_id===recommendSid&&document.querySelector('#dialog').open&&document.querySelector('#dialog').dataset.panelTitle===title;
     try {
       const data=await C.api(`/sessions/${recommendSid}/recommendations`);
       if(!active())return;
@@ -362,7 +366,7 @@ export function createPanels(C) {
     const sid=state.session_id,request=++evidenceRequest;
     const teaching=state.mode==='teaching';
     evidenceRows=[];
-    const active=()=>request===evidenceRequest&&C.S.view?.state.session_id===sid&&document.querySelector('#dialog').open&&document.querySelector('#dialog-title').textContent==='本轮参考资料';
+    const active=()=>request===evidenceRequest&&C.S.view?.state.session_id===sid&&document.querySelector('#dialog').open&&document.querySelector('#dialog').dataset.panelTitle==='本轮参考资料';
     C.openDialog('本轮参考资料','<p class="panel-note">正在整理参考文献…</p>',true);
     try {
       const data=await C.api(`/sessions/${sid}/references`);
