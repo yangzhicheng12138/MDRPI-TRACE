@@ -1,0 +1,17 @@
+base_config: config.yaml
+question_generation:
+  max_revisions: 2
+  max_gap_searches_per_item: 1
+  max_retrieval_rounds: 2
+  job_seconds: 3600
+  item_seconds: 900
+  evidence_seconds: 100
+  local_timeout_seconds: 300
+  generator_max_tokens: 1800
+  reviewer_max_tokens: 1400
+  max_sources: 7
+  reviewer_model: deepseek-flash
+  reviewer_thinking: disabled
+  reviewer_output: text
+  reviewer_timeout_seconds: 60
+  api_key_env: DEEPSEEK_API_KEY

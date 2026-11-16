@@ -1,0 +1,201 @@
+{
+  "schema_version": "source_bound_legacy_objective_metadata_v1",
+  "authored_at": "2026-10-12T03:16:06.649850+00:00",
+  "review_kind": "ai",
+  "clinical_scope": "原教材题面及配套答案的标签化适配，不扩展为通用临床顺序。",
+  "items": {
+    "openrn-skills17-1": {
+      "source_fingerprint": "7db008063f6b7e85cd46557a55f3e63a6133514005de6c4f3272572882968209",
+      "basis": {
+        "question_snapshot": "skills17_q.txt",
+        "answer_snapshot": "skills17_a.txt",
+        "answer_preserved": {
+          "en": "D – slow or stop the infusion based on the patient’s response.",
+          "zh": "D：根据患者的反应减慢或停止输注。"
+        }
+      },
+      "additions": {
+        "question_type": "single_choice",
+        "training_flow": "short_question",
+        "options": {
+          "A": "继续管饲。",
+          "B": "停止管饲并检查胃残余量。",
+          "C": "停止管饲并丢弃剩余营养液。",
+          "D": "根据患者的反应减慢或停止输注。"
+        },
+        "options_en": {
+          "A": "Continue the tube feeding.",
+          "B": "Stop the tube feeding and check gastric residual.",
+          "C": "Stop the tube feeding and discard the remaining formula.",
+          "D": "Slow or stop the infusion based on the patient’s response."
+        },
+        "correct_options": [
+          "D"
+        ]
+      }
+    },
+    "openrn-skills21-4": {
+      "source_fingerprint": "c88dc8b72517841db28a68cb700896db28d072bb51cf0f5efcf034453ad21803",
+      "basis": {
+        "question_snapshot": "skills21_q.txt",
+        "answer_snapshot": "skills21_a.txt",
+        "answer_preserved": {
+          "en": "C – Straight catheter",
+          "zh": "C：直导尿管。"
+        }
+      },
+      "additions": {
+        "question_type": "single_choice",
+        "training_flow": "short_question",
+        "options": {
+          "A": "弯头导尿管。",
+          "B": "留置导尿管。",
+          "C": "直导尿管。",
+          "D": "Foley 导尿管。"
+        },
+        "options_en": {
+          "A": "Coude catheter.",
+          "B": "Indwelling catheter.",
+          "C": "Straight catheter.",
+          "D": "Foley catheter."
+        },
+        "correct_options": [
+          "C"
+        ]
+      }
+    },
+    "openrn-skills21-5": {
+      "source_fingerprint": "53a56d1457b7bf245cabb6e40418b118ac3954abd670a6858f99218f1fcac5d0",
+      "basis": {
+        "question_snapshot": "skills21_q.txt",
+        "answer_snapshot": "skills21_a.txt",
+        "answer_preserved": {
+          "en": "C – Document the assessment findings of the stoma.",
+          "zh": "C：记录造口评估结果。"
+        }
+      },
+      "additions": {
+        "question_type": "single_choice",
+        "training_flow": "short_question",
+        "options": {
+          "A": "立即向医生报告这些发现。",
+          "B": "取下造口袋并对造口施压。",
+          "C": "记录造口评估结果。",
+          "D": "更换造口袋并清洁皮肤。"
+        },
+        "options_en": {
+          "A": "Immediately report the findings to the provider.",
+          "B": "Remove the pouch and apply pressure to the stoma.",
+          "C": "Document the assessment findings of the stoma.",
+          "D": "Change the pouch and clean the skin."
+        },
+        "correct_options": [
+          "C"
+        ]
+      }
+    },
+    "openrn-skills21-6": {
+      "source_fingerprint": "22bf0b560b0d77dc2d3d83f3532c0d1c941770e6341e49ea1f727d6e32134263",
+      "basis": {
+        "question_snapshot": "skills21_q.txt",
+        "answer_snapshot": "skills21_a.txt",
+        "answer_preserved": {
+          "en": "A – “I should plan to replace the pouch system every 8-10 days.”",
+          "zh": "A：“我计划每 8～10 天更换一次造口袋系统。”"
+        }
+      },
+      "additions": {
+        "question_type": "single_choice",
+        "training_flow": "short_question",
+        "options": {
+          "A": "“我计划每 8～10 天更换一次造口袋系统。”",
+          "B": "“底盘开口应比造口大 1/16～1/8 英寸。”",
+          "C": "“应慢慢进食并充分咀嚼。”",
+          "D": "“我会记录饮食和排便情况。”"
+        },
+        "options_en": {
+          "A": "I plan to replace the pouch system every 8–10 days.",
+          "B": "The skin barrier opening should be 1/16–1/8 inch larger than the stoma.",
+          "C": "Eat slowly and chew thoroughly.",
+          "D": "Record diet and bowel movements."
+        },
+        "correct_options": [
+          "A"
+        ]
+      }
+    },
+    "openrn-skills22-2": {
+      "source_fingerprint": "527dbb1f7e9d1c68bcbd0f09752740b95c481d9835b6407889b50432e2c05b05",
+      "basis": {
+        "question_snapshot": "skills22_q.txt",
+        "answer_snapshot": "skills22_a.txt",
+        "answer_preserved": {
+          "en": "D – Check pulse oximetry, B – Suction patient, C – Provide oxygen via the trach collar if warranted, A – Assess lung sounds",
+          "zh": "D：检查脉搏血氧饱和度 → B：吸痰 → C：必要时通过气管切开面罩给氧 → A：评估呼吸音。"
+        }
+      },
+      "additions": {
+        "question_type": "ordering",
+        "training_flow": "short_question",
+        "options": {
+          "A": "评估呼吸音。",
+          "B": "为患者吸痰。",
+          "C": "必要时通过气管切开面罩给氧。",
+          "D": "检查脉搏血氧饱和度。"
+        },
+        "options_en": {
+          "A": "Assess lung sounds.",
+          "B": "Suction the patient.",
+          "C": "Provide oxygen via the trach collar if warranted.",
+          "D": "Check pulse oximetry."
+        },
+        "correct_options": [
+          "D",
+          "B",
+          "C",
+          "A"
+        ]
+      }
+    },
+    "openrn-skills11-1": {
+      "source_fingerprint": "2519d0973758d9ae4ffd6751a61e4457b9a0b0a2f27583cce49a9961a518241c",
+      "basis": {
+        "question_snapshot": "skills11_q.txt",
+        "answer_snapshot": "skills11_a.txt",
+        "answer_preserved": {
+          "en": "Priority\nActions\nFirst\nAssess pulse oximetry\nSecond\nAssess lung sounds\nThird\nApply oxygen as ordered\nFour\nReassess pulse oximetry\nFifth\nInstitute actions to improve oxygenation\nSixth\nTeach oxygen safety\n(Rationale: Priority of actions includes the gathering of assessment information to reflect the patient’s respiratory condition. Once you have collected information, intervention can be initiated with application of oxygen if needed and subsequent reassessment of the pulse oximetry reading. Additional actions to improve client oxygenation and lung capacity can then be implemented with coughing, deep breathing, and use of incentive spirometry. Finally, once the patient experiences improvement in oxygenation and breathing status, reinforcement of oxygen education and safety measures would be appropriate).",
+          "zh": "依次为：评估脉搏血氧饱和度；评估呼吸音；按医嘱给氧；复查脉搏血氧饱和度；采取改善氧合的措施；进行氧疗安全教育。原书解释：先收集呼吸状况的评估信息，再在需要时给氧并复评，随后可采取咳嗽、深呼吸及激励性肺量计等改善氧合和肺功能的措施；在氧合与呼吸改善后加强教育和安全指导。"
+        },
+        "label_adaptation": "原题六个未标字母的操作按中文题面出现顺序标A–F；参考的临床顺序不变。"
+      },
+      "additions": {
+        "question_type": "ordering",
+        "training_flow": "short_question",
+        "options": {
+          "A": "采取改善氧合的措施",
+          "B": "按医嘱给氧",
+          "C": "复查脉搏血氧饱和度",
+          "D": "进行氧疗安全教育",
+          "E": "评估呼吸音",
+          "F": "评估脉搏血氧饱和度"
+        },
+        "options_en": {
+          "A": "Institute actions to improve oxygenation",
+          "B": "Apply oxygen as ordered",
+          "C": "Reassess pulse oximetry",
+          "D": "Teach oxygen safety",
+          "E": "Assess lung sounds",
+          "F": "Assess pulse oximetry"
+        },
+        "correct_options": [
+          "F",
+          "E",
+          "B",
+          "C",
+          "A",
+          "D"
+        ]
+      }
+    }
+  }
+}

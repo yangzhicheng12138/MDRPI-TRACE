@@ -1,0 +1,93 @@
+project:
+  name: MDRPI-TRACE
+  version: public-v1
+paths:
+  source: data/source/PDFs
+  parsed: data/parsed
+  chunks: data/chunks/chunks.jsonl
+  manifest: data/literature_manifest.csv
+  logs: logs/preprocessing
+embedding:
+  model: BAAI/bge-m3
+  device: cpu
+  batch_size: 8
+  max_seq_length: 8192
+  model_cache_dir: data/models
+  local_files_only: false
+  normalize: true
+reranker:
+  model: BAAI/bge-reranker-v2-m3
+  device: cpu
+  batch_size: 4
+  top_k: 8
+  local_files_only: false
+qdrant:
+  path: data/qdrant
+  collection: mdrpi_trace
+retrieval:
+  strategy: hybrid
+  vector_top_k: 40
+  lexical_top_k: 40
+  clinical_top_k: 20
+  evidence_top_k: 20
+  final_top_k: 8
+  rrf_k: 60
+  strict_device: true
+  allow_general_fallback: true
+  require_audited_index: true
+chunking:
+  target_chars_zh: 700
+  target_tokens_en: 350
+  overlap_chars_zh: 80
+  overlap_tokens_en: 40
+audit:
+  min_chars: 80
+  max_chars: 1800
+llm:
+  base_url: http://127.0.0.1:8001/v1
+  model: ministral-3-14b
+  timeout_seconds: 180
+  max_tokens: 1200
+  context_window: 32768
+  temperature: 0.0
+# Optional NF4 launcher: install its separate model environment and weights first.
+local_model:
+  python: .venv-model/bin/python
+  weights: data/models/your-model
+rag:
+  min_vector_score: 0.35
+  min_reranker_score: 0.1
+  max_context_chars: 10500
+  max_evidence: 8
+  max_selected_evidence: 4
+  max_query_chars: 1000
+  answer_mode: verified_extracts
+service:
+  host: 127.0.0.1
+  port: 8020
+  cpu_threads: 4
+reflection:
+  log_dir: logs/reflection
+  budget_seconds: 1800
+  research_budget_seconds: 7200
+  research_compact: true
+  research_lean_output: true
+  research_consolidated_review: true
+  research_max_revision_rounds: 1
+  max_revision_rounds: 2
+  shared_web_sources: true
+web_search:
+  provider: deepseek
+  strategy: fallback
+  api_key_env: DEEPSEEK_API_KEY
+  deepseek_fallback_provider: baidu
+  baidu_api_key_env: BAIDU_SEARCH_API_KEY
+  query_language: auto
+  timeout_seconds: 8
+  max_search_rounds: 2
+search_planner:
+  provider: local
+  model: deepseek-flash
+  timeout_seconds: 15
+  fallback: local
+  max_search_rounds: 2

@@ -1,0 +1,2064 @@
+{
+  "version": "2026-10-02-r1",
+  "adaptations_license": "CC BY-SA 4.0",
+  "note": "AI-assisted source-bound teaching criteria; not independently clinically validated. Optional details do not gate completion. Equivalent examples are not a keyword matcher.",
+  "items": {
+    "openrn-fund10-2": {
+      "version": "2026-10-02-r1",
+      "origin": "project_authored_from_supplied_question_and_textbook_key",
+      "review_status": "source_scope_checked_not_independent_clinical_review",
+      "required": [
+        {
+          "id": "R1",
+          "criterion": {
+            "zh": "识别右侧无力这一风险因素",
+            "en": "Identify weakness as a risk factor"
+          },
+          "acceptable": {
+            "zh": "右侧无力、卒中后肌力下降、自理/变换体位受限（明确关联无力）均可。",
+            "en": "Right-sided weakness, reduced strength after stroke, or difficulty repositioning explicitly linked to weakness."
+          },
+          "incorrect": {
+            "zh": "若明确否认无力会影响风险，才判为错误；仅未提及算遗漏。",
+            "en": "Explicitly denying a contribution from weakness is incorrect; absence alone is missing."
+          },
+          "follow_up": {
+            "zh": "请补充这一点：识别右侧无力这一风险因素。可以只补充这一点，无需重写之前的答案。",
+            "en": "Please add this point: Identify weakness as a risk factor. You can supplement your earlier answer without rewriting it."
+          }
+        },
+        {
+          "id": "R2",
+          "criterion": {
+            "zh": "识别感觉减退这一风险因素",
+            "en": "Identify reduced sensation as a risk factor"
+          },
+          "acceptable": {
+            "zh": "右侧感觉差、不能充分感到受压不适等价。",
+            "en": "Reduced right-sided sensation or reduced awareness of pressure discomfort."
+          },
+          "incorrect": {
+            "zh": "不能把意识清楚等同于感觉正常。",
+            "en": "Being alert does not imply intact sensation."
+          },
+          "follow_up": {
+            "zh": "请补充这一点：识别感觉减退这一风险因素。可以只补充这一点，无需重写之前的答案。",
+            "en": "Please add this point: Identify reduced sensation as a risk factor. You can supplement your earlier answer without rewriting it."
+          }
+        },
+        {
+          "id": "R3",
+          "criterion": {
+            "zh": "识别活动或移动能力下降",
+            "en": "Identify reduced mobility"
+          },
+          "acceptable": {
+            "zh": "长期卧床、久坐轮椅、难以行走或自行调整姿势均可。",
+            "en": "Prolonged bed/wheelchair time, impaired walking, or difficulty changing position."
+          },
+          "incorrect": {
+            "zh": "不能把久卧久坐说成不增加持续受压风险。",
+            "en": "Explicitly claiming prolonged immobility does not contribute to sustained pressure is incorrect."
+          },
+          "follow_up": {
+            "zh": "请补充这一点：识别活动或移动能力下降。可以只补充这一点，无需重写之前的答案。",
+            "en": "Please add this point: Identify reduced mobility. You can supplement your earlier answer without rewriting it."
+          }
+        },
+        {
+          "id": "R4",
+          "criterion": {
+            "zh": "识别频繁失禁",
+            "en": "Identify frequent incontinence"
+          },
+          "acceptable": {
+            "zh": "频繁尿失禁、排泄物造成皮肤潮湿均可。",
+            "en": "Frequent urinary incontinence or moisture exposure due to incontinence."
+          },
+          "incorrect": {
+            "zh": "不能把病例的失禁否认为无失禁；不要求未提供的皮肤检测。",
+            "en": "Denying the documented incontinence is incorrect; no unprovided skin tests are required."
+          },
+          "follow_up": {
+            "zh": "请补充这一点：识别频繁失禁。可以只补充这一点，无需重写之前的答案。",
+            "en": "Please add this point: Identify frequent incontinence. You can supplement your earlier answer without rewriting it."
+          }
+        },
+        {
+          "id": "R5",
+          "criterion": {
+            "zh": "识别营养摄入减少",
+            "en": "Identify reduced nutritional intake"
+          },
+          "acceptable": {
+            "zh": "每餐只吃一半、摄入不足、消瘦提示营养风险均可。",
+            "en": "Eating half his meals, inadequate intake, or thinness suggesting nutritional risk."
+          },
+          "incorrect": {
+            "zh": "不能断言摄入充足；不能把未测白蛋白值当作已知。",
+            "en": "Claiming adequate intake or inventing a measured albumin value is incorrect."
+          },
+          "follow_up": {
+            "zh": "请补充这一点：识别营养摄入减少。可以只补充这一点，无需重写之前的答案。",
+            "en": "Please add this point: Identify reduced nutritional intake. You can supplement your earlier answer without rewriting it."
+          }
+        }
+      ],
+      "optional_extensions": {
+        "zh": "可解释各因素的机制；完整护理方案、Braden六分项和未提供的实验室数值不是本题必答。",
+        "en": "Mechanisms may be expanded; a full care plan, all Braden subscales, and unavailable laboratory values are not required."
+      },
+      "source": {
+        "book": "Nursing Fundamentals (Open RN)",
+        "section": "Chapter 10: Integumentary",
+        "question_number": "2",
+        "authors": "Kimberly Ernstmeyer & Elizabeth Christman (Eds.); Open RN / WisTech Open",
+        "question_url": "https://med.libretexts.org/Bookshelves/Nursing/Nursing_Fundamentals_(OpenRN)/10%3A_Integumentary/10.08%3A_Learning_Activities",
+        "answer_url": "https://wtcs.pressbooks.pub/nursingfundamentals/chapter/answer-key-chapter-10-integumentary/",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "retrieved_at": "2026-10-02",
+        "edition_note": "Question in LibreTexts first-edition mirror; identical case and Q2 key checked in publisher 2e (2024).",
+        "snapshots": [
+          "libre_f10.txt",
+          "f10_answer_web.txt"
+        ]
+      },
+      "basis_question": "You are a nurse working in a long-term care facility. You have been assigned to care for Mr. Johns, a 74-year-old client recently diagnosed with a urinary tract infection, resulting in frequent incontinence. Mr. Johns suffered a CVA (stroke) six months ago and has difficulties ambulating and attending to his own needs because of weakness on his right side. Mr. Johns is alert and oriented to person, place, and time, but has decreased sensation on his entire right side. He spends most of his time in bed or sitting at his bedside in a wheelchair due to his difficulty with ambulation. He eats about 50% of his meals. While assessing Mr. Johns, you note that he is thin for his height, incontinent of foul-smelling urine, and has a deepened reddened area on his sacrum.\n\nWhat factors make him particularly vulnerable to the development of pressure injuries?",
+      "basis_answer": "Individual factors that increase vulnerability to pressure injury development include weakness, diminished sensation (related to his stroke), diminished mobility, frequent incontinence, and decreased nutritional intake."
+    },
+    "openrn-skills14-1": {
+      "version": "2026-10-02-r1",
+      "origin": "project_authored_from_supplied_question_and_textbook_key",
+      "review_status": "source_scope_checked_not_independent_clinical_review",
+      "required": [
+        {
+          "id": "R1",
+          "criterion": {
+            "zh": "评估皮肤状况与破损风险",
+            "en": "Assess skin condition and breakdown risk"
+          },
+          "acceptable": {
+            "zh": "观察完整性、刺激、腹泻接触部位皮肤、发红或破损均可。",
+            "en": "Inspect skin integrity, irritation, exposed/perineal skin, redness, or breakdown."
+          },
+          "incorrect": {
+            "zh": "只谈治疗而明确不需皮肤评估，属于错误；未提及为遗漏。",
+            "en": "Explicitly rejecting skin assessment is incorrect; not mentioning it is missing."
+          },
+          "follow_up": {
+            "zh": "请补充这一点：评估皮肤状况与破损风险。可以只补充这一点，无需重写之前的答案。",
+            "en": "Please add this point: Assess skin condition and breakdown risk. You can supplement your earlier answer without rewriting it."
+          }
+        },
+        {
+          "id": "R2",
+          "criterion": {
+            "zh": "评估水合状态",
+            "en": "Assess hydration status"
+          },
+          "acceptable": {
+            "zh": "脱水风险、液体丢失、皮肤回弹或弹性辅助评估均可。",
+            "en": "Assess dehydration/fluid loss; skin turgor is an acceptable assessment example."
+          },
+          "incorrect": {
+            "zh": "不能认为持续腹泻没有液体丢失风险。",
+            "en": "Denying dehydration risk from ongoing diarrhea is incorrect."
+          },
+          "follow_up": {
+            "zh": "请补充这一点：评估水合状态。可以只补充这一点，无需重写之前的答案。",
+            "en": "Please add this point: Assess hydration status. You can supplement your earlier answer without rewriting it."
+          }
+        }
+      ],
+      "optional_extensions": {
+        "zh": "可说明该年龄组皮肤回弹检查的用途；治疗方案、检验项目和完整六步计划不是必答。",
+        "en": "Skin turgor in this age group is an optional assessment detail; treatment, laboratory panels, and a complete six-step plan are not required."
+      },
+      "source": {
+        "book": "Nursing Skills (Open RN), LibreTexts edition",
+        "section": "Chapter 14: Integumentary Assessment",
+        "question_number": "1",
+        "authors": "Kimberly Ernstmeyer & Elizabeth Christman (Eds.); Open RN; LibreTexts",
+        "question_url": "https://med.libretexts.org/Bookshelves/Nursing/Nursing_Skills_(OpenRN)/14%3A_Integumentary_Assessment/14.07%3A_Learning_Activities",
+        "answer_url": "https://med.libretexts.org/Bookshelves/Nursing/Nursing_Skills_(OpenRN)/24%3A_Answer_Keys/24.14%3A_Chapter_14_(Integumentary_Assessment)",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "retrieved_at": "2026-10-02",
+        "snapshots": [
+          "skills14_q.txt",
+          "skills14_a.txt"
+        ]
+      },
+      "basis_question": "Mr. Curtis is a 47-year-old patient admitted with a one-week history of progressive fatigue and ongoing diarrhea. You are completing his admission assessment.\nBased upon his presenting condition, what integumentary assessments might be important?",
+      "basis_answer": "A patient admitted with diarrhea is at risk for skin breakdown and dehydration. Assessment of the patient’s skin condition and hydration status would be important for assessing the severity of the patient’s illness. Hydration status can be assessed through evaluation of skin turgor with this patient due to normal skin elasticity in this age group."
+    },
+    "openrn-skills20-1a": {
+      "version": "2026-10-02-r1",
+      "origin": "project_authored_from_supplied_question_and_textbook_key",
+      "review_status": "source_scope_checked_not_independent_clinical_review",
+      "required": [
+        {
+          "id": "R1",
+          "criterion": {
+            "zh": "指出糖尿病",
+            "en": "Identify diabetes"
+          },
+          "acceptable": {
+            "zh": "糖尿病史或其对愈合的影响均可，不要求未提供的血糖值。",
+            "en": "History of diabetes or its influence on healing; no unknown glucose value is required."
+          },
+          "incorrect": {
+            "zh": "不能否认病例中的糖尿病史。",
+            "en": "Denying the documented diabetes is incorrect."
+          },
+          "follow_up": {
+            "zh": "请补充这一点：指出糖尿病。可以只补充这一点，无需重写之前的答案。",
+            "en": "Please add this point: Identify diabetes. You can supplement your earlier answer without rewriting it."
+          }
+        },
+        {
+          "id": "R2",
+          "criterion": {
+            "zh": "指出超重",
+            "en": "Identify overweight status"
+          },
+          "acceptable": {
+            "zh": "BMI 29、体重超重均可。",
+            "en": "BMI 29 or being overweight."
+          },
+          "incorrect": {
+            "zh": "把本例说成低体重或BMI正常属于事实错误。",
+            "en": "Calling this patient underweight or describing BMI 29 as normal is a factual error."
+          },
+          "follow_up": {
+            "zh": "请补充这一点：指出超重。可以只补充这一点，无需重写之前的答案。",
+            "en": "Please add this point: Identify overweight status. You can supplement your earlier answer without rewriting it."
+          }
+        },
+        {
+          "id": "R3",
+          "criterion": {
+            "zh": "指出糖皮质激素用药",
+            "en": "Identify corticosteroid use"
+          },
+          "acceptable": {
+            "zh": "泼尼松、prednisone、糖皮质激素、steroid use均可。",
+            "en": "Prednisone, corticosteroid, or steroid use."
+          },
+          "incorrect": {
+            "zh": "把泼尼松认作与此因素无关的其他药物类别不正确。",
+            "en": "Misclassifying prednisone as an unrelated medication category is incorrect."
+          },
+          "follow_up": {
+            "zh": "请补充这一点：指出糖皮质激素用药。可以只补充这一点，无需重写之前的答案。",
+            "en": "Please add this point: Identify corticosteroid use. You can supplement your earlier answer without rewriting it."
+          }
+        },
+        {
+          "id": "R4",
+          "criterion": {
+            "zh": "指出近期生活应激",
+            "en": "Identify recent life stress"
+          },
+          "acceptable": {
+            "zh": "近期丧偶、妻子去世造成的生活应激均可。",
+            "en": "Recent bereavement, loss of his wife, or a recent major life stressor."
+          },
+          "incorrect": {
+            "zh": "不能把已知丧偶否认为没有近期应激；独居可作相关线索。",
+            "en": "Denying the documented recent bereavement/stressor is incorrect; living alone is related context."
+          },
+          "follow_up": {
+            "zh": "请补充这一点：指出近期生活应激。可以只补充这一点，无需重写之前的答案。",
+            "en": "Please add this point: Identify recent life stress. You can supplement your earlier answer without rewriting it."
+          }
+        }
+      ],
+      "optional_extensions": {
+        "zh": "可说明机制及支持资源；吸烟、饮酒和饮食是另一子题的补充评估，不可凭空当作已知事实。",
+        "en": "Mechanisms/support resources are optional; smoking, alcohol, and diet belong to additional assessment and are not established case facts."
+      },
+      "source": {
+        "book": "Nursing Skills (Open RN), LibreTexts edition",
+        "section": "Chapter 20: Wound Care",
+        "question_number": "1a",
+        "authors": "Kimberly Ernstmeyer & Elizabeth Christman (Eds.); Open RN; LibreTexts",
+        "question_url": "https://med.libretexts.org/Bookshelves/Nursing/Nursing_Skills_(OpenRN)/20%3A_Wound_Care/20.14%3A_Learning_Activities",
+        "answer_url": "https://med.libretexts.org/Bookshelves/Nursing/Nursing_Skills_(OpenRN)/24%3A_Answer_Keys/24.20%3A_Chapter_20_(Wound_Care)",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "retrieved_at": "2026-10-02",
+        "snapshots": [
+          "skills20_q.txt",
+          "skills20_a.txt"
+        ]
+      },
+      "basis_question": "Mr. Jones is a 76-year-old patient admitted to the medical surgical floor with complications of a nonhealing foot ulcer. Mr. Jones has a history of diabetes, hypertension, and COPD. He has a BMI of 29. His daily medications include metformin, Lisinopril, and prednisone. His wife has recently passed away and he lives alone.\n\nBased upon what is known about Mr. Jones, what factors might be contributing to his nonhealing wound?",
+      "basis_answer": "Mr. Jones has a history of diabetes, is overweight, takes a corticosteroid, and has had a recent life stressor. These factors may all be contributory to the lack of wound healing."
+    },
+    "openrn-skills20-1b": {
+      "version": "2026-10-02-r1",
+      "origin": "project_authored_from_supplied_question_and_textbook_key",
+      "review_status": "source_scope_checked_not_independent_clinical_review",
+      "required": [
+        {
+          "id": "R1",
+          "criterion": {
+            "zh": "补充评估目前饮食及蛋白质摄入",
+            "en": "Assess current diet including protein intake"
+          },
+          "acceptable": {
+            "zh": "询问日常饮食和蛋白摄入、营养摄入是否充足（明确包含蛋白）均可。只泛说饮食可算部分覆盖。",
+            "en": "Ask about current diet and protein/adequacy of protein intake. Diet alone is partial unless protein is otherwise addressed."
+          },
+          "incorrect": {
+            "zh": "饮食/蛋白摄入未知，不得当作患者已确定缺乏或充足。",
+            "en": "Diet/protein intake is unknown; do not treat deficiency or adequacy as established."
+          },
+          "follow_up": {
+            "zh": "请补充这一点：补充评估目前饮食及蛋白质摄入。可以只补充这一点，无需重写之前的答案。",
+            "en": "Please add this point: Assess current diet including protein intake. You can supplement your earlier answer without rewriting it."
+          }
+        },
+        {
+          "id": "R2",
+          "criterion": {
+            "zh": "补充评估吸烟情况",
+            "en": "Assess smoking history or current tobacco use"
+          },
+          "acceptable": {
+            "zh": "询问是否吸烟、烟草使用、吸烟史均可。",
+            "en": "Ask whether he smokes, uses tobacco, or has a smoking history."
+          },
+          "incorrect": {
+            "zh": "COPD不等于已确认吸烟；本题需要询问。",
+            "en": "COPD does not establish current smoking; this is an assessment target."
+          },
+          "follow_up": {
+            "zh": "请补充这一点：补充评估吸烟情况。可以只补充这一点，无需重写之前的答案。",
+            "en": "Please add this point: Assess smoking history or current tobacco use. You can supplement your earlier answer without rewriting it."
+          }
+        },
+        {
+          "id": "R3",
+          "criterion": {
+            "zh": "补充评估饮酒情况",
+            "en": "Assess alcohol use"
+          },
+          "acceptable": {
+            "zh": "询问饮酒习惯、酒精摄入、是否喝酒均可。",
+            "en": "Ask about alcohol intake, drinking habits, or whether he drinks."
+          },
+          "incorrect": {
+            "zh": "不能把尚未询问的饮酒习惯写成既定事实。",
+            "en": "An unassessed drinking habit must not be presented as established fact."
+          },
+          "follow_up": {
+            "zh": "请补充这一点：补充评估饮酒情况。可以只补充这一点，无需重写之前的答案。",
+            "en": "Please add this point: Assess alcohol use. You can supplement your earlier answer without rewriting it."
+          }
+        }
+      ],
+      "optional_extensions": {
+        "zh": "心理支持、用药复核和其他合理评估可作拓展；不是这道子题的必答点，不能因未提及而阻止完成。",
+        "en": "Psychological support, medication review, and other reasonable assessments are optional extensions; their omission must not block completion of this subquestion."
+      },
+      "source": {
+        "book": "Nursing Skills (Open RN), LibreTexts edition",
+        "section": "Chapter 20: Wound Care",
+        "question_number": "1b",
+        "authors": "Kimberly Ernstmeyer & Elizabeth Christman (Eds.); Open RN; LibreTexts",
+        "question_url": "https://med.libretexts.org/Bookshelves/Nursing/Nursing_Skills_(OpenRN)/20%3A_Wound_Care/20.14%3A_Learning_Activities",
+        "answer_url": "https://med.libretexts.org/Bookshelves/Nursing/Nursing_Skills_(OpenRN)/24%3A_Answer_Keys/24.20%3A_Chapter_20_(Wound_Care)",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "retrieved_at": "2026-10-02",
+        "snapshots": [
+          "skills20_q.txt",
+          "skills20_a.txt"
+        ]
+      },
+      "basis_question": "Mr. Jones is a 76-year-old patient admitted to the medical surgical floor with complications of a nonhealing foot ulcer. Mr. Jones has a history of diabetes, hypertension, and COPD. He has a BMI of 29. His daily medications include metformin, Lisinopril, and prednisone. His wife has recently passed away and he lives alone.\n\nWhat other factors that influence wound healing might be important to assess with Mr. Jones?",
+      "basis_answer": "Other factors that would be important to assess with Mr. Jones would be his current diet and level of dietary protein, smoking, and alcohol consumption."
+    },
+    "openrn-skills17-1": {
+      "version": "2026-10-02-r1",
+      "origin": "project_authored_from_supplied_question_and_textbook_key",
+      "review_status": "source_scope_checked_not_independent_clinical_review",
+      "required": [
+        {
+          "id": "R1",
+          "criterion": {
+            "zh": "根据患者反应减慢或停止管饲",
+            "en": "slow or stop the infusion based on the patient response"
+          },
+          "acceptable": {
+            "zh": "选D、选项原文或语义等价回答均可；不强制另写理由。",
+            "en": "The letter D, the option wording, or an equivalent description is sufficient; a rationale is optional."
+          },
+          "incorrect": {
+            "zh": "继续输注而忽略饱胀，或把其他选项作为本题答案",
+            "en": "continuing despite fullness or selecting another option as the answer"
+          },
+          "follow_up": {
+            "zh": "请补充这一点：根据患者反应减慢或停止管饲。可以只补充这一点，无需重写之前的答案。",
+            "en": "Please add this point: slow or stop the infusion based on the patient response. You can supplement your earlier answer without rewriting it."
+          }
+        }
+      ],
+      "optional_extensions": {
+        "zh": "可解释选项理由或其他选项的区别；未补机制、固定频次或完整护理方案不算遗漏。",
+        "en": "Reasons and discussion of alternatives are optional; no mechanisms, additional schedules, or full care plan are required."
+      },
+      "source": {
+        "book": "Nursing Skills (Open RN), LibreTexts edition",
+        "section": "Chapter 17: Enteral Tube Management",
+        "question_number": "1",
+        "authors": "Kimberly Ernstmeyer & Elizabeth Christman (Eds.); Open RN; LibreTexts",
+        "question_url": "https://med.libretexts.org/Bookshelves/Nursing/Nursing_Skills_(OpenRN)/17%3A_Enteral_Tube_Management/17.07%3A_Learning_Activities",
+        "answer_url": "https://med.libretexts.org/Bookshelves/Nursing/Nursing_Skills_(OpenRN)/24%3A_Answer_Keys/24.17%3A_Chapter_17_(Enteral_Tube_Management)",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "retrieved_at": "2026-10-02",
+        "snapshots": [
+          "skills17_q.txt",
+          "skills17_a.txt"
+        ]
+      },
+      "basis_question": "As you are administering tube feeding to your patient, they complain of feeling full.\nWhat is the next step to take?\n\nA. Continue with administering the tube feeding.\nB. Stop the tube feeding and check the gastric residual.\nC. Stop the tube feeding and waste the remaining feeding.\nD. Slow or stop the infusion based on the patient’s response.",
+      "basis_answer": "D – slow or stop the infusion based on the patient’s response."
+    },
+    "openrn-skills21-4": {
+      "version": "2026-10-02-r1",
+      "origin": "project_authored_from_supplied_question_and_textbook_key",
+      "review_status": "source_scope_checked_not_independent_clinical_review",
+      "required": [
+        {
+          "id": "R1",
+          "criterion": {
+            "zh": "使用直导尿管测量排尿后残余尿",
+            "en": "use a straight catheter to measure post-void residual"
+          },
+          "acceptable": {
+            "zh": "选C、选项原文或语义等价回答均可；不强制另写理由。",
+            "en": "The letter C, the option wording, or an equivalent description is sufficient; a rationale is optional."
+          },
+          "incorrect": {
+            "zh": "将留置/Foley或弯头导管作为本题答案",
+            "en": "selecting an indwelling/Foley or Coude catheter for this question"
+          },
+          "follow_up": {
+            "zh": "请补充这一点：使用直导尿管测量排尿后残余尿。可以只补充这一点，无需重写之前的答案。",
+            "en": "Please add this point: use a straight catheter to measure post-void residual. You can supplement your earlier answer without rewriting it."
+          }
+        }
+      ],
+      "optional_extensions": {
+        "zh": "可解释选项理由或其他选项的区别；未补机制、固定频次或完整护理方案不算遗漏。",
+        "en": "Reasons and discussion of alternatives are optional; no mechanisms, additional schedules, or full care plan are required."
+      },
+      "source": {
+        "book": "Nursing Skills (Open RN), LibreTexts edition",
+        "section": "Chapter 21: Facilitation of Elimination",
+        "question_number": "4",
+        "authors": "Kimberly Ernstmeyer & Elizabeth Christman (Eds.); Open RN; LibreTexts",
+        "question_url": "https://med.libretexts.org/Bookshelves/Nursing/Nursing_Skills_(OpenRN)/21%3A_Facilitation_of_Elimination/21.16%3A_Learning_Activities",
+        "answer_url": "https://med.libretexts.org/Bookshelves/Nursing/Nursing_Skills_(OpenRN)/24%3A_Answer_Keys/24.21%3A_Chapter_21_(Facilitation_of_Elimination)",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "retrieved_at": "2026-10-02",
+        "snapshots": [
+          "skills21_q.txt",
+          "skills21_a.txt"
+        ]
+      },
+      "basis_question": "The nurse is caring for a female patient who is experiencing inadequate bladder emptying. The nurse obtains an order to determine post-void residual.\nWhich catheter type would the nurse use to evaluate post-void residual?\n\nA. Coude catheter\nB. Indwelling catheter\nC. Straight catheter\nD. Foley catheter",
+      "basis_answer": "C – Straight catheter"
+    },
+    "openrn-skills21-5": {
+      "version": "2026-10-02-r1",
+      "origin": "project_authored_from_supplied_question_and_textbook_key",
+      "review_status": "source_scope_checked_not_independent_clinical_review",
+      "required": [
+        {
+          "id": "R1",
+          "criterion": {
+            "zh": "记录造口评估发现",
+            "en": "document the stoma assessment findings"
+          },
+          "acceptable": {
+            "zh": "选C、选项原文或语义等价回答均可；不强制另写理由。",
+            "en": "The letter C, the option wording, or an equivalent description is sufficient; a rationale is optional."
+          },
+          "incorrect": {
+            "zh": "把湿润鲜红本身当作必须立即上报的异常，或压迫造口",
+            "en": "treating moist beefy-red appearance alone as an emergency or applying pressure"
+          },
+          "follow_up": {
+            "zh": "请补充这一点：记录造口评估发现。可以只补充这一点，无需重写之前的答案。",
+            "en": "Please add this point: document the stoma assessment findings. You can supplement your earlier answer without rewriting it."
+          }
+        }
+      ],
+      "optional_extensions": {
+        "zh": "可解释选项理由或其他选项的区别；未补机制、固定频次或完整护理方案不算遗漏。",
+        "en": "Reasons and discussion of alternatives are optional; no mechanisms, additional schedules, or full care plan are required."
+      },
+      "source": {
+        "book": "Nursing Skills (Open RN), LibreTexts edition",
+        "section": "Chapter 21: Facilitation of Elimination",
+        "question_number": "5",
+        "authors": "Kimberly Ernstmeyer & Elizabeth Christman (Eds.); Open RN; LibreTexts",
+        "question_url": "https://med.libretexts.org/Bookshelves/Nursing/Nursing_Skills_(OpenRN)/21%3A_Facilitation_of_Elimination/21.16%3A_Learning_Activities",
+        "answer_url": "https://med.libretexts.org/Bookshelves/Nursing/Nursing_Skills_(OpenRN)/24%3A_Answer_Keys/24.21%3A_Chapter_21_(Facilitation_of_Elimination)",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "retrieved_at": "2026-10-02",
+        "snapshots": [
+          "skills21_q.txt",
+          "skills21_a.txt"
+        ]
+      },
+      "basis_question": "The nurse is caring for a patient who had a colostomy placed two days earlier. The nurse notes that the stoma is moist and beefy red.\nWhich action should the nurse be expected to take based on these findings?\n\nA. Notify the physician of the findings immediately.\nB. Remove the bag and apply pressure to the stoma.\nC. Document the assessment findings of the stoma.\nD. Change the appliance pouch and clean the skin.",
+      "basis_answer": "C – Document the assessment findings of the stoma."
+    },
+    "openrn-skills21-6": {
+      "version": "2026-10-02-r1",
+      "origin": "project_authored_from_supplied_question_and_textbook_key",
+      "review_status": "source_scope_checked_not_independent_clinical_review",
+      "required": [
+        {
+          "id": "R1",
+          "criterion": {
+            "zh": "选出每8–10天更换造口袋系统这句话需要再教育",
+            "en": "identify the every-8–10-days replacement statement as requiring further education"
+          },
+          "acceptable": {
+            "zh": "选A、选项原文或语义等价回答均可；不强制另写理由。",
+            "en": "The letter A, the option wording, or an equivalent description is sufficient; a rationale is optional."
+          },
+          "incorrect": {
+            "zh": "把A说成正确自护建议，或选其他选项为教材错误项",
+            "en": "endorsing A as correct self-care or choosing another statement as the textbook error"
+          },
+          "follow_up": {
+            "zh": "请补充这一点：选出每8–10天更换造口袋系统这句话需要再教育。可以只补充这一点，无需重写之前的答案。",
+            "en": "Please add this point: identify the every-8–10-days replacement statement as requiring further education. You can supplement your earlier answer without rewriting it."
+          }
+        }
+      ],
+      "optional_extensions": {
+        "zh": "可解释选项理由或其他选项的区别；未补机制、固定频次或完整护理方案不算遗漏。",
+        "en": "Reasons and discussion of alternatives are optional; no mechanisms, additional schedules, or full care plan are required."
+      },
+      "source": {
+        "book": "Nursing Skills (Open RN), LibreTexts edition",
+        "section": "Chapter 21: Facilitation of Elimination",
+        "question_number": "6",
+        "authors": "Kimberly Ernstmeyer & Elizabeth Christman (Eds.); Open RN; LibreTexts",
+        "question_url": "https://med.libretexts.org/Bookshelves/Nursing/Nursing_Skills_(OpenRN)/21%3A_Facilitation_of_Elimination/21.16%3A_Learning_Activities",
+        "answer_url": "https://med.libretexts.org/Bookshelves/Nursing/Nursing_Skills_(OpenRN)/24%3A_Answer_Keys/24.21%3A_Chapter_21_(Facilitation_of_Elimination)",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "retrieved_at": "2026-10-02",
+        "snapshots": [
+          "skills21_q.txt",
+          "skills21_a.txt"
+        ]
+      },
+      "basis_question": "The nurse is providing patient education on the care of an ostomy.\nWhich of the following statements by the patient would indicate that further education is necessary?\n\nA. “I should plan to replace the pouch system every 8-10 days.”\nB. “Wafer should be cut 1/16 to 1/8 an inch larger than the stoma.”\nC. “It is important to chew all foods completely and slowly.”\nD. “I will keep a diary of the foods I eat and my stool pattern.”",
+      "basis_answer": "A – “I should plan to replace the pouch system every 8-10 days.”"
+    },
+    "openrn-skills21-1": {
+      "version": "2026-10-02-r1",
+      "origin": "project_authored_from_supplied_question_and_textbook_key",
+      "review_status": "source_scope_checked_not_independent_clinical_review",
+      "required": [
+        {
+          "id": "R1",
+          "criterion": {
+            "zh": "先停止并解除球囊充盈",
+            "en": "First stop inflation and deflate the balloon"
+          },
+          "acceptable": {
+            "zh": "停止注液并排空/回抽球囊液体均可。",
+            "en": "Stop inflation and withdraw the balloon fluid/deflate it."
+          },
+          "incorrect": {
+            "zh": "有疼痛时仍继续充盈或强行牵拉充盈球囊不正确。",
+            "en": "Continuing inflation despite pain or pulling an inflated balloon is incorrect."
+          },
+          "follow_up": {
+            "zh": "请补充这一点：先停止并解除球囊充盈。可以只补充这一点，无需重写之前的答案。",
+            "en": "Please add this point: First stop inflation and deflate the balloon. You can supplement your earlier answer without rewriting it."
+          }
+        },
+        {
+          "id": "R2",
+          "criterion": {
+            "zh": "核对尿液流出并进一步确认导管位置",
+            "en": "Check urine flow and advance/check catheter placement"
+          },
+          "acceptable": {
+            "zh": "确认尿流并在解除球囊后送入/确认到位；强调重新确认位置可接受。",
+            "en": "Ensure urine flow and advance/check placement after deflation; equivalent placement verification is acceptable."
+          },
+          "incorrect": {
+            "zh": "不能在球囊仍充盈时推进导管。",
+            "en": "Advancing the catheter while the balloon remains inflated is incorrect."
+          },
+          "follow_up": {
+            "zh": "请补充这一点：核对尿液流出并进一步确认导管位置。可以只补充这一点，无需重写之前的答案。",
+            "en": "Please add this point: Check urine flow and advance/check catheter placement. You can supplement your earlier answer without rewriting it."
+          }
+        },
+        {
+          "id": "R3",
+          "criterion": {
+            "zh": "确认位置后再尝试充盈",
+            "en": "Reattempt inflation after placement is confirmed"
+          },
+          "acceptable": {
+            "zh": "在核对到位、按操作要求允许的情况下再试充盈；仍异常则寻求协助也可。",
+            "en": "Reattempt inflation only after confirming placement; seek assistance if abnormal findings persist."
+          },
+          "incorrect": {
+            "zh": "不能未经核对位置就盲目再次充盈。",
+            "en": "Blind reinflation without placement reassessment is incorrect."
+          },
+          "follow_up": {
+            "zh": "请补充这一点：确认位置后再尝试充盈。可以只补充这一点，无需重写之前的答案。",
+            "en": "Please add this point: Reattempt inflation after placement is confirmed. You can supplement your earlier answer without rewriting it."
+          }
+        }
+      ],
+      "optional_extensions": {
+        "zh": "可说明持续疼痛时暂停与求助；额外用品、尺寸或固定注液量不是本题必答。",
+        "en": "Pausing/seeking help for persistent pain may be expanded; supplies, sizes, or a fixed volume are not required."
+      },
+      "source": {
+        "book": "Nursing Skills (Open RN), LibreTexts edition",
+        "section": "Chapter 21: Facilitation of Elimination",
+        "question_number": "1",
+        "authors": "Kimberly Ernstmeyer & Elizabeth Christman (Eds.); Open RN; LibreTexts",
+        "question_url": "https://med.libretexts.org/Bookshelves/Nursing/Nursing_Skills_(OpenRN)/21%3A_Facilitation_of_Elimination/21.16%3A_Learning_Activities",
+        "answer_url": "https://med.libretexts.org/Bookshelves/Nursing/Nursing_Skills_(OpenRN)/24%3A_Answer_Keys/24.21%3A_Chapter_21_(Facilitation_of_Elimination)",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "retrieved_at": "2026-10-02",
+        "snapshots": [
+          "skills21_q.txt",
+          "skills21_a.txt"
+        ]
+      },
+      "basis_question": "Your patient complains of pain while you are inflating the balloon during a urinary catheter insertion.\nDescribe your next steps.",
+      "basis_answer": "Deflate the balloon, ensure flow of urine, advance the catheter, and attempt reinflation."
+    },
+    "openrn-skills21-2": {
+      "version": "2026-10-02-r1",
+      "origin": "project_authored_from_supplied_question_and_textbook_key",
+      "review_status": "source_scope_checked_not_independent_clinical_review",
+      "required": [
+        {
+          "id": "R1",
+          "criterion": {
+            "zh": "安排人员协助体位和操作",
+            "en": "Arrange assistance with positioning and the procedure"
+          },
+          "acceptable": {
+            "zh": "请同事协助摆位、支托或操作均可。",
+            "en": "Ask a colleague to assist with positioning, support, or the procedure."
+          },
+          "incorrect": {
+            "zh": "坚持独自强行摆位不正确。",
+            "en": "Insisting on forcing positioning without assistance is incorrect."
+          },
+          "follow_up": {
+            "zh": "请补充这一点：安排人员协助体位和操作。可以只补充这一点，无需重写之前的答案。",
+            "en": "Please add this point: Arrange assistance with positioning and the procedure. You can supplement your earlier answer without rewriting it."
+          }
+        },
+        {
+          "id": "R2",
+          "criterion": {
+            "zh": "保护右侧患肢，仅在允许范围调整左腿",
+            "en": "Protect the right leg and manipulate only the left leg as permitted"
+          },
+          "acceptable": {
+            "zh": "不移动右侧骨折腿，调整健侧左腿或采用保护患肢的替代体位均可。",
+            "en": "Do not move the fractured right leg; adjust the left leg or use positioning that protects the right leg."
+          },
+          "incorrect": {
+            "zh": "为了导尿强行移动右腿与病例限制冲突。",
+            "en": "Forcing movement of the right leg contradicts the stated restriction."
+          },
+          "follow_up": {
+            "zh": "请补充这一点：保护右侧患肢，仅在允许范围调整左腿。可以只补充这一点，无需重写之前的答案。",
+            "en": "Please add this point: Protect the right leg and manipulate only the left leg as permitted. You can supplement your earlier answer without rewriting it."
+          }
+        }
+      ],
+      "optional_extensions": {
+        "zh": "协助照明、牵开皮肤、舒适和隐私措施可拓展；不要求列全辅助任务。",
+        "en": "Lighting, retraction, comfort, and privacy measures are optional details; every assistant task need not be listed."
+      },
+      "source": {
+        "book": "Nursing Skills (Open RN), LibreTexts edition",
+        "section": "Chapter 21: Facilitation of Elimination",
+        "question_number": "2",
+        "authors": "Kimberly Ernstmeyer & Elizabeth Christman (Eds.); Open RN; LibreTexts",
+        "question_url": "https://med.libretexts.org/Bookshelves/Nursing/Nursing_Skills_(OpenRN)/21%3A_Facilitation_of_Elimination/21.16%3A_Learning_Activities",
+        "answer_url": "https://med.libretexts.org/Bookshelves/Nursing/Nursing_Skills_(OpenRN)/24%3A_Answer_Keys/24.21%3A_Chapter_21_(Facilitation_of_Elimination)",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "retrieved_at": "2026-10-02",
+        "snapshots": [
+          "skills21_q.txt",
+          "skills21_a.txt"
+        ]
+      },
+      "basis_question": "Your patient is admitted with a fractured head of the right femur and is scheduled for surgery in the next six hours. You have a prescription to insert a Foley catheter. After you assess the patient’s ability for the recommended position to insert the catheter, you note that the patient is unable to move the right leg and should not move the leg.\nDescribe how you will proceed with the procedure.",
+      "basis_answer": "Utilize assistant to help with positioning and holding. Manipulation of the left leg should only occur, and additional personnel may be needed to assist in holding, providing light source, and retracting skin as needed."
+    },
+    "openrn-skills21-3": {
+      "version": "2026-10-02-r1",
+      "origin": "project_authored_from_supplied_question_and_textbook_key",
+      "review_status": "source_scope_checked_not_independent_clinical_review",
+      "required": [
+        {
+          "id": "R1",
+          "criterion": {
+            "zh": "倾听并支持患者表达感受及身体形象顾虑",
+            "en": "Support expression of feelings and body-image concerns"
+          },
+          "acceptable": {
+            "zh": "鼓励谈感受、倾听接纳对造口外观的担忧，避免强迫均可。",
+            "en": "Invite feelings, listen to concerns about the stoma/body image, and avoid coercion."
+          },
+          "incorrect": {
+            "zh": "责备、羞辱或强迫立即参与不符合支持性适应。",
+            "en": "Blaming, shaming, or coercing immediate participation contradicts supportive adjustment."
+          },
+          "follow_up": {
+            "zh": "请补充这一点：倾听并支持患者表达感受及身体形象顾虑。可以只补充这一点，无需重写之前的答案。",
+            "en": "Please add this point: Support expression of feelings and body-image concerns. You can supplement your earlier answer without rewriting it."
+          }
+        },
+        {
+          "id": "R2",
+          "criterion": {
+            "zh": "提供造口护理教育并逐步促进参与",
+            "en": "Provide ostomy-care education and support gradual participation"
+          },
+          "acceptable": {
+            "zh": "解释护理需求、示范管理方法、循序支持自我护理均可。",
+            "en": "Explain care needs, demonstrate management, and support gradual self-care participation."
+          },
+          "incorrect": {
+            "zh": "完全不提供护理教育或将拒绝视为无需支持不正确。",
+            "en": "Withholding care education entirely or treating refusal as no need for support is incorrect."
+          },
+          "follow_up": {
+            "zh": "请补充这一点：提供造口护理教育并逐步促进参与。可以只补充这一点，无需重写之前的答案。",
+            "en": "Please add this point: Provide ostomy-care education and support gradual participation. You can supplement your earlier answer without rewriting it."
+          }
+        }
+      ],
+      "optional_extensions": {
+        "zh": "衣着调整、同伴支持和转介可作拓展，不要求学生逐项罗列。",
+        "en": "Clothing adaptations, peer support, and referral are optional extensions, not mandatory lists."
+      },
+      "source": {
+        "book": "Nursing Skills (Open RN), LibreTexts edition",
+        "section": "Chapter 21: Facilitation of Elimination",
+        "question_number": "3",
+        "authors": "Kimberly Ernstmeyer & Elizabeth Christman (Eds.); Open RN; LibreTexts",
+        "question_url": "https://med.libretexts.org/Bookshelves/Nursing/Nursing_Skills_(OpenRN)/21%3A_Facilitation_of_Elimination/21.16%3A_Learning_Activities",
+        "answer_url": "https://med.libretexts.org/Bookshelves/Nursing/Nursing_Skills_(OpenRN)/24%3A_Answer_Keys/24.21%3A_Chapter_21_(Facilitation_of_Elimination)",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "retrieved_at": "2026-10-02",
+        "snapshots": [
+          "skills21_q.txt",
+          "skills21_a.txt"
+        ]
+      },
+      "basis_question": "A patient with a new colostomy refuses to look at the stoma or participate in changing the pouching system.\nWhat are some suggestions to help your patient adjust to the stoma?",
+      "basis_answer": "The patient should be encouraged to verbalize feelings related to the colostomy. Body image issues can be a significant concern with new stoma creation. The nurse should ensure that the patient is allowed to voice their feelings, while also reinforcing the measures required to provide care. Education regarding colostomy management can aid in empowerment and facilitate the beginning of normalization. Additionally, it can be helpful to provide guidance on measures for dress to accommodate the colostomy."
+    },
+    "openrn-skills22-1": {
+      "version": "2026-10-02-r1",
+      "origin": "project_authored_from_supplied_question_and_textbook_key",
+      "review_status": "source_scope_checked_not_independent_clinical_review",
+      "required": [
+        {
+          "id": "R1",
+          "criterion": {
+            "zh": "备有替换气管切开套管",
+            "en": "Have a replacement tracheostomy tube available"
+          },
+          "acceptable": {
+            "zh": "备用气切套管、replacement trach等价。",
+            "en": "Spare/replacement trach or tracheostomy tube."
+          },
+          "incorrect": {
+            "zh": "明确认为无需备用套管不正确。",
+            "en": "Explicitly stating no replacement tube is needed is incorrect."
+          },
+          "follow_up": {
+            "zh": "请补充这一点：备有替换气管切开套管。可以只补充这一点，无需重写之前的答案。",
+            "en": "Please add this point: Have a replacement tracheostomy tube available. You can supplement your earlier answer without rewriting it."
+          }
+        },
+        {
+          "id": "R2",
+          "criterion": {
+            "zh": "备有手动复苏气囊",
+            "en": "Have a manual resuscitation bag available"
+          },
+          "acceptable": {
+            "zh": "Ambu bag、复苏囊、手动通气气囊均可。",
+            "en": "Ambu bag, manual resuscitator, or ventilation bag."
+          },
+          "incorrect": {
+            "zh": "把普通储物袋等当成复苏气囊不正确。",
+            "en": "Substituting an ordinary bag for a ventilation/resuscitation bag is incorrect."
+          },
+          "follow_up": {
+            "zh": "请补充这一点：备有手动复苏气囊。可以只补充这一点，无需重写之前的答案。",
+            "en": "Please add this point: Have a manual resuscitation bag available. You can supplement your earlier answer without rewriting it."
+          }
+        },
+        {
+          "id": "R3",
+          "criterion": {
+            "zh": "备有吸引用品",
+            "en": "Have suction equipment available"
+          },
+          "acceptable": {
+            "zh": "吸痰/吸引装置、suction kit均可。",
+            "en": "Suctioning kit, suction supplies, or suction equipment."
+          },
+          "incorrect": {
+            "zh": "明确认为无需吸引用品不正确。",
+            "en": "Explicitly denying the need for suction equipment is incorrect."
+          },
+          "follow_up": {
+            "zh": "请补充这一点：备有吸引用品。可以只补充这一点，无需重写之前的答案。",
+            "en": "Please add this point: Have suction equipment available. You can supplement your earlier answer without rewriting it."
+          }
+        }
+      ],
+      "optional_extensions": {
+        "zh": "备用型号、其他急救设备和检查方法可拓展；原题只要求这三类用品。",
+        "en": "Spare sizes, other emergency equipment, and checking methods are optional; the key requires these three supply categories."
+      },
+      "source": {
+        "book": "Nursing Skills (Open RN), LibreTexts edition",
+        "section": "Chapter 22: Tracheostomy Care and Suctioning",
+        "question_number": "1",
+        "authors": "Kimberly Ernstmeyer & Elizabeth Christman (Eds.); Open RN; LibreTexts",
+        "question_url": "https://med.libretexts.org/Bookshelves/Nursing/Nursing_Skills_(OpenRN)/22%3A_Tracheostomy_Care_and_Suctioning/22.08%3A_Learning_Activities",
+        "answer_url": "https://med.libretexts.org/Bookshelves/Nursing/Nursing_Skills_(OpenRN)/24%3A_Answer_Keys/24.22%3A_Chapter_22_(Tracheostomy_Care_and_Suctioning)",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "retrieved_at": "2026-10-02",
+        "snapshots": [
+          "skills22_q.txt",
+          "skills22_a.txt"
+        ]
+      },
+      "basis_question": "You are caring for a patient with a tracheostomy.\nWhat supplies should you ensure are in the patient’s room when you first assess the patient?",
+      "basis_answer": "The items that you should have available include the replacement trach, Ambu bag, and suctioning kit."
+    },
+    "openrn-skills22-2": {
+      "version": "2026-10-02-r1",
+      "origin": "project_authored_from_supplied_question_and_textbook_key",
+      "review_status": "source_scope_checked_not_independent_clinical_review",
+      "required": [
+        {
+          "id": "R1",
+          "criterion": {
+            "zh": "按教材给出的D→B→C→A排序，并保留给氧的条件",
+            "en": "Order the supplied actions D→B→C→A, retaining conditional oxygen"
+          },
+          "acceptable": {
+            "zh": "血氧监测→吸引→必要时气切面罩给氧→评估呼吸音；仅给字母顺序也可。",
+            "en": "Pulse oximetry, suction, oxygen via trach collar if warranted, then lung sounds; D-B-C-A alone is sufficient."
+          },
+          "incorrect": {
+            "zh": "改变题目指定优先顺序，或明确把必要时给氧改成无条件固定方案，与本题答案不符。",
+            "en": "Changing the specified order, or explicitly making conditional oxygen unconditional, conflicts with this exercise key."
+          },
+          "follow_up": {
+            "zh": "请补充这一点：按教材给出的D→B→C→A排序，并保留给氧的条件。可以只补充这一点，无需重写之前的答案。",
+            "en": "Please add this point: Order the supplied actions D→B→C→A, retaining conditional oxygen. You can supplement your earlier answer without rewriting it."
+          }
+        }
+      ],
+      "optional_extensions": {
+        "zh": "可解释排序；本题按教材所给选项作答，不要求扩展成适用于所有突发事件的流程。",
+        "en": "Rationale is optional; this exercise orders the supplied textbook actions and does not define a universal emergency protocol."
+      },
+      "source": {
+        "book": "Nursing Skills (Open RN), LibreTexts edition",
+        "section": "Chapter 22: Tracheostomy Care and Suctioning",
+        "question_number": "2",
+        "authors": "Kimberly Ernstmeyer & Elizabeth Christman (Eds.); Open RN; LibreTexts",
+        "question_url": "https://med.libretexts.org/Bookshelves/Nursing/Nursing_Skills_(OpenRN)/22%3A_Tracheostomy_Care_and_Suctioning/22.08%3A_Learning_Activities",
+        "answer_url": "https://med.libretexts.org/Bookshelves/Nursing/Nursing_Skills_(OpenRN)/24%3A_Answer_Keys/24.22%3A_Chapter_22_(Tracheostomy_Care_and_Suctioning)",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "retrieved_at": "2026-10-02",
+        "snapshots": [
+          "skills22_q.txt",
+          "skills22_a.txt"
+        ]
+      },
+      "basis_question": "Your patient with a tracheostomy puts on their call light. As you enter the room, the patient is coughing violently and turning red.\nPrioritize the action steps that you will take.\n\nA. Assess lung sounds\nB. Suction patient\nC. Provide oxygen via the trach collar if warranted\nD. Check pulse oximetry",
+      "basis_answer": "D – Check pulse oximetry, B – Suction patient, C – Provide oxygen via the trach collar if warranted, A – Assess lung sounds"
+    },
+    "openrn-skills11-1": {
+      "version": "2026-10-02-r1",
+      "origin": "project_authored_from_supplied_question_and_textbook_key",
+      "review_status": "source_scope_checked_not_independent_clinical_review",
+      "required": [
+        {
+          "id": "R1",
+          "criterion": {
+            "zh": "先评估血氧，再评估呼吸音",
+            "en": "First assess pulse oximetry, then lung sounds"
+          },
+          "acceptable": {
+            "zh": "以SpO₂/血氧开头，接着听诊呼吸音，顺序明确即可。",
+            "en": "Start with SpO2/pulse oximetry, followed by lung auscultation."
+          },
+          "incorrect": {
+            "zh": "在本题给定顺序中把教育放在最前，或颠倒两项初评与教材不符。",
+            "en": "Putting education first or reversing the two initial assessments conflicts with this exercise key."
+          },
+          "follow_up": {
+            "zh": "请补充这一点：先评估血氧，再评估呼吸音。可以只补充这一点，无需重写之前的答案。",
+            "en": "Please add this point: First assess pulse oximetry, then lung sounds. You can supplement your earlier answer without rewriting it."
+          }
+        },
+        {
+          "id": "R2",
+          "criterion": {
+            "zh": "之后按医嘱给氧，再复查血氧",
+            "en": "Then apply oxygen as ordered and reassess pulse oximetry"
+          },
+          "acceptable": {
+            "zh": "给氧后复评SpO₂等价；不要求填写剂量。",
+            "en": "Give prescribed oxygen and then recheck SpO2; no dose is required."
+          },
+          "incorrect": {
+            "zh": "把复评放在此次给氧前，或漏掉干预后的复评不构成完整顺序。",
+            "en": "Putting reassessment before this oxygen intervention is incorrect; omitting reassessment is incomplete."
+          },
+          "follow_up": {
+            "zh": "请补充这一点：之后按医嘱给氧，再复查血氧。可以只补充这一点，无需重写之前的答案。",
+            "en": "Please add this point: Then apply oxygen as ordered and reassess pulse oximetry. You can supplement your earlier answer without rewriting it."
+          }
+        },
+        {
+          "id": "R3",
+          "criterion": {
+            "zh": "再采取改善氧合措施，最后进行氧疗安全教育",
+            "en": "Next institute actions to improve oxygenation, with oxygen-safety teaching last"
+          },
+          "acceptable": {
+            "zh": "改善氧合/呼吸措施在复评之后，安全教育最后；可直接按原选项排序。",
+            "en": "Additional oxygenation actions follow reassessment, and safety education is last; the supplied option wording suffices."
+          },
+          "incorrect": {
+            "zh": "在本题中把安全教育置于最初处置之前与教材顺序不符。",
+            "en": "Prioritizing safety teaching before initial management conflicts with this exercise sequence."
+          },
+          "follow_up": {
+            "zh": "请补充这一点：再采取改善氧合措施，最后进行氧疗安全教育。可以只补充这一点，无需重写之前的答案。",
+            "en": "Please add this point: Next institute actions to improve oxygenation, with oxygen-safety teaching last. You can supplement your earlier answer without rewriting it."
+          }
+        }
+      ],
+      "optional_extensions": {
+        "zh": "可解释每步理由；具体氧流量、药物及所有可能的呼吸干预不是本题要求。",
+        "en": "Rationales are optional; oxygen flow rates, medications, and every possible intervention are not required."
+      },
+      "source": {
+        "book": "Nursing Skills (Open RN), LibreTexts edition",
+        "section": "Chapter 11: Oxygen Therapy",
+        "question_number": "1",
+        "authors": "Kimberly Ernstmeyer & Elizabeth Christman (Eds.); Open RN; LibreTexts",
+        "question_url": "https://med.libretexts.org/Bookshelves/Nursing/Nursing_Skills_(OpenRN)/11%3A_Oxygen_Therapy/11.08%3A_Learning_Activities",
+        "answer_url": "https://med.libretexts.org/Bookshelves/Nursing/Nursing_Skills_(OpenRN)/24%3A_Answer_Keys/24.11%3A_Chapter_11_(Oxygen_Therapy)",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "retrieved_at": "2026-10-02",
+        "snapshots": [
+          "skills11_q.txt",
+          "skills11_a.txt"
+        ]
+      },
+      "basis_question": "Your patient turns on their call light. Upon entering your patient’s room, they say they are short of breath. Prioritize your actions from first to sixth.\nInstitute actions to improve oxygenation\nApply oxygen as ordered\nReassess pulse oximetry\nTeach oxygen safety\nAssess lung sounds\nAssess pulse oximetry",
+      "basis_answer": "Priority\nActions\nFirst\nAssess pulse oximetry\nSecond\nAssess lung sounds\nThird\nApply oxygen as ordered\nFour\nReassess pulse oximetry\nFifth\nInstitute actions to improve oxygenation\nSixth\nTeach oxygen safety\n(Rationale: Priority of actions includes the gathering of assessment information to reflect the patient’s respiratory condition. Once you have collected information, intervention can be initiated with application of oxygen if needed and subsequent reassessment of the pulse oximetry reading. Additional actions to improve client oxygenation and lung capacity can then be implemented with coughing, deep breathing, and use of incentive spirometry. Finally, once the patient experiences improvement in oxygenation and breathing status, reinforcement of oxygen education and safety measures would be appropriate)."
+    },
+    "openrn-skin-card-4": {
+      "version": "2026-10-02-r1",
+      "origin": "project_authored_from_supplied_question_and_textbook_key",
+      "review_status": "source_scope_checked_not_independent_clinical_review",
+      "required": [
+        {
+          "id": "R1",
+          "criterion": {
+            "zh": "识别概念：Braden 量表",
+            "en": "Identify the concept: Braden Scale"
+          },
+          "acceptable": {
+            "zh": "接受中英文术语、常见同义名称、单复数及不改变含义的轻微拼写差异。",
+            "en": "Accept the Chinese/English term, common synonyms, singular/plural forms, and minor unambiguous spelling variants."
+          },
+          "incorrect": {
+            "zh": "明确给出不同概念且未自行纠正才判错；没有给名称算遗漏。",
+            "en": "An explicitly different concept, unless corrected, is incorrect; no name is missing."
+          },
+          "follow_up": {
+            "zh": "请补充这一点：识别概念：Braden 量表。可以只补充这一点，无需重写之前的答案。",
+            "en": "Please add this point: Identify the concept: Braden Scale. You can supplement your earlier answer without rewriting it."
+          }
+        },
+        {
+          "id": "R2",
+          "criterion": {
+            "zh": "说明用于评估压力性损伤风险",
+            "en": "Describe its purpose as assessing pressure-injury risk"
+          },
+          "acceptable": {
+            "zh": "风险评估、评估发生压疮/压力性损伤的危险因素均可。",
+            "en": "Risk assessment or identifying/documenting risk factors for pressure injury."
+          },
+          "incorrect": {
+            "zh": "不能说成压力性损伤分期或已经发生损伤的诊断工具。",
+            "en": "Do not describe it as injury staging or as a diagnosis of an existing injury."
+          },
+          "follow_up": {
+            "zh": "请补充这一点：说明用于评估压力性损伤风险。可以只补充这一点，无需重写之前的答案。",
+            "en": "Please add this point: Describe its purpose as assessing pressure-injury risk. You can supplement your earlier answer without rewriting it."
+          }
+        }
+      ],
+      "optional_extensions": {
+        "zh": "Braden六个分项、分值阈值、计算方法和护理计划均为可选拓展，不作为完成条件。",
+        "en": "The six Braden subscales, score thresholds, calculation, and care plans are optional and must not gate completion."
+      },
+      "source": {
+        "book": "Nursing Fundamentals (Open RN), H5P Integumentary Glossary Cards",
+        "section": "10.8 Learning Activities",
+        "question_number": "Card 4",
+        "authors": "Chippewa Valley Technical College / Open RN",
+        "question_url": "https://studio.libretexts.org/h5p/6884/embed",
+        "answer_url": "https://studio.libretexts.org/h5p/6884/embed",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "retrieved_at": "2026-10-02",
+        "snapshots": [
+          "h5p_6884.json"
+        ],
+        "h5p_card_index": 3
+      },
+      "basis_question": "A standardized assessment tool used to assess and document a patient’s risk factors for developing pressure injuries.\n\nName the concept described and briefly identify its key distinguishing feature.",
+      "basis_answer": "Braden Scale"
+    },
+    "openrn-skin-card-5": {
+      "version": "2026-10-02-r1",
+      "origin": "project_authored_from_supplied_question_and_textbook_key",
+      "review_status": "source_scope_checked_not_independent_clinical_review",
+      "required": [
+        {
+          "id": "R1",
+          "criterion": {
+            "zh": "识别概念：深部组织压力性损伤",
+            "en": "Identify the concept: Deep tissue pressure injuries"
+          },
+          "acceptable": {
+            "zh": "接受中英文术语、常见同义名称、单复数及不改变含义的轻微拼写差异。",
+            "en": "Accept the Chinese/English term, common synonyms, singular/plural forms, and minor unambiguous spelling variants."
+          },
+          "incorrect": {
+            "zh": "明确给出不同概念且未自行纠正才判错；没有给名称算遗漏。",
+            "en": "An explicitly different concept, unless corrected, is incorrect; no name is missing."
+          },
+          "follow_up": {
+            "zh": "请补充这一点：识别概念：深部组织压力性损伤。可以只补充这一点，无需重写之前的答案。",
+            "en": "Please add this point: Identify the concept: Deep tissue pressure injuries. You can supplement your earlier answer without rewriting it."
+          }
+        },
+        {
+          "id": "R2",
+          "criterion": {
+            "zh": "指出持续不可褪色的深红/栗/紫色改变等深部损伤特征",
+            "en": "Identify persistent nonblanching deep-red/maroon/purple change or a blood-filled blister"
+          },
+          "acceptable": {
+            "zh": "从描述指出持续深色、不可褪色或血疱等有辨识度的线索即可；不要求重述全部。",
+            "en": "A discriminating cue from the description such as persistent deep discoloration, nonblanching, or a blood-filled blister is sufficient."
+          },
+          "incorrect": {
+            "zh": "不能把可褪色浅压痕当作该定义，或认为皮肤完整便排除深部损伤。",
+            "en": "A blanchable shallow indentation is not this definition; intact skin does not exclude deep tissue injury."
+          },
+          "follow_up": {
+            "zh": "请补充这一点：指出持续不可褪色的深红/栗/紫色改变等深部损伤特征。可以只补充这一点，无需重写之前的答案。",
+            "en": "Please add this point: Identify persistent nonblanching deep-red/maroon/purple change or a blood-filled blister. You can supplement your earlier answer without rewriting it."
+          }
+        }
+      ],
+      "optional_extensions": {
+        "zh": "其他定义细节、机制、分期鉴别、治疗和完整护理计划可作拓展；不要要求复述题面全部内容。",
+        "en": "Other definition details, mechanisms, stage comparisons, treatment, and a full care plan are optional; do not require every detail of the supplied description."
+      },
+      "source": {
+        "book": "Nursing Fundamentals (Open RN), H5P Integumentary Glossary Cards",
+        "section": "10.8 Learning Activities",
+        "question_number": "Card 5",
+        "authors": "Chippewa Valley Technical College / Open RN",
+        "question_url": "https://studio.libretexts.org/h5p/6884/embed",
+        "answer_url": "https://studio.libretexts.org/h5p/6884/embed",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "retrieved_at": "2026-10-02",
+        "snapshots": [
+          "h5p_6884.json"
+        ],
+        "h5p_card_index": 4
+      },
+      "basis_question": "Persistent; non-blanchable; deep red, maroon, or purple discoloration of intact or non-intact skin revealing a dark wound bed or blood filled blister.\n\nName the concept described and briefly identify its key distinguishing feature.",
+      "basis_answer": "Deep tissue pressure injuries"
+    },
+    "openrn-skin-card-10": {
+      "version": "2026-10-02-r1",
+      "origin": "project_authored_from_supplied_question_and_textbook_key",
+      "review_status": "source_scope_checked_not_independent_clinical_review",
+      "required": [
+        {
+          "id": "R1",
+          "criterion": {
+            "zh": "识别概念：焦痂",
+            "en": "Identify the concept: Eschar"
+          },
+          "acceptable": {
+            "zh": "接受中英文术语、常见同义名称、单复数及不改变含义的轻微拼写差异。",
+            "en": "Accept the Chinese/English term, common synonyms, singular/plural forms, and minor unambiguous spelling variants."
+          },
+          "incorrect": {
+            "zh": "明确给出不同概念且未自行纠正才判错；没有给名称算遗漏。",
+            "en": "An explicitly different concept, unless corrected, is incorrect; no name is missing."
+          },
+          "follow_up": {
+            "zh": "请补充这一点：识别概念：焦痂。可以只补充这一点，无需重写之前的答案。",
+            "en": "Please add this point: Identify the concept: Eschar. You can supplement your earlier answer without rewriting it."
+          }
+        },
+        {
+          "id": "R2",
+          "criterion": {
+            "zh": "指出干燥、深色、厚或皮革样坏死组织特征",
+            "en": "Identify dry dark thick/leathery dead tissue"
+          },
+          "acceptable": {
+            "zh": "至少点出坏死/死亡组织与干燥深色或皮革样外观的联系。",
+            "en": "Link dead/necrotic tissue with its dry dark or leathery appearance."
+          },
+          "incorrect": {
+            "zh": "不能把焦痂说成新生健康肉芽组织。",
+            "en": "Do not describe eschar as new healthy granulation tissue."
+          },
+          "follow_up": {
+            "zh": "请补充这一点：指出干燥、深色、厚或皮革样坏死组织特征。可以只补充这一点，无需重写之前的答案。",
+            "en": "Please add this point: Identify dry dark thick/leathery dead tissue. You can supplement your earlier answer without rewriting it."
+          }
+        }
+      ],
+      "optional_extensions": {
+        "zh": "其他定义细节、机制、分期鉴别、治疗和完整护理计划可作拓展；不要要求复述题面全部内容。",
+        "en": "Other definition details, mechanisms, stage comparisons, treatment, and a full care plan are optional; do not require every detail of the supplied description."
+      },
+      "source": {
+        "book": "Nursing Fundamentals (Open RN), H5P Integumentary Glossary Cards",
+        "section": "10.8 Learning Activities",
+        "question_number": "Card 10",
+        "authors": "Chippewa Valley Technical College / Open RN",
+        "question_url": "https://studio.libretexts.org/h5p/6884/embed",
+        "answer_url": "https://studio.libretexts.org/h5p/6884/embed",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "retrieved_at": "2026-10-02",
+        "snapshots": [
+          "h5p_6884.json"
+        ],
+        "h5p_card_index": 9
+      },
+      "basis_question": "Dark brown/black, dry, thick, and leathery dead tissue in wounds.\n\nName the concept described and briefly identify its key distinguishing feature.",
+      "basis_answer": "Eschar"
+    },
+    "openrn-skin-card-12": {
+      "version": "2026-10-02-r1",
+      "origin": "project_authored_from_supplied_question_and_textbook_key",
+      "review_status": "source_scope_checked_not_independent_clinical_review",
+      "required": [
+        {
+          "id": "R1",
+          "criterion": {
+            "zh": "识别概念：摩擦",
+            "en": "Identify the concept: Friction"
+          },
+          "acceptable": {
+            "zh": "接受中英文术语、常见同义名称、单复数及不改变含义的轻微拼写差异。",
+            "en": "Accept the Chinese/English term, common synonyms, singular/plural forms, and minor unambiguous spelling variants."
+          },
+          "incorrect": {
+            "zh": "明确给出不同概念且未自行纠正才判错；没有给名称算遗漏。",
+            "en": "An explicitly different concept, unless corrected, is incorrect; no name is missing."
+          },
+          "follow_up": {
+            "zh": "请补充这一点：识别概念：摩擦。可以只补充这一点，无需重写之前的答案。",
+            "en": "Please add this point: Identify the concept: Friction. You can supplement your earlier answer without rewriting it."
+          }
+        },
+        {
+          "id": "R2",
+          "criterion": {
+            "zh": "说明皮肤与外物表面摩擦",
+            "en": "Describe skin rubbing against an external surface"
+          },
+          "acceptable": {
+            "zh": "皮肤与床面/外物相对运动、表面擦伤均可。",
+            "en": "Surface rubbing against bedding/objects or resulting superficial abrasion."
+          },
+          "incorrect": {
+            "zh": "不能把仅描述组织层间滑移当作表面摩擦的区别特征。",
+            "en": "Movement only between tissue layers does not identify surface friction."
+          },
+          "follow_up": {
+            "zh": "请补充这一点：说明皮肤与外物表面摩擦。可以只补充这一点，无需重写之前的答案。",
+            "en": "Please add this point: Describe skin rubbing against an external surface. You can supplement your earlier answer without rewriting it."
+          }
+        }
+      ],
+      "optional_extensions": {
+        "zh": "其他定义细节、机制、分期鉴别、治疗和完整护理计划可作拓展；不要要求复述题面全部内容。",
+        "en": "Other definition details, mechanisms, stage comparisons, treatment, and a full care plan are optional; do not require every detail of the supplied description."
+      },
+      "source": {
+        "book": "Nursing Fundamentals (Open RN), H5P Integumentary Glossary Cards",
+        "section": "10.8 Learning Activities",
+        "question_number": "Card 12",
+        "authors": "Chippewa Valley Technical College / Open RN",
+        "question_url": "https://studio.libretexts.org/h5p/6884/embed",
+        "answer_url": "https://studio.libretexts.org/h5p/6884/embed",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "retrieved_at": "2026-10-02",
+        "snapshots": [
+          "h5p_6884.json"
+        ],
+        "h5p_card_index": 11
+      },
+      "basis_question": "The rubbing of skin against a hard object, such as the bed or the arm of a wheelchair. This rubbing causes heat that can remove the top layer of skin and often results in skin damage.\n\nName the concept described and briefly identify its key distinguishing feature.",
+      "basis_answer": "Friction"
+    },
+    "openrn-skin-card-13": {
+      "version": "2026-10-02-r1",
+      "origin": "project_authored_from_supplied_question_and_textbook_key",
+      "review_status": "source_scope_checked_not_independent_clinical_review",
+      "required": [
+        {
+          "id": "R1",
+          "criterion": {
+            "zh": "识别概念：肉芽组织",
+            "en": "Identify the concept: Granulation tissue"
+          },
+          "acceptable": {
+            "zh": "接受中英文术语、常见同义名称、单复数及不改变含义的轻微拼写差异。",
+            "en": "Accept the Chinese/English term, common synonyms, singular/plural forms, and minor unambiguous spelling variants."
+          },
+          "incorrect": {
+            "zh": "明确给出不同概念且未自行纠正才判错；没有给名称算遗漏。",
+            "en": "An explicitly different concept, unless corrected, is incorrect; no name is missing."
+          },
+          "follow_up": {
+            "zh": "请补充这一点：识别概念：肉芽组织。可以只补充这一点，无需重写之前的答案。",
+            "en": "Please add this point: Identify the concept: Granulation tissue. You can supplement your earlier answer without rewriting it."
+          }
+        },
+        {
+          "id": "R2",
+          "criterion": {
+            "zh": "指出愈合过程中的新生组织或新生毛细血管",
+            "en": "Identify new healing tissue or new capillaries"
+          },
+          "acceptable": {
+            "zh": "新生结缔组织、创面修复组织或脆弱新生毛细血管均可。",
+            "en": "New connective/healing tissue or fragile new capillaries."
+          },
+          "incorrect": {
+            "zh": "不能说成干燥黑色坏死组织。",
+            "en": "Do not describe it as dry black dead tissue."
+          },
+          "follow_up": {
+            "zh": "请补充这一点：指出愈合过程中的新生组织或新生毛细血管。可以只补充这一点，无需重写之前的答案。",
+            "en": "Please add this point: Identify new healing tissue or new capillaries. You can supplement your earlier answer without rewriting it."
+          }
+        }
+      ],
+      "optional_extensions": {
+        "zh": "其他定义细节、机制、分期鉴别、治疗和完整护理计划可作拓展；不要要求复述题面全部内容。",
+        "en": "Other definition details, mechanisms, stage comparisons, treatment, and a full care plan are optional; do not require every detail of the supplied description."
+      },
+      "source": {
+        "book": "Nursing Fundamentals (Open RN), H5P Integumentary Glossary Cards",
+        "section": "10.8 Learning Activities",
+        "question_number": "Card 13",
+        "authors": "Chippewa Valley Technical College / Open RN",
+        "question_url": "https://studio.libretexts.org/h5p/6884/embed",
+        "answer_url": "https://studio.libretexts.org/h5p/6884/embed",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "retrieved_at": "2026-10-02",
+        "snapshots": [
+          "h5p_6884.json"
+        ],
+        "h5p_card_index": 12
+      },
+      "basis_question": "New connective tissue in a healing wound with new, fragile, thin-walled capillaries.\n\nName the concept described and briefly identify its key distinguishing feature.",
+      "basis_answer": "Granulation tissue"
+    },
+    "openrn-skin-card-16": {
+      "version": "2026-10-02-r1",
+      "origin": "project_authored_from_supplied_question_and_textbook_key",
+      "review_status": "source_scope_checked_not_independent_clinical_review",
+      "required": [
+        {
+          "id": "R1",
+          "criterion": {
+            "zh": "识别概念：皮肤完整性受损",
+            "en": "Identify the concept: Impaired skin integrity"
+          },
+          "acceptable": {
+            "zh": "接受中英文术语、常见同义名称、单复数及不改变含义的轻微拼写差异。",
+            "en": "Accept the Chinese/English term, common synonyms, singular/plural forms, and minor unambiguous spelling variants."
+          },
+          "incorrect": {
+            "zh": "明确给出不同概念且未自行纠正才判错；没有给名称算遗漏。",
+            "en": "An explicitly different concept, unless corrected, is incorrect; no name is missing."
+          },
+          "follow_up": {
+            "zh": "请补充这一点：识别概念：皮肤完整性受损。可以只补充这一点，无需重写之前的答案。",
+            "en": "Please add this point: Identify the concept: Impaired skin integrity. You can supplement your earlier answer without rewriting it."
+          }
+        },
+        {
+          "id": "R2",
+          "criterion": {
+            "zh": "说明表皮或真皮发生改变",
+            "en": "Describe alteration of epidermis and/or dermis"
+          },
+          "acceptable": {
+            "zh": "皮肤表皮/真皮受损、皮肤层完整性改变均可。",
+            "en": "Altered/damaged epidermis or dermis, or changed skin-layer integrity."
+          },
+          "incorrect": {
+            "zh": "不能仅凭该广义概念指定某一压力性损伤分期。",
+            "en": "This broad concept alone does not establish a particular pressure-injury stage."
+          },
+          "follow_up": {
+            "zh": "请补充这一点：说明表皮或真皮发生改变。可以只补充这一点，无需重写之前的答案。",
+            "en": "Please add this point: Describe alteration of epidermis and/or dermis. You can supplement your earlier answer without rewriting it."
+          }
+        }
+      ],
+      "optional_extensions": {
+        "zh": "其他定义细节、机制、分期鉴别、治疗和完整护理计划可作拓展；不要要求复述题面全部内容。",
+        "en": "Other definition details, mechanisms, stage comparisons, treatment, and a full care plan are optional; do not require every detail of the supplied description."
+      },
+      "source": {
+        "book": "Nursing Fundamentals (Open RN), H5P Integumentary Glossary Cards",
+        "section": "10.8 Learning Activities",
+        "question_number": "Card 16",
+        "authors": "Chippewa Valley Technical College / Open RN",
+        "question_url": "https://studio.libretexts.org/h5p/6884/embed",
+        "answer_url": "https://studio.libretexts.org/h5p/6884/embed",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "retrieved_at": "2026-10-02",
+        "snapshots": [
+          "h5p_6884.json"
+        ],
+        "h5p_card_index": 15
+      },
+      "basis_question": "Altered epidermis and/or dermis.\n\nName the concept described and briefly identify its key distinguishing feature.",
+      "basis_answer": "Impaired skin integrity"
+    },
+    "openrn-skin-card-18": {
+      "version": "2026-10-02-r1",
+      "origin": "project_authored_from_supplied_question_and_textbook_key",
+      "review_status": "source_scope_checked_not_independent_clinical_review",
+      "required": [
+        {
+          "id": "R1",
+          "criterion": {
+            "zh": "识别概念：浸渍",
+            "en": "Identify the concept: Maceration"
+          },
+          "acceptable": {
+            "zh": "接受中英文术语、常见同义名称、单复数及不改变含义的轻微拼写差异。",
+            "en": "Accept the Chinese/English term, common synonyms, singular/plural forms, and minor unambiguous spelling variants."
+          },
+          "incorrect": {
+            "zh": "明确给出不同概念且未自行纠正才判错；没有给名称算遗漏。",
+            "en": "An explicitly different concept, unless corrected, is incorrect; no name is missing."
+          },
+          "follow_up": {
+            "zh": "请补充这一点：识别概念：浸渍。可以只补充这一点，无需重写之前的答案。",
+            "en": "Please add this point: Identify the concept: Maceration. You can supplement your earlier answer without rewriting it."
+          }
+        },
+        {
+          "id": "R2",
+          "criterion": {
+            "zh": "联系长期潮湿与皮肤湿软变化",
+            "en": "Link prolonged moisture with softened/soggy skin"
+          },
+          "acceptable": {
+            "zh": "长期潮湿后皮肤湿软、起皱或发白，任选相关表现均可。",
+            "en": "Prolonged wetness with sogginess, wrinkling, or whitening."
+          },
+          "incorrect": {
+            "zh": "不能将长期潮湿描述成皮肤干燥焦痂的定义。",
+            "en": "Do not equate this moisture change with dry leathery eschar."
+          },
+          "follow_up": {
+            "zh": "请补充这一点：联系长期潮湿与皮肤湿软变化。可以只补充这一点，无需重写之前的答案。",
+            "en": "Please add this point: Link prolonged moisture with softened/soggy skin. You can supplement your earlier answer without rewriting it."
+          }
+        }
+      ],
+      "optional_extensions": {
+        "zh": "其他定义细节、机制、分期鉴别、治疗和完整护理计划可作拓展；不要要求复述题面全部内容。",
+        "en": "Other definition details, mechanisms, stage comparisons, treatment, and a full care plan are optional; do not require every detail of the supplied description."
+      },
+      "source": {
+        "book": "Nursing Fundamentals (Open RN), H5P Integumentary Glossary Cards",
+        "section": "10.8 Learning Activities",
+        "question_number": "Card 18",
+        "authors": "Chippewa Valley Technical College / Open RN",
+        "question_url": "https://studio.libretexts.org/h5p/6884/embed",
+        "answer_url": "https://studio.libretexts.org/h5p/6884/embed",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "retrieved_at": "2026-10-02",
+        "snapshots": [
+          "h5p_6884.json"
+        ],
+        "h5p_card_index": 17
+      },
+      "basis_question": "A condition that occurs when skin has been exposed to moisture for too long causing it to appear soggy, wrinkled, or whiter than usual.\n\nName the concept described and briefly identify its key distinguishing feature.",
+      "basis_answer": "Maceration"
+    },
+    "openrn-skin-card-22": {
+      "version": "2026-10-02-r1",
+      "origin": "project_authored_from_supplied_question_and_textbook_key",
+      "review_status": "source_scope_checked_not_independent_clinical_review",
+      "required": [
+        {
+          "id": "R1",
+          "criterion": {
+            "zh": "识别概念：不可褪色红斑",
+            "en": "Identify the concept: Nonblanchable erythema"
+          },
+          "acceptable": {
+            "zh": "接受中英文术语、常见同义名称、单复数及不改变含义的轻微拼写差异。",
+            "en": "Accept the Chinese/English term, common synonyms, singular/plural forms, and minor unambiguous spelling variants."
+          },
+          "incorrect": {
+            "zh": "明确给出不同概念且未自行纠正才判错；没有给名称算遗漏。",
+            "en": "An explicitly different concept, unless corrected, is incorrect; no name is missing."
+          },
+          "follow_up": {
+            "zh": "请补充这一点：识别概念：不可褪色红斑。可以只补充这一点，无需重写之前的答案。",
+            "en": "Please add this point: Identify the concept: Nonblanchable erythema. You can supplement your earlier answer without rewriting it."
+          }
+        },
+        {
+          "id": "R2",
+          "criterion": {
+            "zh": "指出发红处按压不变白",
+            "en": "State that redness does not blanch with pressure"
+          },
+          "acceptable": {
+            "zh": "按压不褪色、压之不白、不消退的红斑均可。",
+            "en": "Redness that stays red/does not turn white with pressure."
+          },
+          "incorrect": {
+            "zh": "若说明按压可褪色，则与定义相反。",
+            "en": "Stating that it blanches contradicts the definition."
+          },
+          "follow_up": {
+            "zh": "请补充这一点：指出发红处按压不变白。可以只补充这一点，无需重写之前的答案。",
+            "en": "Please add this point: State that redness does not blanch with pressure. You can supplement your earlier answer without rewriting it."
+          }
+        }
+      ],
+      "optional_extensions": {
+        "zh": "其他定义细节、机制、分期鉴别、治疗和完整护理计划可作拓展；不要要求复述题面全部内容。",
+        "en": "Other definition details, mechanisms, stage comparisons, treatment, and a full care plan are optional; do not require every detail of the supplied description."
+      },
+      "source": {
+        "book": "Nursing Fundamentals (Open RN), H5P Integumentary Glossary Cards",
+        "section": "10.8 Learning Activities",
+        "question_number": "Card 22",
+        "authors": "Chippewa Valley Technical College / Open RN",
+        "question_url": "https://studio.libretexts.org/h5p/6884/embed",
+        "answer_url": "https://studio.libretexts.org/h5p/6884/embed",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "retrieved_at": "2026-10-02",
+        "snapshots": [
+          "h5p_6884.json"
+        ],
+        "h5p_card_index": 21
+      },
+      "basis_question": "Skin redness that does not turn white when pressed.\n\nName the concept described and briefly identify its key distinguishing feature.",
+      "basis_answer": "Nonblanchable erythema"
+    },
+    "openrn-skin-card-24": {
+      "version": "2026-10-02-r1",
+      "origin": "project_authored_from_supplied_question_and_textbook_key",
+      "review_status": "source_scope_checked_not_independent_clinical_review",
+      "required": [
+        {
+          "id": "R1",
+          "criterion": {
+            "zh": "识别概念：压力性损伤",
+            "en": "Identify the concept: Pressure injuries"
+          },
+          "acceptable": {
+            "zh": "接受中英文术语、常见同义名称、单复数及不改变含义的轻微拼写差异。",
+            "en": "Accept the Chinese/English term, common synonyms, singular/plural forms, and minor unambiguous spelling variants."
+          },
+          "incorrect": {
+            "zh": "明确给出不同概念且未自行纠正才判错；没有给名称算遗漏。",
+            "en": "An explicitly different concept, unless corrected, is incorrect; no name is missing."
+          },
+          "follow_up": {
+            "zh": "请补充这一点：识别概念：压力性损伤。可以只补充这一点，无需重写之前的答案。",
+            "en": "Please add this point: Identify the concept: Pressure injuries. You can supplement your earlier answer without rewriting it."
+          }
+        },
+        {
+          "id": "R2",
+          "criterion": {
+            "zh": "联系局部皮肤/软组织损伤与压力或剪切作用",
+            "en": "Link localized tissue injury to pressure and/or shear loading"
+          },
+          "acceptable": {
+            "zh": "局部组织受压损伤，常见骨隆突；不用逐字复述所有定义。",
+            "en": "Localized pressure-related tissue damage, often over a bony prominence; verbatim definition is unnecessary."
+          },
+          "incorrect": {
+            "zh": "不能把所有皮肤破损都归为压力性损伤，或一概认定为器械所致。",
+            "en": "Not every skin lesion is a pressure injury, and device causation cannot be assumed."
+          },
+          "follow_up": {
+            "zh": "请补充这一点：联系局部皮肤/软组织损伤与压力或剪切作用。可以只补充这一点，无需重写之前的答案。",
+            "en": "Please add this point: Link localized tissue injury to pressure and/or shear loading. You can supplement your earlier answer without rewriting it."
+          }
+        }
+      ],
+      "optional_extensions": {
+        "zh": "其他定义细节、机制、分期鉴别、治疗和完整护理计划可作拓展；不要要求复述题面全部内容。",
+        "en": "Other definition details, mechanisms, stage comparisons, treatment, and a full care plan are optional; do not require every detail of the supplied description."
+      },
+      "source": {
+        "book": "Nursing Fundamentals (Open RN), H5P Integumentary Glossary Cards",
+        "section": "10.8 Learning Activities",
+        "question_number": "Card 24",
+        "authors": "Chippewa Valley Technical College / Open RN",
+        "question_url": "https://studio.libretexts.org/h5p/6884/embed",
+        "answer_url": "https://studio.libretexts.org/h5p/6884/embed",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "retrieved_at": "2026-10-02",
+        "snapshots": [
+          "h5p_6884.json"
+        ],
+        "h5p_card_index": 23
+      },
+      "basis_question": "Localized damage to the skin or underlying soft tissue, usually over a bony prominence, as a result of intense and prolonged pressure in combination with shear.\n\nName the concept described and briefly identify its key distinguishing feature.",
+      "basis_answer": "Pressure injuries"
+    },
+    "openrn-skin-card-32": {
+      "version": "2026-10-02-r1",
+      "origin": "project_authored_from_supplied_question_and_textbook_key",
+      "review_status": "source_scope_checked_not_independent_clinical_review",
+      "required": [
+        {
+          "id": "R1",
+          "criterion": {
+            "zh": "识别概念：剪切力",
+            "en": "Identify the concept: Shear"
+          },
+          "acceptable": {
+            "zh": "接受中英文术语、常见同义名称、单复数及不改变含义的轻微拼写差异。",
+            "en": "Accept the Chinese/English term, common synonyms, singular/plural forms, and minor unambiguous spelling variants."
+          },
+          "incorrect": {
+            "zh": "明确给出不同概念且未自行纠正才判错；没有给名称算遗漏。",
+            "en": "An explicitly different concept, unless corrected, is incorrect; no name is missing."
+          },
+          "follow_up": {
+            "zh": "请补充这一点：识别概念：剪切力。可以只补充这一点，无需重写之前的答案。",
+            "en": "Please add this point: Identify the concept: Shear. You can supplement your earlier answer without rewriting it."
+          }
+        },
+        {
+          "id": "R2",
+          "criterion": {
+            "zh": "说明组织层间滑移或由此牵拉血管",
+            "en": "Describe tissue layers sliding and/or vessels being stretched"
+          },
+          "acceptable": {
+            "zh": "组织不同层次相对滑动、深层血管受牵拉均可。",
+            "en": "Relative sliding between tissue layers or stretching of deeper vessels."
+          },
+          "incorrect": {
+            "zh": "仅说皮肤在床面摩擦不能说明与摩擦的区别。",
+            "en": "Surface rubbing alone does not distinguish shear from friction."
+          },
+          "follow_up": {
+            "zh": "请补充这一点：说明组织层间滑移或由此牵拉血管。可以只补充这一点，无需重写之前的答案。",
+            "en": "Please add this point: Describe tissue layers sliding and/or vessels being stretched. You can supplement your earlier answer without rewriting it."
+          }
+        }
+      ],
+      "optional_extensions": {
+        "zh": "其他定义细节、机制、分期鉴别、治疗和完整护理计划可作拓展；不要要求复述题面全部内容。",
+        "en": "Other definition details, mechanisms, stage comparisons, treatment, and a full care plan are optional; do not require every detail of the supplied description."
+      },
+      "source": {
+        "book": "Nursing Fundamentals (Open RN), H5P Integumentary Glossary Cards",
+        "section": "10.8 Learning Activities",
+        "question_number": "Card 32",
+        "authors": "Chippewa Valley Technical College / Open RN",
+        "question_url": "https://studio.libretexts.org/h5p/6884/embed",
+        "answer_url": "https://studio.libretexts.org/h5p/6884/embed",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "retrieved_at": "2026-10-02",
+        "snapshots": [
+          "h5p_6884.json"
+        ],
+        "h5p_card_index": 31
+      },
+      "basis_question": "Damage that occurs when tissue layers move over the top of each other, causing blood vessels to stretch and break as they pass through the subcutaneous tissue.\n\nName the concept described and briefly identify its key distinguishing feature.",
+      "basis_answer": "Shear"
+    },
+    "openrn-skin-card-34": {
+      "version": "2026-10-02-r1",
+      "origin": "project_authored_from_supplied_question_and_textbook_key",
+      "review_status": "source_scope_checked_not_independent_clinical_review",
+      "required": [
+        {
+          "id": "R1",
+          "criterion": {
+            "zh": "识别概念：1 期压力性损伤",
+            "en": "Identify the concept: Stage 1 pressure injuries"
+          },
+          "acceptable": {
+            "zh": "接受中英文术语、常见同义名称、单复数及不改变含义的轻微拼写差异。",
+            "en": "Accept the Chinese/English term, common synonyms, singular/plural forms, and minor unambiguous spelling variants."
+          },
+          "incorrect": {
+            "zh": "明确给出不同概念且未自行纠正才判错；没有给名称算遗漏。",
+            "en": "An explicitly different concept, unless corrected, is incorrect; no name is missing."
+          },
+          "follow_up": {
+            "zh": "请补充这一点：识别概念：1 期压力性损伤。可以只补充这一点，无需重写之前的答案。",
+            "en": "Please add this point: Identify the concept: Stage 1 pressure injuries. You can supplement your earlier answer without rewriting it."
+          }
+        },
+        {
+          "id": "R2",
+          "criterion": {
+            "zh": "说明皮肤完整并有不可褪色红斑",
+            "en": "Describe intact skin with nonblanchable erythema"
+          },
+          "acceptable": {
+            "zh": "皮肤未破、按压不褪色的局部红斑；两特征可分布在多次作答中。",
+            "en": "Unbroken/intact skin and localized nonblanching redness; the two features may occur across attempts."
+          },
+          "incorrect": {
+            "zh": "可褪色浅压痕或明确皮肤已缺损不能直接对应1期定义。",
+            "en": "Blanchable indentation or explicit skin loss does not match the stage-1 definition."
+          },
+          "follow_up": {
+            "zh": "请补充这一点：说明皮肤完整并有不可褪色红斑。可以只补充这一点，无需重写之前的答案。",
+            "en": "Please add this point: Describe intact skin with nonblanchable erythema. You can supplement your earlier answer without rewriting it."
+          }
+        }
+      ],
+      "optional_extensions": {
+        "zh": "其他定义细节、机制、分期鉴别、治疗和完整护理计划可作拓展；不要要求复述题面全部内容。",
+        "en": "Other definition details, mechanisms, stage comparisons, treatment, and a full care plan are optional; do not require every detail of the supplied description."
+      },
+      "source": {
+        "book": "Nursing Fundamentals (Open RN), H5P Integumentary Glossary Cards",
+        "section": "10.8 Learning Activities",
+        "question_number": "Card 34",
+        "authors": "Chippewa Valley Technical College / Open RN",
+        "question_url": "https://studio.libretexts.org/h5p/6884/embed",
+        "answer_url": "https://studio.libretexts.org/h5p/6884/embed",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "retrieved_at": "2026-10-02",
+        "snapshots": [
+          "h5p_6884.json"
+        ],
+        "h5p_card_index": 33
+      },
+      "basis_question": "Intact skin with a localized area of nonblanchable erythema where prolonged pressure has occurred.\n\nName the concept described and briefly identify its key distinguishing feature.",
+      "basis_answer": "Stage 1 pressure injuries"
+    },
+    "openrn-skin-card-35": {
+      "version": "2026-10-02-r1",
+      "origin": "project_authored_from_supplied_question_and_textbook_key",
+      "review_status": "source_scope_checked_not_independent_clinical_review",
+      "required": [
+        {
+          "id": "R1",
+          "criterion": {
+            "zh": "识别概念：2 期压力性损伤",
+            "en": "Identify the concept: Stage 2 pressure injuries"
+          },
+          "acceptable": {
+            "zh": "接受中英文术语、常见同义名称、单复数及不改变含义的轻微拼写差异。",
+            "en": "Accept the Chinese/English term, common synonyms, singular/plural forms, and minor unambiguous spelling variants."
+          },
+          "incorrect": {
+            "zh": "明确给出不同概念且未自行纠正才判错；没有给名称算遗漏。",
+            "en": "An explicitly different concept, unless corrected, is incorrect; no name is missing."
+          },
+          "follow_up": {
+            "zh": "请补充这一点：识别概念：2 期压力性损伤。可以只补充这一点，无需重写之前的答案。",
+            "en": "Please add this point: Identify the concept: Stage 2 pressure injuries. You can supplement your earlier answer without rewriting it."
+          }
+        },
+        {
+          "id": "R2",
+          "criterion": {
+            "zh": "指出部分皮层缺失/真皮暴露或相应水疱表现",
+            "en": "Identify partial-thickness skin loss/exposed dermis or the described blister"
+          },
+          "acceptable": {
+            "zh": "部分皮层损伤、真皮暴露或与描述一致的完整/破裂水疱均可。",
+            "en": "Partial-thickness loss, exposed dermis, or the described intact/ruptured blister."
+          },
+          "incorrect": {
+            "zh": "不能说成脂肪或骨暴露的全层损伤。",
+            "en": "Do not characterize this as full-thickness loss with visible fat or bone."
+          },
+          "follow_up": {
+            "zh": "请补充这一点：指出部分皮层缺失/真皮暴露或相应水疱表现。可以只补充这一点，无需重写之前的答案。",
+            "en": "Please add this point: Identify partial-thickness skin loss/exposed dermis or the described blister. You can supplement your earlier answer without rewriting it."
+          }
+        }
+      ],
+      "optional_extensions": {
+        "zh": "其他定义细节、机制、分期鉴别、治疗和完整护理计划可作拓展；不要要求复述题面全部内容。",
+        "en": "Other definition details, mechanisms, stage comparisons, treatment, and a full care plan are optional; do not require every detail of the supplied description."
+      },
+      "source": {
+        "book": "Nursing Fundamentals (Open RN), H5P Integumentary Glossary Cards",
+        "section": "10.8 Learning Activities",
+        "question_number": "Card 35",
+        "authors": "Chippewa Valley Technical College / Open RN",
+        "question_url": "https://studio.libretexts.org/h5p/6884/embed",
+        "answer_url": "https://studio.libretexts.org/h5p/6884/embed",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "retrieved_at": "2026-10-02",
+        "snapshots": [
+          "h5p_6884.json"
+        ],
+        "h5p_card_index": 34
+      },
+      "basis_question": "Partial-thickness loss of skin with exposed dermis. The wound bed is viable and may appear like an intact or ruptured blister.\n\nName the concept described and briefly identify its key distinguishing feature.",
+      "basis_answer": "Stage 2 pressure injuries"
+    },
+    "openrn-skin-card-36": {
+      "version": "2026-10-02-r1",
+      "origin": "project_authored_from_supplied_question_and_textbook_key",
+      "review_status": "source_scope_checked_not_independent_clinical_review",
+      "required": [
+        {
+          "id": "R1",
+          "criterion": {
+            "zh": "识别概念：3 期压力性损伤",
+            "en": "Identify the concept: Stage 3 pressure injuries"
+          },
+          "acceptable": {
+            "zh": "接受中英文术语、常见同义名称、单复数及不改变含义的轻微拼写差异。",
+            "en": "Accept the Chinese/English term, common synonyms, singular/plural forms, and minor unambiguous spelling variants."
+          },
+          "incorrect": {
+            "zh": "明确给出不同概念且未自行纠正才判错；没有给名称算遗漏。",
+            "en": "An explicitly different concept, unless corrected, is incorrect; no name is missing."
+          },
+          "follow_up": {
+            "zh": "请补充这一点：识别概念：3 期压力性损伤。可以只补充这一点，无需重写之前的答案。",
+            "en": "Please add this point: Identify the concept: Stage 3 pressure injuries. You can supplement your earlier answer without rewriting it."
+          }
+        },
+        {
+          "id": "R2",
+          "criterion": {
+            "zh": "指出全层缺失可见脂肪，但无更深部结构暴露",
+            "en": "Describe full-thickness loss with visible fat but no exposed deeper structures"
+          },
+          "acceptable": {
+            "zh": "皮下脂肪暴露且肌肉/骨/肌腱等未暴露；可用等价概括。",
+            "en": "Visible subcutaneous fat without exposed muscle/bone/tendon or equivalent deeper structures."
+          },
+          "incorrect": {
+            "zh": "将骨、肌肉或肌腱暴露列为3期区别特征不正确。",
+            "en": "Exposed bone, muscle, or tendon is not the distinguishing stage-3 feature."
+          },
+          "follow_up": {
+            "zh": "请补充这一点：指出全层缺失可见脂肪，但无更深部结构暴露。可以只补充这一点，无需重写之前的答案。",
+            "en": "Please add this point: Describe full-thickness loss with visible fat but no exposed deeper structures. You can supplement your earlier answer without rewriting it."
+          }
+        }
+      ],
+      "optional_extensions": {
+        "zh": "其他定义细节、机制、分期鉴别、治疗和完整护理计划可作拓展；不要要求复述题面全部内容。",
+        "en": "Other definition details, mechanisms, stage comparisons, treatment, and a full care plan are optional; do not require every detail of the supplied description."
+      },
+      "source": {
+        "book": "Nursing Fundamentals (Open RN), H5P Integumentary Glossary Cards",
+        "section": "10.8 Learning Activities",
+        "question_number": "Card 36",
+        "authors": "Chippewa Valley Technical College / Open RN",
+        "question_url": "https://studio.libretexts.org/h5p/6884/embed",
+        "answer_url": "https://studio.libretexts.org/h5p/6884/embed",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "retrieved_at": "2026-10-02",
+        "snapshots": [
+          "h5p_6884.json"
+        ],
+        "h5p_card_index": 35
+      },
+      "basis_question": "Full-thickness tissue loss in which fat is visible, but cartilage, tendon, ligament, muscle, and bone are not exposed.\n\nName the concept described and briefly identify its key distinguishing feature.",
+      "basis_answer": "Stage 3 pressure injuries"
+    },
+    "openrn-skin-card-37": {
+      "version": "2026-10-02-r1",
+      "origin": "project_authored_from_supplied_question_and_textbook_key",
+      "review_status": "source_scope_checked_not_independent_clinical_review",
+      "required": [
+        {
+          "id": "R1",
+          "criterion": {
+            "zh": "识别概念：4 期压力性损伤",
+            "en": "Identify the concept: Stage 4 pressure injuries"
+          },
+          "acceptable": {
+            "zh": "接受中英文术语、常见同义名称、单复数及不改变含义的轻微拼写差异。",
+            "en": "Accept the Chinese/English term, common synonyms, singular/plural forms, and minor unambiguous spelling variants."
+          },
+          "incorrect": {
+            "zh": "明确给出不同概念且未自行纠正才判错；没有给名称算遗漏。",
+            "en": "An explicitly different concept, unless corrected, is incorrect; no name is missing."
+          },
+          "follow_up": {
+            "zh": "请补充这一点：识别概念：4 期压力性损伤。可以只补充这一点，无需重写之前的答案。",
+            "en": "Please add this point: Identify the concept: Stage 4 pressure injuries. You can supplement your earlier answer without rewriting it."
+          }
+        },
+        {
+          "id": "R2",
+          "criterion": {
+            "zh": "指出全层缺失并有深部结构暴露",
+            "en": "Describe full-thickness loss with exposed deeper structures"
+          },
+          "acceptable": {
+            "zh": "肌肉、骨、肌腱、韧带或软骨暴露，任选其中之一与全层损伤关联即可。",
+            "en": "Full-thickness loss with exposed muscle, bone, tendon, ligament, or cartilage; listing every structure is unnecessary."
+          },
+          "incorrect": {
+            "zh": "仅脂肪可见且无更深结构暴露，不能作为4期区别依据。",
+            "en": "Visible fat alone without deeper exposure does not distinguish stage 4."
+          },
+          "follow_up": {
+            "zh": "请补充这一点：指出全层缺失并有深部结构暴露。可以只补充这一点，无需重写之前的答案。",
+            "en": "Please add this point: Describe full-thickness loss with exposed deeper structures. You can supplement your earlier answer without rewriting it."
+          }
+        }
+      ],
+      "optional_extensions": {
+        "zh": "其他定义细节、机制、分期鉴别、治疗和完整护理计划可作拓展；不要要求复述题面全部内容。",
+        "en": "Other definition details, mechanisms, stage comparisons, treatment, and a full care plan are optional; do not require every detail of the supplied description."
+      },
+      "source": {
+        "book": "Nursing Fundamentals (Open RN), H5P Integumentary Glossary Cards",
+        "section": "10.8 Learning Activities",
+        "question_number": "Card 37",
+        "authors": "Chippewa Valley Technical College / Open RN",
+        "question_url": "https://studio.libretexts.org/h5p/6884/embed",
+        "answer_url": "https://studio.libretexts.org/h5p/6884/embed",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "retrieved_at": "2026-10-02",
+        "snapshots": [
+          "h5p_6884.json"
+        ],
+        "h5p_card_index": 36
+      },
+      "basis_question": "Full-thickness tissue loss like Stage 3 pressure injuries but also have exposed cartilage, tendon, ligament, muscle, or bone.\n\nName the concept described and briefly identify its key distinguishing feature.",
+      "basis_answer": "Stage 4 pressure injuries"
+    },
+    "openrn-skin-card-39": {
+      "version": "2026-10-02-r1",
+      "origin": "project_authored_from_supplied_question_and_textbook_key",
+      "review_status": "source_scope_checked_not_independent_clinical_review",
+      "required": [
+        {
+          "id": "R1",
+          "criterion": {
+            "zh": "识别概念：窦道",
+            "en": "Identify the concept: Tunneling"
+          },
+          "acceptable": {
+            "zh": "接受中英文术语、常见同义名称、单复数及不改变含义的轻微拼写差异。",
+            "en": "Accept the Chinese/English term, common synonyms, singular/plural forms, and minor unambiguous spelling variants."
+          },
+          "incorrect": {
+            "zh": "明确给出不同概念且未自行纠正才判错；没有给名称算遗漏。",
+            "en": "An explicitly different concept, unless corrected, is incorrect; no name is missing."
+          },
+          "follow_up": {
+            "zh": "请补充这一点：识别概念：窦道。可以只补充这一点，无需重写之前的答案。",
+            "en": "Please add this point: Identify the concept: Tunneling. You can supplement your earlier answer without rewriting it."
+          }
+        },
+        {
+          "id": "R2",
+          "criterion": {
+            "zh": "指出伤口向皮下延伸的通道",
+            "en": "Describe a channel extending from a wound beneath the skin"
+          },
+          "acceptable": {
+            "zh": "可曲折的通道、隧道样延伸均可。",
+            "en": "A passageway, tunnel, or twisting tract below the skin."
+          },
+          "incorrect": {
+            "zh": "不能把一般表浅擦伤或只在伤缘下的袋状空腔作为通道定义。",
+            "en": "A superficial abrasion or only a pocket under a wound edge does not describe tunneling."
+          },
+          "follow_up": {
+            "zh": "请补充这一点：指出伤口向皮下延伸的通道。可以只补充这一点，无需重写之前的答案。",
+            "en": "Please add this point: Describe a channel extending from a wound beneath the skin. You can supplement your earlier answer without rewriting it."
+          }
+        }
+      ],
+      "optional_extensions": {
+        "zh": "其他定义细节、机制、分期鉴别、治疗和完整护理计划可作拓展；不要要求复述题面全部内容。",
+        "en": "Other definition details, mechanisms, stage comparisons, treatment, and a full care plan are optional; do not require every detail of the supplied description."
+      },
+      "source": {
+        "book": "Nursing Fundamentals (Open RN), H5P Integumentary Glossary Cards",
+        "section": "10.8 Learning Activities",
+        "question_number": "Card 39",
+        "authors": "Chippewa Valley Technical College / Open RN",
+        "question_url": "https://studio.libretexts.org/h5p/6884/embed",
+        "answer_url": "https://studio.libretexts.org/h5p/6884/embed",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "retrieved_at": "2026-10-02",
+        "snapshots": [
+          "h5p_6884.json"
+        ],
+        "h5p_card_index": 38
+      },
+      "basis_question": "Passageways underneath the surface of the skin that extend from a wound and can take twists and turns.\n\nName the concept described and briefly identify its key distinguishing feature.",
+      "basis_answer": "Tunneling"
+    },
+    "openrn-skin-card-41": {
+      "version": "2026-10-02-r1",
+      "origin": "project_authored_from_supplied_question_and_textbook_key",
+      "review_status": "source_scope_checked_not_independent_clinical_review",
+      "required": [
+        {
+          "id": "R1",
+          "criterion": {
+            "zh": "识别概念：不可分期压力性损伤",
+            "en": "Identify the concept: Unstageable pressure injuries"
+          },
+          "acceptable": {
+            "zh": "接受中英文术语、常见同义名称、单复数及不改变含义的轻微拼写差异。",
+            "en": "Accept the Chinese/English term, common synonyms, singular/plural forms, and minor unambiguous spelling variants."
+          },
+          "incorrect": {
+            "zh": "明确给出不同概念且未自行纠正才判错；没有给名称算遗漏。",
+            "en": "An explicitly different concept, unless corrected, is incorrect; no name is missing."
+          },
+          "follow_up": {
+            "zh": "请补充这一点：识别概念：不可分期压力性损伤。可以只补充这一点，无需重写之前的答案。",
+            "en": "Please add this point: Identify the concept: Unstageable pressure injuries. You can supplement your earlier answer without rewriting it."
+          }
+        },
+        {
+          "id": "R2",
+          "criterion": {
+            "zh": "指出腐肉或焦痂遮挡而无法确认深度",
+            "en": "Describe tissue loss with depth obscured by slough or eschar"
+          },
+          "acceptable": {
+            "zh": "全层损伤被腐肉/焦痂遮盖，深度无法确认均可；不用同时写两种遮挡物。",
+            "en": "Full-thickness loss with extent/depth obscured by either slough or eschar."
+          },
+          "incorrect": {
+            "zh": "不可分期不等于浅表损伤，也不能凭猜测赋具体分期。",
+            "en": "Unstageable does not mean superficial, and the obscured depth must not be guessed."
+          },
+          "follow_up": {
+            "zh": "请补充这一点：指出腐肉或焦痂遮挡而无法确认深度。可以只补充这一点，无需重写之前的答案。",
+            "en": "Please add this point: Describe tissue loss with depth obscured by slough or eschar. You can supplement your earlier answer without rewriting it."
+          }
+        }
+      ],
+      "optional_extensions": {
+        "zh": "其他定义细节、机制、分期鉴别、治疗和完整护理计划可作拓展；不要要求复述题面全部内容。",
+        "en": "Other definition details, mechanisms, stage comparisons, treatment, and a full care plan are optional; do not require every detail of the supplied description."
+      },
+      "source": {
+        "book": "Nursing Fundamentals (Open RN), H5P Integumentary Glossary Cards",
+        "section": "10.8 Learning Activities",
+        "question_number": "Card 41",
+        "authors": "Chippewa Valley Technical College / Open RN",
+        "question_url": "https://studio.libretexts.org/h5p/6884/embed",
+        "answer_url": "https://studio.libretexts.org/h5p/6884/embed",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "retrieved_at": "2026-10-02",
+        "snapshots": [
+          "h5p_6884.json"
+        ],
+        "h5p_card_index": 40
+      },
+      "basis_question": "Full-thickness skin and tissue loss in which the extent of tissue damage within the ulcer cannot be confirmed because it is obscured by slough or eschar.\n\nName the concept described and briefly identify its key distinguishing feature.",
+      "basis_answer": "Unstageable pressure injuries"
+    }
+  }
+}

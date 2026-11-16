@@ -1,0 +1,63 @@
+{
+  "schema_version": "published_objective_rules_v1",
+  "version": "published_truth_order_20261013_v1",
+  "source_signature_fields": [
+    "id",
+    "case",
+    "case_zh",
+    "answer",
+    "question_type",
+    "options",
+    "options_en",
+    "correct_options"
+  ],
+  "scope": "将既有发布答案的明确真伪和有序选项绑定为固定规则；不改题干、原答案、原rubric或审核历史。判断题只核对真伪，排序题只核对全部选项的发布顺序，不要求更正、理由或护理方案。",
+  "items": {
+    "openrn-skills22-2": {
+      "question_type": "ordering",
+      "source_sha256": "e2ba9933ec91200f36bf89acd638facb6a728fa26fc293e4a2ca41cb4eb70907",
+      "correct_order": [
+        "D",
+        "B",
+        "C",
+        "A"
+      ],
+      "basis": {
+        "source_file": "data/teaching_bank/openrn.json",
+        "source_item_id": "openrn-skills22-2",
+        "answer_locator": "items[id=openrn-skills22-2].answer.en",
+        "published_answer_quote": "D – Check pulse oximetry, B – Suction patient, C – Provide oxygen via the trach collar if warranted, A – Assess lung sounds",
+        "label_source_file": "data/teaching_bank/legacy_objective_metadata.json",
+        "label_locator": "items.openrn-skills22-2.additions.options/en",
+        "key_locator": "data/teaching_bank/content_reviews.json:items.openrn-skills22-2.additions.correct_options",
+        "question_snapshot": "skills22_q.txt",
+        "answer_snapshot": "skills22_a.txt",
+        "derivation": "复制既有已审核有序选项key；与保留的教材配套答案逐项核对。选项中的条件原文保留，不强制另写理由或护理方案。"
+      }
+    },
+    "openrn-skills11-1": {
+      "question_type": "ordering",
+      "source_sha256": "1d60228629f6116c8c272fefc8ab3026e84eccecc92a42c2ffdc45167fb19463",
+      "correct_order": [
+        "F",
+        "E",
+        "B",
+        "C",
+        "A",
+        "D"
+      ],
+      "basis": {
+        "source_file": "data/teaching_bank/openrn.json",
+        "source_item_id": "openrn-skills11-1",
+        "answer_locator": "items[id=openrn-skills11-1].answer.en",
+        "published_answer_quote": "Priority\nActions\nFirst\nAssess pulse oximetry\nSecond\nAssess lung sounds\nThird\nApply oxygen as ordered\nFour\nReassess pulse oximetry\nFifth\nInstitute actions to improve oxygenation\nSixth\nTeach oxygen safety",
+        "label_source_file": "data/teaching_bank/legacy_objective_metadata.json",
+        "label_locator": "items.openrn-skills11-1.additions.options/en",
+        "key_locator": "data/teaching_bank/content_reviews.json:items.openrn-skills11-1.additions.correct_options",
+        "question_snapshot": "skills11_q.txt",
+        "answer_snapshot": "skills11_a.txt",
+        "derivation": "复制既有已审核有序选项key；与保留的教材配套答案逐项核对。选项中的条件原文保留，不强制另写理由或护理方案。"
+      }
+    }
+  }
+}

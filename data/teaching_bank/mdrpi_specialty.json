@@ -1,0 +1,2275 @@
+{
+  "version": "2026-10-04-mdrpi-r2",
+  "adaptations_license": "CC BY-SA 4.0",
+  "content_origin": "Original project-authored fictional practice grounded in cited clinical sources",
+  "independent_expert_review": "pending",
+  "items": [
+    {
+      "id": "mdrpi-cannula-blanching",
+      "title": "鼻导管耳后压痕：先判断，再复评 / Ear indentation from oxygen tubing",
+      "case": "Fictional focused exercise: An alert adult uses oxygen via nasal cannula. A pale red indentation follows the tubing behind the ear; it blanches, the skin is intact, and no purple discoloration is seen. Tubing is adjusted without interrupting oxygen therapy. The mark becomes lighter but mild discomfort remains.\n\nAnswer two points: (1) Are these findings sufficient to classify a Stage 1 pressure injury, and why? (2) What local changes and device function should be reassessed? A full care plan is not required.",
+      "case_zh": "虚构专项练习：一名清醒成人使用鼻导管吸氧。耳后沿管路出现浅红色压痕，按压可褪色，表皮完整，未见紫红色改变；在保持氧疗的情况下调整管路后，压痕颜色变浅，但仍有轻微不适。\n\n请回答两点：①这些资料是否足以判定为1期压力性损伤，理由是什么；②调整后应复评哪些局部变化和器械功能。无需写完整护理计划。",
+      "answer": {
+        "zh": "当前可褪色、皮肤完整且减压后变浅的资料，不足以按1期压力性损伤判定；1期的关键是局限性不可褪色红斑。仍有压痕与不适，应继续关注受压。调整后比较耳后颜色、完整性和不适变化，同时确认管路不再牵拉、氧疗装置工作正常、氧合维持；不能把颜色变浅直接写成风险已消失。",
+        "en": "The blanching mark that lightens after offloading is insufficient for Stage 1 classification, which requires localized nonblanchable erythema. Pressure exposure and discomfort still need attention. Compare the skin color, integrity and discomfort after adjustment, and verify reduced tubing tension, functioning oxygen delivery and maintained oxygenation. A lighter mark alone does not establish that the risk has resolved."
+      },
+      "source": {
+        "book": "MDRPI focused practice (project-authored)",
+        "section": "Ear indentation from oxygen tubing",
+        "question_number": "M01",
+        "authors": "MDRPI project; AI-assisted content authoring",
+        "question_url": "https://cdn.ymaws.com/npiap.com/resource/resmgr/NPIAP-Staging-Poster.pdf",
+        "answer_url": "https://cdn.ymaws.com/npiap.com/resource/resmgr/NPIAP-Staging-Poster.pdf",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "retrieved_at": "2026-10-04",
+        "references": [
+          {
+            "id": "npiap-staging-2016",
+            "title": "NPIAP Pressure Injury and Stages",
+            "url": "https://cdn.ymaws.com/npiap.com/resource/resmgr/NPIAP-Staging-Poster.pdf",
+            "edition": "September 2016",
+            "locator": "PDF pp. 1–2: Stage 1, Stage 2 and Mucosal Membrane Pressure Injury",
+            "checked_at": "2026-10-04",
+            "license": "Copyright NPIAP; cited as evidence, not relicensed"
+          },
+          {
+            "id": "openrn-pressure-2e",
+            "title": "Open RN Nursing Fundamentals 2e: 10.4 Pressure Injuries",
+            "url": "https://wtcs.pressbooks.pub/nursingfundamentals/chapter/10-4-pressure-injuries/",
+            "edition": "2e (2024)",
+            "locator": "Stage 1 Pressure Injuries",
+            "checked_at": "2026-10-04",
+            "license": "CC BY 4.0 (chapter text; image permissions differ)"
+          },
+          {
+            "id": "ig-drpi2",
+            "title": "International Guideline: Device-Related Pressure Injuries",
+            "url": "https://www.internationalguideline.com/drpi",
+            "edition": "Fourth edition; published 2025-09-16; accessed 2026-10-04",
+            "locator": "DRPI2: Implementation considerations (inspection without interfering with device function)",
+            "checked_at": "2026-10-04",
+            "license": "Copyright NPIAP/EPUAP/PPPIA; cited as evidence, not relicensed"
+          },
+          {
+            "id": "ig-drpi3",
+            "title": "International Guideline: Device-Related Pressure Injuries",
+            "url": "https://www.internationalguideline.com/drpi",
+            "edition": "Fourth edition; published 2025-09-16; accessed 2026-10-04",
+            "locator": "DRPI3: Device securements and repositioning; cervical collar consultation",
+            "checked_at": "2026-10-04",
+            "license": "Copyright NPIAP/EPUAP/PPPIA; cited as evidence, not relicensed"
+          }
+        ],
+        "snapshots": [
+          "mdrpi_source_basis_20261004.json"
+        ],
+        "attribution_note": "The license applies to original project exercise content. External source copyrights and licenses remain separate; URLs identify supporting evidence, not an original publisher question or answer."
+      },
+      "category": "mdrpi",
+      "kind": "fictional_case_question",
+      "level": "基础",
+      "scenario_id": "cannula-blanching",
+      "has_reference_answer": true,
+      "answer_origin": "project_authored_source_grounded",
+      "review_status": "source_basis_checked_pending_independent_expert_review",
+      "adaptation": "Original fictional teaching vignette and bilingual reference points authored for this project, with source-bound criteria. Not a publisher-supplied answer or independently clinically validated content.",
+      "skill_ids": [
+        "pressure-classification",
+        "device-reassessment"
+      ],
+      "learning_objectives": {
+        "zh": [
+          "按皮肤表现判断分期依据",
+          "同时复评组织与器械功能"
+        ],
+        "en": [
+          "Use tissue findings to assess classification",
+          "Reassess both tissue and device function"
+        ]
+      },
+      "scope": {
+        "population": "Adult",
+        "devices": [
+          "Nasal cannula"
+        ],
+        "setting": "Oxygen therapy",
+        "limits": "Blanching intact skin; no confirmed pressure injury. Preserve prescribed oxygen delivery; no fixed offloading duration is supplied."
+      },
+      "hints": {
+        "zh": [
+          {
+            "cue": "先把颜色是否可褪色和表皮是否完整分开看。",
+            "explanation": "皮肤完整本身不能确定分期，颜色反应还需要单独判断。"
+          },
+          {
+            "cue": "再将题目观察与1期判定的颜色反应对照。",
+            "explanation": "把当前依据与仍需观察的受压风险分开表达。"
+          }
+        ],
+        "en": [
+          {
+            "cue": "Separate blanching behavior from whether the skin is intact.",
+            "explanation": "Intact skin alone does not determine the stage; color response matters separately."
+          },
+          {
+            "cue": "Compare the color response with the requirement for Stage 1.",
+            "explanation": "Separate the present classification evidence from pressure risk that still needs monitoring."
+          }
+        ]
+      },
+      "hint_pathways": {
+        "R1": {
+          "zh": [
+            {
+              "cue": "先把颜色是否可褪色和表皮是否完整分开看。",
+              "explanation": "皮肤完整本身不能确定分期，颜色反应还需要单独判断。"
+            },
+            {
+              "cue": "再将题目观察与1期判定的颜色反应对照。",
+              "explanation": "把当前依据与仍需观察的受压风险分开表达。"
+            }
+          ],
+          "en": [
+            {
+              "cue": "Separate blanching behavior from whether the skin is intact.",
+              "explanation": "Intact skin alone does not determine the stage; color response matters separately."
+            },
+            {
+              "cue": "Compare the color response with the requirement for Stage 1.",
+              "explanation": "Separate the present classification evidence from pressure risk that still needs monitoring."
+            }
+          ]
+        },
+        "R2": {
+          "zh": [
+            {
+              "cue": "把复评分成局部组织和治疗装置两部分。",
+              "explanation": "舒适度变化需要记录，但装置是否持续发挥作用也需要确认。"
+            },
+            {
+              "cue": "每一部分选能与调整前比较的观察。",
+              "explanation": "描述实际复评内容即可，不必补造正常结果。"
+            }
+          ],
+          "en": [
+            {
+              "cue": "Divide reassessment into tissue and treatment-device checks.",
+              "explanation": "Record comfort changes and verify that the device still performs its function."
+            },
+            {
+              "cue": "Choose observations that can be compared with the pre-adjustment state.",
+              "explanation": "Describe what to reassess without inventing a normal result."
+            }
+          ]
+        }
+      },
+      "rubric": {
+        "version": "2026-10-04-mdrpi-r1",
+        "origin": "project_authored_source_grounded",
+        "review_status": "source_basis_checked_pending_independent_expert_review",
+        "required": [
+          {
+            "id": "R1",
+            "criterion": {
+              "zh": "说明现有可褪色资料不足以判为1期，并给出不可褪色这一判定依据",
+              "en": "Explain why these blanching findings do not establish Stage 1"
+            },
+            "acceptable": {
+              "zh": "可说“暂不能定为1期”“证据不足”；只要说明可褪色与1期要求的不可褪色不同，不必背诵完整定义。",
+              "en": "Accept 'insufficient evidence for Stage 1' or 'cannot classify it as Stage 1 yet', linked to blanching versus nonblanching."
+            },
+            "incorrect": {
+              "zh": "明确把可褪色压痕判为1期才属错误；未说明依据为部分覆盖或遗漏。",
+              "en": "Calling the blanching mark Stage 1 is incorrect. An absent reason is partial or missing."
+            },
+            "follow_up": {
+              "zh": "请只补充这一点：说明现有可褪色资料不足以判为1期，并给出不可褪色这一判定依据。已说清的内容无需重写。",
+              "en": "Please add only this point: Explain why these blanching findings do not establish Stage 1. You need not repeat points already covered."
+            },
+            "reference_ids": [
+              "npiap-staging-2016",
+              "openrn-pressure-2e"
+            ]
+          },
+          {
+            "id": "R2",
+            "criterion": {
+              "zh": "复评局部组织和不适，同时确认氧疗功能与氧合维持",
+              "en": "Reassess local tissue and discomfort together with oxygen delivery"
+            },
+            "acceptable": {
+              "zh": "接受颜色/完整性与疼痛或舒适度的前后比较，并确认供氧、氧合或监测读数；不强求逐字列全指标。",
+              "en": "Accept a before/after comparison of skin findings and discomfort plus checking oxygen delivery or oxygenation; an exhaustive list is unnecessary."
+            },
+            "incorrect": {
+              "zh": "明确只看颜色、无需确认氧疗，或断言颜色变浅表示风险消失，才属错误。",
+              "en": "Explicitly dismissing device/oxygenation checks or claiming the lighter mark proves risk has ended is incorrect."
+            },
+            "follow_up": {
+              "zh": "请只补充这一点：复评局部组织和不适，同时确认氧疗功能与氧合维持。已说清的内容无需重写。",
+              "en": "Please add only this point: Reassess local tissue and discomfort together with oxygen delivery. You need not repeat points already covered."
+            },
+            "reference_ids": [
+              "ig-drpi2",
+              "ig-drpi3"
+            ]
+          }
+        ],
+        "optional_extensions": {
+          "zh": "可补充管路支撑和舒适度沟通；不要求Braden六分项、敷料品牌或统一减压时长。",
+          "en": "Tubing support and comfort communication are optional. Braden subscales, dressing brands and a universal offloading duration are not required."
+        },
+        "misconceptions": [
+          {
+            "id": "mdrpi-cannula-blanching-M1",
+            "criterion_id": "R1",
+            "statement": {
+              "zh": "有压痕和红色就一定是1期。",
+              "en": "Any red indentation must be Stage 1."
+            },
+            "feedback": {
+              "zh": "压痕提示受压；判定1期还需要局限性不可褪色红斑，不能只看表皮完整。",
+              "en": "An indentation indicates pressure exposure; Stage 1 also requires localized nonblanchable erythema."
+            }
+          },
+          {
+            "id": "mdrpi-cannula-blanching-M2",
+            "criterion_id": "R2",
+            "statement": {
+              "zh": "颜色变浅就证明处理成功，不必再看供氧。",
+              "en": "A lighter mark proves success, so oxygen delivery need not be checked."
+            },
+            "feedback": {
+              "zh": "组织改善与治疗有效需要分别复评，不能由一项观察推定另一项。",
+              "en": "Tissue improvement and effective treatment require separate reassessment."
+            }
+          }
+        ],
+        "source": {
+          "book": "MDRPI focused practice (project-authored)",
+          "section": "Ear indentation from oxygen tubing",
+          "question_number": "M01",
+          "authors": "MDRPI project; AI-assisted content authoring",
+          "question_url": "https://cdn.ymaws.com/npiap.com/resource/resmgr/NPIAP-Staging-Poster.pdf",
+          "answer_url": "https://cdn.ymaws.com/npiap.com/resource/resmgr/NPIAP-Staging-Poster.pdf",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "retrieved_at": "2026-10-04",
+          "references": [
+            {
+              "id": "npiap-staging-2016",
+              "title": "NPIAP Pressure Injury and Stages",
+              "url": "https://cdn.ymaws.com/npiap.com/resource/resmgr/NPIAP-Staging-Poster.pdf",
+              "edition": "September 2016",
+              "locator": "PDF pp. 1–2: Stage 1, Stage 2 and Mucosal Membrane Pressure Injury",
+              "checked_at": "2026-10-04",
+              "license": "Copyright NPIAP; cited as evidence, not relicensed"
+            },
+            {
+              "id": "openrn-pressure-2e",
+              "title": "Open RN Nursing Fundamentals 2e: 10.4 Pressure Injuries",
+              "url": "https://wtcs.pressbooks.pub/nursingfundamentals/chapter/10-4-pressure-injuries/",
+              "edition": "2e (2024)",
+              "locator": "Stage 1 Pressure Injuries",
+              "checked_at": "2026-10-04",
+              "license": "CC BY 4.0 (chapter text; image permissions differ)"
+            },
+            {
+              "id": "ig-drpi2",
+              "title": "International Guideline: Device-Related Pressure Injuries",
+              "url": "https://www.internationalguideline.com/drpi",
+              "edition": "Fourth edition; published 2025-09-16; accessed 2026-10-04",
+              "locator": "DRPI2: Implementation considerations (inspection without interfering with device function)",
+              "checked_at": "2026-10-04",
+              "license": "Copyright NPIAP/EPUAP/PPPIA; cited as evidence, not relicensed"
+            },
+            {
+              "id": "ig-drpi3",
+              "title": "International Guideline: Device-Related Pressure Injuries",
+              "url": "https://www.internationalguideline.com/drpi",
+              "edition": "Fourth edition; published 2025-09-16; accessed 2026-10-04",
+              "locator": "DRPI3: Device securements and repositioning; cervical collar consultation",
+              "checked_at": "2026-10-04",
+              "license": "Copyright NPIAP/EPUAP/PPPIA; cited as evidence, not relicensed"
+            }
+          ],
+          "snapshots": [
+            "mdrpi_source_basis_20261004.json"
+          ],
+          "attribution_note": "The license applies to original project exercise content. External source copyrights and licenses remain separate; URLs identify supporting evidence, not an original publisher question or answer."
+        },
+        "basis_question": "Fictional focused exercise: An alert adult uses oxygen via nasal cannula. A pale red indentation follows the tubing behind the ear; it blanches, the skin is intact, and no purple discoloration is seen. Tubing is adjusted without interrupting oxygen therapy. The mark becomes lighter but mild discomfort remains.\n\nAnswer two points: (1) Are these findings sufficient to classify a Stage 1 pressure injury, and why? (2) What local changes and device function should be reassessed? A full care plan is not required.",
+        "basis_answer": "The blanching mark that lightens after offloading is insufficient for Stage 1 classification, which requires localized nonblanchable erythema. Pressure exposure and discomfort still need attention. Compare the skin color, integrity and discomfort after adjustment, and verify reduced tubing tension, functioning oxygen delivery and maintained oxygenation. A lighter mark alone does not establish that the risk has resolved."
+      }
+    },
+    {
+      "id": "mdrpi-probe-nonblanching",
+      "title": "血氧探头下红斑：完整皮肤仍需判断 / Nonblanching erythema under an oximeter",
+      "case": "Fictional focused exercise: An adult's oximeter probe has been safely moved while monitoring continues. At the original site there is localized nonblanchable erythema, intact skin and a pattern matching the probe contact area. There is no purple discoloration, blister or open wound. The team confirms sustained pressure at that site.\n\nExplain (1) the supported stage and its basis, and (2) what the device-shaped pattern supports and what it cannot establish.",
+      "case_zh": "虚构专项练习：一名成人的血氧探头已按安全流程换至另一部位，监测继续。原接触处出现局限性不可褪色红斑，表皮完整，颜色和探头接触范围一致，无紫红色改变、水疱或开放伤口。护理团队确认该处有持续受压史。\n\n请说明：①这种表现符合哪一期的判定及依据；②“与探头形状一致”能说明什么，不能据此推断什么。",
+      "answer": {
+        "zh": "持续受压处的局限性不可褪色红斑且表皮完整，与1期压力性损伤的判定一致。红斑与探头接触范围一致，结合受压史，支持器械相关成因；器械相关描述说明成因，不另形成一个数字分期。该形状不能推出深部损伤、感染或病变已经加重，未提供的变化仍需临床评估。",
+        "en": "Localized nonblanchable erythema of intact skin at the confirmed pressure site is consistent with Stage 1. Its distribution and pressure history support a device-related cause; 'device-related' describes etiology rather than a separate numerical stage. Shape alone does not establish deep tissue injury, infection or progression."
+      },
+      "source": {
+        "book": "MDRPI focused practice (project-authored)",
+        "section": "Nonblanching erythema under an oximeter",
+        "question_number": "M02",
+        "authors": "MDRPI project; AI-assisted content authoring",
+        "question_url": "https://cdn.ymaws.com/npiap.com/resource/resmgr/NPIAP-Staging-Poster.pdf",
+        "answer_url": "https://cdn.ymaws.com/npiap.com/resource/resmgr/NPIAP-Staging-Poster.pdf",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "retrieved_at": "2026-10-04",
+        "references": [
+          {
+            "id": "npiap-staging-2016",
+            "title": "NPIAP Pressure Injury and Stages",
+            "url": "https://cdn.ymaws.com/npiap.com/resource/resmgr/NPIAP-Staging-Poster.pdf",
+            "edition": "September 2016",
+            "locator": "PDF pp. 1–2: Stage 1, Stage 2 and Mucosal Membrane Pressure Injury",
+            "checked_at": "2026-10-04",
+            "license": "Copyright NPIAP; cited as evidence, not relicensed"
+          },
+          {
+            "id": "openrn-pressure-2e",
+            "title": "Open RN Nursing Fundamentals 2e: 10.4 Pressure Injuries",
+            "url": "https://wtcs.pressbooks.pub/nursingfundamentals/chapter/10-4-pressure-injuries/",
+            "edition": "2e (2024)",
+            "locator": "Stage 1 Pressure Injuries",
+            "checked_at": "2026-10-04",
+            "license": "CC BY 4.0 (chapter text; image permissions differ)"
+          },
+          {
+            "id": "ig-drpi2",
+            "title": "International Guideline: Device-Related Pressure Injuries",
+            "url": "https://www.internationalguideline.com/drpi",
+            "edition": "Fourth edition; published 2025-09-16; accessed 2026-10-04",
+            "locator": "DRPI2: Implementation considerations (inspection without interfering with device function)",
+            "checked_at": "2026-10-04",
+            "license": "Copyright NPIAP/EPUAP/PPPIA; cited as evidence, not relicensed"
+          }
+        ],
+        "snapshots": [
+          "mdrpi_source_basis_20261004.json"
+        ],
+        "attribution_note": "The license applies to original project exercise content. External source copyrights and licenses remain separate; URLs identify supporting evidence, not an original publisher question or answer."
+      },
+      "category": "mdrpi",
+      "kind": "fictional_case_question",
+      "level": "基础",
+      "scenario_id": "probe-nonblanching",
+      "has_reference_answer": true,
+      "answer_origin": "project_authored_source_grounded",
+      "review_status": "source_basis_checked_pending_independent_expert_review",
+      "adaptation": "Original fictional teaching vignette and bilingual reference points authored for this project, with source-bound criteria. Not a publisher-supplied answer or independently clinically validated content.",
+      "skill_ids": [
+        "pressure-classification",
+        "cause-versus-stage"
+      ],
+      "learning_objectives": {
+        "zh": [
+          "辨别皮肤完整与不可褪色红斑",
+          "区分器械成因与损伤分期"
+        ],
+        "en": [
+          "Distinguish intact skin from the blanching criterion",
+          "Separate device etiology from injury stage"
+        ]
+      },
+      "scope": {
+        "population": "Adult",
+        "devices": [
+          "Pulse oximeter"
+        ],
+        "setting": "Continued monitoring after safe relocation",
+        "limits": "Pressure history is confirmed. No deep-red/purple color or other evidence of deeper tissue loss is supplied."
+      },
+      "hints": {
+        "zh": [
+          {
+            "cue": "先对照皮肤是否破损和颜色反应。",
+            "explanation": "数字分期由组织表现支持，不由探头名称决定。"
+          },
+          {
+            "cue": "把不可褪色红斑与皮肤完整这两个线索合起来。",
+            "explanation": "不要因为表皮没有开放就忽略已给出的受压改变。"
+          }
+        ],
+        "en": [
+          {
+            "cue": "Compare tissue integrity and the color response.",
+            "explanation": "Tissue findings support the stage, rather than the device name."
+          },
+          {
+            "cue": "Combine nonblanchable erythema with intact skin.",
+            "explanation": "An intact epidermis does not erase the supplied pressure-related change."
+          }
+        ]
+      },
+      "hint_pathways": {
+        "R1": {
+          "zh": [
+            {
+              "cue": "先对照皮肤是否破损和颜色反应。",
+              "explanation": "数字分期由组织表现支持，不由探头名称决定。"
+            },
+            {
+              "cue": "把不可褪色红斑与皮肤完整这两个线索合起来。",
+              "explanation": "不要因为表皮没有开放就忽略已给出的受压改变。"
+            }
+          ],
+          "en": [
+            {
+              "cue": "Compare tissue integrity and the color response.",
+              "explanation": "Tissue findings support the stage, rather than the device name."
+            },
+            {
+              "cue": "Combine nonblanchable erythema with intact skin.",
+              "explanation": "An intact epidermis does not erase the supplied pressure-related change."
+            }
+          ]
+        },
+        "R2": {
+          "zh": [
+            {
+              "cue": "把造成损伤的原因和组织受损程度写成两句话。",
+              "explanation": "与接触范围一致可以帮助分析来源，但不能替代组织评估。"
+            },
+            {
+              "cue": "只保留题目能支持的结论。",
+              "explanation": "指出一个目前不能由形状推出的结论即可。"
+            }
+          ],
+          "en": [
+            {
+              "cue": "Describe the cause and the tissue severity in separate sentences.",
+              "explanation": "The contact pattern can support causation, but cannot replace tissue assessment."
+            },
+            {
+              "cue": "Keep conclusions within the supplied observations.",
+              "explanation": "Name one conclusion that the shape alone cannot support."
+            }
+          ]
+        }
+      },
+      "rubric": {
+        "version": "2026-10-04-mdrpi-r1",
+        "origin": "project_authored_source_grounded",
+        "review_status": "source_basis_checked_pending_independent_expert_review",
+        "required": [
+          {
+            "id": "R1",
+            "criterion": {
+              "zh": "判断与1期一致，并说明完整皮肤和局限性不可褪色红斑",
+              "en": "Identify findings consistent with Stage 1 and explain the tissue basis"
+            },
+            "acceptable": {
+              "zh": "“1期”“一期”“Stage 1”均可，理由明确为完整皮肤的不可褪色红斑；不要求逐字定义。",
+              "en": "Accept 'Stage 1' or an equivalent numerical name with intact skin and nonblanchable erythema as its basis."
+            },
+            "incorrect": {
+              "zh": "因表皮完整而否认任何压力性损伤，或直接判2期，属于错误；缺少理由为部分覆盖。",
+              "en": "Denying injury solely because skin is intact, or classifying it as Stage 2, is incorrect; a missing reason is partial."
+            },
+            "follow_up": {
+              "zh": "请只补充这一点：判断与1期一致，并说明完整皮肤和局限性不可褪色红斑。已说清的内容无需重写。",
+              "en": "Please add only this point: Identify findings consistent with Stage 1 and explain the tissue basis. You need not repeat points already covered."
+            },
+            "reference_ids": [
+              "npiap-staging-2016",
+              "openrn-pressure-2e"
+            ]
+          },
+          {
+            "id": "R2",
+            "criterion": {
+              "zh": "将器械接触形状用于判断成因，避免据此推断未给出的深度或感染",
+              "en": "Use the contact pattern for etiology without inventing depth or infection"
+            },
+            "acceptable": {
+              "zh": "接受“支持探头受压相关”“器械相关是原因，分期另看组织”；需说明形状本身不能证实深部损伤、感染或更重分期之一。",
+              "en": "Accept device-pressure causation separate from staging, with at least one limit such as shape not proving depth, infection or a higher stage."
+            },
+            "incorrect": {
+              "zh": "把器械相关当独立数字分期，或只凭形状断定深部损伤/感染，属于错误。",
+              "en": "Treating device etiology as a separate numbered stage or using shape alone to diagnose depth/infection is incorrect."
+            },
+            "follow_up": {
+              "zh": "请只补充这一点：将器械接触形状用于判断成因，避免据此推断未给出的深度或感染。已说清的内容无需重写。",
+              "en": "Please add only this point: Use the contact pattern for etiology without inventing depth or infection. You need not repeat points already covered."
+            },
+            "reference_ids": [
+              "npiap-staging-2016",
+              "ig-drpi2"
+            ]
+          }
+        ],
+        "optional_extensions": {
+          "zh": "可补充减压后的复评与记录；不要求完整预防方案或未提供的感染检查。",
+          "en": "Offloading follow-up and documentation are optional; a full prevention plan or unprovided infection workup is not required."
+        },
+        "misconceptions": [
+          {
+            "id": "mdrpi-probe-nonblanching-M1",
+            "criterion_id": "R1",
+            "statement": {
+              "zh": "皮肤没破，所以不存在压力性损伤。",
+              "en": "There is no pressure injury because the skin is unbroken."
+            },
+            "feedback": {
+              "zh": "表皮完整不能排除1期；局限性不可褪色红斑是本题关键依据。",
+              "en": "An intact epidermis does not exclude Stage 1; localized nonblanchable erythema is the key finding."
+            }
+          },
+          {
+            "id": "mdrpi-probe-nonblanching-M2",
+            "criterion_id": "R2",
+            "statement": {
+              "zh": "与探头形状一致就说明已经出现深部感染。",
+              "en": "Matching the probe shape proves deep infection."
+            },
+            "feedback": {
+              "zh": "器械形状帮助识别成因，不能单独证明感染或深度。",
+              "en": "Device shape supports etiology, not a diagnosis of infection or tissue depth."
+            }
+          }
+        ],
+        "source": {
+          "book": "MDRPI focused practice (project-authored)",
+          "section": "Nonblanching erythema under an oximeter",
+          "question_number": "M02",
+          "authors": "MDRPI project; AI-assisted content authoring",
+          "question_url": "https://cdn.ymaws.com/npiap.com/resource/resmgr/NPIAP-Staging-Poster.pdf",
+          "answer_url": "https://cdn.ymaws.com/npiap.com/resource/resmgr/NPIAP-Staging-Poster.pdf",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "retrieved_at": "2026-10-04",
+          "references": [
+            {
+              "id": "npiap-staging-2016",
+              "title": "NPIAP Pressure Injury and Stages",
+              "url": "https://cdn.ymaws.com/npiap.com/resource/resmgr/NPIAP-Staging-Poster.pdf",
+              "edition": "September 2016",
+              "locator": "PDF pp. 1–2: Stage 1, Stage 2 and Mucosal Membrane Pressure Injury",
+              "checked_at": "2026-10-04",
+              "license": "Copyright NPIAP; cited as evidence, not relicensed"
+            },
+            {
+              "id": "openrn-pressure-2e",
+              "title": "Open RN Nursing Fundamentals 2e: 10.4 Pressure Injuries",
+              "url": "https://wtcs.pressbooks.pub/nursingfundamentals/chapter/10-4-pressure-injuries/",
+              "edition": "2e (2024)",
+              "locator": "Stage 1 Pressure Injuries",
+              "checked_at": "2026-10-04",
+              "license": "CC BY 4.0 (chapter text; image permissions differ)"
+            },
+            {
+              "id": "ig-drpi2",
+              "title": "International Guideline: Device-Related Pressure Injuries",
+              "url": "https://www.internationalguideline.com/drpi",
+              "edition": "Fourth edition; published 2025-09-16; accessed 2026-10-04",
+              "locator": "DRPI2: Implementation considerations (inspection without interfering with device function)",
+              "checked_at": "2026-10-04",
+              "license": "Copyright NPIAP/EPUAP/PPPIA; cited as evidence, not relicensed"
+            }
+          ],
+          "snapshots": [
+            "mdrpi_source_basis_20261004.json"
+          ],
+          "attribution_note": "The license applies to original project exercise content. External source copyrights and licenses remain separate; URLs identify supporting evidence, not an original publisher question or answer."
+        },
+        "basis_question": "Fictional focused exercise: An adult's oximeter probe has been safely moved while monitoring continues. At the original site there is localized nonblanchable erythema, intact skin and a pattern matching the probe contact area. There is no purple discoloration, blister or open wound. The team confirms sustained pressure at that site.\n\nExplain (1) the supported stage and its basis, and (2) what the device-shaped pattern supports and what it cannot establish.",
+        "basis_answer": "Localized nonblanchable erythema of intact skin at the confirmed pressure site is consistent with Stage 1. Its distribution and pressure history support a device-related cause; 'device-related' describes etiology rather than a separate numerical stage. Shape alone does not establish deep tissue injury, infection or progression."
+      }
+    },
+    {
+      "id": "mdrpi-lip-mucosa",
+      "title": "气管插管下唇黏膜：如何记录 / Lip mucosal injury near an endotracheal tube",
+      "case": "Fictional focused exercise: An intubated adult has focal ulceration of the inner lower-lip mucosa where the tube has been in sustained contact. The team has assessed alternative causes and considers it pressure-related. The external lip skin is intact. The tube remains necessary for ventilation.\n\nExplain (1) whether to use Stages 1–4 or the 'Unstageable Pressure Injury' category for this mucosal injury, and (2) the treatment condition that must be preserved during inspection and offloading.",
+      "case_zh": "虚构专项练习：一名气管插管成人的下唇内侧黏膜有局灶性溃损，正处于管路持续接触部位。医护团队已完成鉴别并认为与局部压力有关；外侧唇部皮肤完整。插管仍承担必要通气。\n\n请说明：①记录损伤类别时是否使用1—4期，是否等同于“不可分期压力性损伤”；②安排局部检查和减压时必须保留的治疗条件。",
+      "answer": {
+        "zh": "可记录为黏膜性压力性损伤并写明部位、器械与观察。黏膜损伤不使用1—4期；这种不进行数字分期的规则，不等同于由腐肉或焦痂遮挡深度的“不可分期压力性损伤”。局部评估和调整应由适当人员协调，保持气道、有效通气和插管固定；不能为皮肤检查自行拔除必要插管。",
+        "en": "Document a mucosal membrane pressure injury, specifying site, device and findings. Mucosal injuries are not assigned Stages 1–4; that rule is distinct from the 'Unstageable Pressure Injury' category in which full-thickness loss is obscured by slough or eschar. Coordinate inspection and adjustment while preserving airway patency, ventilation and securement. Necessary intubation must not be removed solely for skin inspection."
+      },
+      "source": {
+        "book": "MDRPI focused practice (project-authored)",
+        "section": "Lip mucosal injury near an endotracheal tube",
+        "question_number": "M03",
+        "authors": "MDRPI project; AI-assisted content authoring",
+        "question_url": "https://cdn.ymaws.com/npiap.com/resource/resmgr/NPIAP-Staging-Poster.pdf",
+        "answer_url": "https://cdn.ymaws.com/npiap.com/resource/resmgr/NPIAP-Staging-Poster.pdf",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "retrieved_at": "2026-10-04",
+        "references": [
+          {
+            "id": "npiap-staging-2016",
+            "title": "NPIAP Pressure Injury and Stages",
+            "url": "https://cdn.ymaws.com/npiap.com/resource/resmgr/NPIAP-Staging-Poster.pdf",
+            "edition": "September 2016",
+            "locator": "PDF pp. 1–2: Stage 1, Stage 2 and Mucosal Membrane Pressure Injury",
+            "checked_at": "2026-10-04",
+            "license": "Copyright NPIAP; cited as evidence, not relicensed"
+          },
+          {
+            "id": "ig-drpi2",
+            "title": "International Guideline: Device-Related Pressure Injuries",
+            "url": "https://www.internationalguideline.com/drpi",
+            "edition": "Fourth edition; published 2025-09-16; accessed 2026-10-04",
+            "locator": "DRPI2: Implementation considerations (inspection without interfering with device function)",
+            "checked_at": "2026-10-04",
+            "license": "Copyright NPIAP/EPUAP/PPPIA; cited as evidence, not relicensed"
+          },
+          {
+            "id": "ig-drpi3",
+            "title": "International Guideline: Device-Related Pressure Injuries",
+            "url": "https://www.internationalguideline.com/drpi",
+            "edition": "Fourth edition; published 2025-09-16; accessed 2026-10-04",
+            "locator": "DRPI3: Device securements and repositioning; cervical collar consultation",
+            "checked_at": "2026-10-04",
+            "license": "Copyright NPIAP/EPUAP/PPPIA; cited as evidence, not relicensed"
+          }
+        ],
+        "snapshots": [
+          "mdrpi_source_basis_20261004.json"
+        ],
+        "attribution_note": "The license applies to original project exercise content. External source copyrights and licenses remain separate; URLs identify supporting evidence, not an original publisher question or answer."
+      },
+      "category": "mdrpi",
+      "kind": "fictional_case_question",
+      "level": "基础",
+      "scenario_id": "lip-mucosa",
+      "has_reference_answer": true,
+      "answer_origin": "project_authored_source_grounded",
+      "review_status": "source_basis_checked_pending_independent_expert_review",
+      "adaptation": "Original fictional teaching vignette and bilingual reference points authored for this project, with source-bound criteria. Not a publisher-supplied answer or independently clinically validated content.",
+      "skill_ids": [
+        "mucosal-classification",
+        "treatment-continuity"
+      ],
+      "learning_objectives": {
+        "zh": [
+          "辨别黏膜损伤与皮肤数字分期",
+          "在减压时保留必要治疗"
+        ],
+        "en": [
+          "Separate mucosal classification from skin staging",
+          "Preserve necessary therapy during offloading"
+        ]
+      },
+      "scope": {
+        "population": "Intubated adult",
+        "devices": [
+          "Endotracheal tube"
+        ],
+        "setting": "Necessary mechanical ventilation",
+        "limits": "Pressure-related mucosal cause is already clinically assessed in this vignette; do not infer it from an unassessed ulcer in a different case."
+      },
+      "hints": {
+        "zh": [
+          {
+            "cue": "先确认病变位于内侧黏膜，还是外侧皮肤。",
+            "explanation": "部位影响分类规则，不能把皮肤的分期直接套到黏膜。"
+          },
+          {
+            "cue": "再区分不使用数字分期和深度被遮挡这两种情况。",
+            "explanation": "两个名称相近的表达不代表同一种分类依据。"
+          }
+        ],
+        "en": [
+          {
+            "cue": "Identify whether the lesion is on inner mucosa or external skin.",
+            "explanation": "Anatomical tissue type affects classification; skin staging cannot simply be transferred."
+          },
+          {
+            "cue": "Distinguish absence of numerical staging from obscured tissue depth.",
+            "explanation": "Similar wording does not imply an identical classification basis."
+          }
+        ]
+      },
+      "hint_pathways": {
+        "R1": {
+          "zh": [
+            {
+              "cue": "先确认病变位于内侧黏膜，还是外侧皮肤。",
+              "explanation": "部位影响分类规则，不能把皮肤的分期直接套到黏膜。"
+            },
+            {
+              "cue": "再区分不使用数字分期和深度被遮挡这两种情况。",
+              "explanation": "两个名称相近的表达不代表同一种分类依据。"
+            }
+          ],
+          "en": [
+            {
+              "cue": "Identify whether the lesion is on inner mucosa or external skin.",
+              "explanation": "Anatomical tissue type affects classification; skin staging cannot simply be transferred."
+            },
+            {
+              "cue": "Distinguish absence of numerical staging from obscured tissue depth.",
+              "explanation": "Similar wording does not imply an identical classification basis."
+            }
+          ]
+        },
+        "R2": {
+          "zh": [
+            {
+              "cue": "把局部保护放在必要通气仍能维持的条件下。",
+              "explanation": "检查不应让维持生命的器械失去功能。"
+            },
+            {
+              "cue": "明确谁来协同，以及需要保持的器械作用。",
+              "explanation": "无需写侵入操作细节，说明协调和持续观察即可。"
+            }
+          ],
+          "en": [
+            {
+              "cue": "Place local tissue protection within continued necessary ventilation.",
+              "explanation": "Inspection should not disable a life-supporting device."
+            },
+            {
+              "cue": "Identify coordination and the device function to preserve.",
+              "explanation": "Coordination and observation suffice; invasive procedural details are unnecessary."
+            }
+          ]
+        }
+      },
+      "rubric": {
+        "version": "2026-10-04-mdrpi-r1",
+        "origin": "project_authored_source_grounded",
+        "review_status": "source_basis_checked_pending_independent_expert_review",
+        "required": [
+          {
+            "id": "R1",
+            "criterion": {
+              "zh": "记录黏膜性压力性损伤，不套数字分期，也不混同不可分期类别",
+              "en": "Describe mucosal injury without a numbered stage or the Unstageable category"
+            },
+            "acceptable": {
+              "zh": "接受“黏膜压力伤，不按1—4期”“黏膜不数字分期”；需说明不能直接称为焦痂遮挡深度的不可分期类型。",
+              "en": "Accept 'mucosal pressure injury, no numbered stage' while distinguishing it from obscured full-thickness Unstageable injury."
+            },
+            "incorrect": {
+              "zh": "明确分为2期，或把所有黏膜损伤称作焦痂遮挡深度的不可分期损伤，属于错误；未说清区别为部分覆盖。",
+              "en": "Stage 2 classification or equating every mucosal lesion with obscured full-thickness Unstageable injury is incorrect; an unclear distinction is partial."
+            },
+            "follow_up": {
+              "zh": "请只补充这一点：记录黏膜性压力性损伤，不套数字分期，也不混同不可分期类别。已说清的内容无需重写。",
+              "en": "Please add only this point: Describe mucosal injury without a numbered stage or the Unstageable category. You need not repeat points already covered."
+            },
+            "reference_ids": [
+              "npiap-staging-2016"
+            ]
+          },
+          {
+            "id": "R2",
+            "criterion": {
+              "zh": "协调检查与减压，同时保持插管固定、气道和必要通气",
+              "en": "Coordinate inspection/offloading while preserving airway, ventilation and securement"
+            },
+            "acceptable": {
+              "zh": "可说“与呼吸治疗/医护协同、保持气道通畅和通气，确保导管不移位”；不要求具体团队职称或操作步骤。",
+              "en": "Accept team coordination that maintains the airway, ventilation and tube position; no particular job title or procedural sequence is required."
+            },
+            "incorrect": {
+              "zh": "为检查自行拔管或停掉必要通气才属错误；仅未描述合作为遗漏/部分覆盖。",
+              "en": "Unilateral extubation or stopping required ventilation for inspection is incorrect; an omitted coordination detail is missing/partial."
+            },
+            "follow_up": {
+              "zh": "请只补充这一点：协调检查与减压，同时保持插管固定、气道和必要通气。已说清的内容无需重写。",
+              "en": "Please add only this point: Coordinate inspection/offloading while preserving airway, ventilation and securement. You need not repeat points already covered."
+            },
+            "reference_ids": [
+              "ig-drpi2",
+              "ig-drpi3"
+            ]
+          }
+        ],
+        "optional_extensions": {
+          "zh": "可补充溃损范围、疼痛和变化记录；不要求治疗敷料名称、病原判断或固定换位时长。",
+          "en": "Lesion extent, pain and follow-up documentation are optional. Dressing brands, pathogens and fixed repositioning intervals are not required."
+        },
+        "misconceptions": [
+          {
+            "id": "mdrpi-lip-mucosa-M1",
+            "criterion_id": "R1",
+            "statement": {
+              "zh": "黏膜溃损都属于2期，或都属于焦痂遮挡的不可分期。",
+              "en": "All mucosal ulcers are Stage 2 or obscured-depth Unstageable injuries."
+            },
+            "feedback": {
+              "zh": "黏膜损伤不使用数字分期；它与深度被腐肉/焦痂遮挡的不可分期类别不同。",
+              "en": "Mucosal injuries receive no numerical stage; that is distinct from obscured-depth Unstageable injury."
+            }
+          },
+          {
+            "id": "mdrpi-lip-mucosa-M2",
+            "criterion_id": "R2",
+            "statement": {
+              "zh": "为了看清溃损，可以自行拔除插管。",
+              "en": "The tube can be removed unilaterally to see the ulcer."
+            },
+            "feedback": {
+              "zh": "局部检查需要与气道和通气安全同时安排，不能自行中断必要插管。",
+              "en": "Local inspection must preserve the airway and ventilation rather than unilaterally interrupting necessary intubation."
+            }
+          }
+        ],
+        "source": {
+          "book": "MDRPI focused practice (project-authored)",
+          "section": "Lip mucosal injury near an endotracheal tube",
+          "question_number": "M03",
+          "authors": "MDRPI project; AI-assisted content authoring",
+          "question_url": "https://cdn.ymaws.com/npiap.com/resource/resmgr/NPIAP-Staging-Poster.pdf",
+          "answer_url": "https://cdn.ymaws.com/npiap.com/resource/resmgr/NPIAP-Staging-Poster.pdf",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "retrieved_at": "2026-10-04",
+          "references": [
+            {
+              "id": "npiap-staging-2016",
+              "title": "NPIAP Pressure Injury and Stages",
+              "url": "https://cdn.ymaws.com/npiap.com/resource/resmgr/NPIAP-Staging-Poster.pdf",
+              "edition": "September 2016",
+              "locator": "PDF pp. 1–2: Stage 1, Stage 2 and Mucosal Membrane Pressure Injury",
+              "checked_at": "2026-10-04",
+              "license": "Copyright NPIAP; cited as evidence, not relicensed"
+            },
+            {
+              "id": "ig-drpi2",
+              "title": "International Guideline: Device-Related Pressure Injuries",
+              "url": "https://www.internationalguideline.com/drpi",
+              "edition": "Fourth edition; published 2025-09-16; accessed 2026-10-04",
+              "locator": "DRPI2: Implementation considerations (inspection without interfering with device function)",
+              "checked_at": "2026-10-04",
+              "license": "Copyright NPIAP/EPUAP/PPPIA; cited as evidence, not relicensed"
+            },
+            {
+              "id": "ig-drpi3",
+              "title": "International Guideline: Device-Related Pressure Injuries",
+              "url": "https://www.internationalguideline.com/drpi",
+              "edition": "Fourth edition; published 2025-09-16; accessed 2026-10-04",
+              "locator": "DRPI3: Device securements and repositioning; cervical collar consultation",
+              "checked_at": "2026-10-04",
+              "license": "Copyright NPIAP/EPUAP/PPPIA; cited as evidence, not relicensed"
+            }
+          ],
+          "snapshots": [
+            "mdrpi_source_basis_20261004.json"
+          ],
+          "attribution_note": "The license applies to original project exercise content. External source copyrights and licenses remain separate; URLs identify supporting evidence, not an original publisher question or answer."
+        },
+        "basis_question": "Fictional focused exercise: An intubated adult has focal ulceration of the inner lower-lip mucosa where the tube has been in sustained contact. The team has assessed alternative causes and considers it pressure-related. The external lip skin is intact. The tube remains necessary for ventilation.\n\nExplain (1) whether to use Stages 1–4 or the 'Unstageable Pressure Injury' category for this mucosal injury, and (2) the treatment condition that must be preserved during inspection and offloading.",
+        "basis_answer": "Document a mucosal membrane pressure injury, specifying site, device and findings. Mucosal injuries are not assigned Stages 1–4; that rule is distinct from the 'Unstageable Pressure Injury' category in which full-thickness loss is obscured by slough or eschar. Coordinate inspection and adjustment while preserving airway patency, ventilation and securement. Necessary intubation must not be removed solely for skin inspection."
+      }
+    },
+    {
+      "id": "mdrpi-niv-dressing",
+      "title": "面罩敷料加厚后漏气：适用条件 / Mask leakage after adding padding",
+      "case": "Fictional focused exercise: An adult receives non-invasive ventilation through an oronasal mask. Nasal-bridge skin is intact but uncomfortable. Several padding layers have worsened the fit and increased leakage. A colleague proposes adding more padding and tightening the straps further. Respiratory support is still required; no permitted interruption is supplied.\n\nExplain (1) the limits of that proposal and the condition for preventive dressing use, and (2) the two types of result to verify after adjustment.",
+      "case_zh": "虚构专项练习：一名成人使用无创通气口鼻面罩。鼻梁皮肤完整，有受压不适。为预防损伤加了多层垫料后，面罩贴合变差、漏气增加。有人建议继续加厚，再把固定带收得更紧。患者仍需要原有呼吸支持，题目没有提供允许停机的安排。\n\n请说明：①如何评价这一建议及预防敷料的适用条件；②调整方案后要同时确认的两类结果。",
+      "answer": {
+        "zh": "不应把越厚、越紧当成越保护。预防敷料需要不妨碍器械位置与功能；在面罩已经贴合不良时，应协调重新评估尺寸、材料厚度和固定张力，按器械要求处理漏气，不能用加压固定替代评估。复评既要看皮肤受压与舒适度，也要确认密封、有效通气与氧合，在仍需呼吸支持时保持治疗连续性。",
+        "en": "More padding and tighter straps do not necessarily protect tissue. A preventive dressing must preserve device position and function. Reassess fit, padding thickness and securement tension with the team and manufacturer guidance rather than using extra strap pressure as a substitute for assessment. Verify tissue pressure/comfort and effective sealing, ventilation and oxygenation while preserving required respiratory support."
+      },
+      "source": {
+        "book": "MDRPI focused practice (project-authored)",
+        "section": "Mask leakage after adding padding",
+        "question_number": "M04",
+        "authors": "MDRPI project; AI-assisted content authoring",
+        "question_url": "https://www.internationalguideline.com/drpi",
+        "answer_url": "https://www.internationalguideline.com/drpi",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "retrieved_at": "2026-10-04",
+        "references": [
+          {
+            "id": "ig-drpi6",
+            "title": "International Guideline: Device-Related Pressure Injuries",
+            "url": "https://www.internationalguideline.com/drpi",
+            "edition": "Fourth edition; published 2025-09-16; accessed 2026-10-04",
+            "locator": "DRPI6: Recommendation and implementation (function, tight fit and thinner dressing)",
+            "checked_at": "2026-10-04",
+            "license": "Copyright NPIAP/EPUAP/PPPIA; cited as evidence, not relicensed"
+          },
+          {
+            "id": "ig-drpi1",
+            "title": "International Guideline: Device-Related Pressure Injuries",
+            "url": "https://www.internationalguideline.com/drpi",
+            "edition": "Fourth edition; published 2025-09-16; accessed 2026-10-04",
+            "locator": "DRPI1: Implementation considerations (fit, edema and manufacturer instructions)",
+            "checked_at": "2026-10-04",
+            "license": "Copyright NPIAP/EPUAP/PPPIA; cited as evidence, not relicensed"
+          },
+          {
+            "id": "ig-drpi3",
+            "title": "International Guideline: Device-Related Pressure Injuries",
+            "url": "https://www.internationalguideline.com/drpi",
+            "edition": "Fourth edition; published 2025-09-16; accessed 2026-10-04",
+            "locator": "DRPI3: Device securements and repositioning; cervical collar consultation",
+            "checked_at": "2026-10-04",
+            "license": "Copyright NPIAP/EPUAP/PPPIA; cited as evidence, not relicensed"
+          },
+          {
+            "id": "ig-drpi2",
+            "title": "International Guideline: Device-Related Pressure Injuries",
+            "url": "https://www.internationalguideline.com/drpi",
+            "edition": "Fourth edition; published 2025-09-16; accessed 2026-10-04",
+            "locator": "DRPI2: Implementation considerations (inspection without interfering with device function)",
+            "checked_at": "2026-10-04",
+            "license": "Copyright NPIAP/EPUAP/PPPIA; cited as evidence, not relicensed"
+          }
+        ],
+        "snapshots": [
+          "mdrpi_source_basis_20261004.json"
+        ],
+        "attribution_note": "The license applies to original project exercise content. External source copyrights and licenses remain separate; URLs identify supporting evidence, not an original publisher question or answer."
+      },
+      "category": "mdrpi",
+      "kind": "fictional_case_question",
+      "level": "进阶",
+      "scenario_id": "niv-dressing",
+      "has_reference_answer": true,
+      "answer_origin": "project_authored_source_grounded",
+      "review_status": "source_basis_checked_pending_independent_expert_review",
+      "adaptation": "Original fictional teaching vignette and bilingual reference points authored for this project, with source-bound criteria. Not a publisher-supplied answer or independently clinically validated content.",
+      "skill_ids": [
+        "device-fit",
+        "treatment-continuity",
+        "device-reassessment"
+      ],
+      "learning_objectives": {
+        "zh": [
+          "判断敷料使用的条件",
+          "同时验证组织保护和通气效果"
+        ],
+        "en": [
+          "Assess the conditions for dressing use",
+          "Verify tissue protection and ventilation together"
+        ]
+      },
+      "scope": {
+        "population": "Adult",
+        "devices": [
+          "Oronasal NIV mask"
+        ],
+        "setting": "Required non-invasive ventilation",
+        "limits": "No brand, prescribed pressure change or safe interruption duration is provided; do not invent one."
+      },
+      "hints": {
+        "zh": [
+          {
+            "cue": "先比较加垫前后的贴合变化。",
+            "explanation": "防护材料本身也可能改变器械接触压力和功能。"
+          },
+          {
+            "cue": "把材料选择与固定张力分别评估。",
+            "explanation": "拟定方案需要能兼顾保护组织与维持密封。"
+          }
+        ],
+        "en": [
+          {
+            "cue": "Compare fit before and after adding padding.",
+            "explanation": "Protective material can itself change contact pressure and device function."
+          },
+          {
+            "cue": "Assess material choice and securement tension separately.",
+            "explanation": "A proposal must preserve sealing as well as tissue protection."
+          }
+        ]
+      },
+      "hint_pathways": {
+        "R1": {
+          "zh": [
+            {
+              "cue": "先比较加垫前后的贴合变化。",
+              "explanation": "防护材料本身也可能改变器械接触压力和功能。"
+            },
+            {
+              "cue": "把材料选择与固定张力分别评估。",
+              "explanation": "拟定方案需要能兼顾保护组织与维持密封。"
+            }
+          ],
+          "en": [
+            {
+              "cue": "Compare fit before and after adding padding.",
+              "explanation": "Protective material can itself change contact pressure and device function."
+            },
+            {
+              "cue": "Assess material choice and securement tension separately.",
+              "explanation": "A proposal must preserve sealing as well as tissue protection."
+            }
+          ]
+        },
+        "R2": {
+          "zh": [
+            {
+              "cue": "把措施的结果分成局部组织和呼吸治疗两类。",
+              "explanation": "皮肤舒适不等于通气有效，两类观察都需要。"
+            },
+            {
+              "cue": "说明调整期间怎样维持题目中的必要治疗。",
+              "explanation": "题目没有允许停机的安排，不补造固定时长。"
+            }
+          ],
+          "en": [
+            {
+              "cue": "Separate tissue outcomes from respiratory-treatment outcomes.",
+              "explanation": "Comfort does not establish effective ventilation; both require observation."
+            },
+            {
+              "cue": "State how required treatment is preserved during adjustment.",
+              "explanation": "Do not invent a fixed interruption period when none is supplied."
+            }
+          ]
+        }
+      },
+      "rubric": {
+        "version": "2026-10-04-mdrpi-r1",
+        "origin": "project_authored_source_grounded",
+        "review_status": "source_basis_checked_pending_independent_expert_review",
+        "required": [
+          {
+            "id": "R1",
+            "criterion": {
+              "zh": "指出敷料不能妨碍贴合与功能，拒绝以加厚和加紧替代评估",
+              "en": "Require maintained fit/function and reject padding-plus-tightening as an automatic solution"
+            },
+            "acceptable": {
+              "zh": "接受“垫料要适合、不能影响密封”“先重新检查尺寸/厚度/张力，不是越紧越好”；需同时说明功能条件与重新评估。",
+              "en": "Accept suitable padding that preserves sealing plus reassessment of size, thickness or tension instead of assuming tighter is better."
+            },
+            "incorrect": {
+              "zh": "断言越厚越保护、越紧越安全，或可忽略已出现漏气，才属错误。",
+              "en": "Claiming thicker/tighter is always safer or dismissing the documented leak is incorrect."
+            },
+            "follow_up": {
+              "zh": "请只补充这一点：指出敷料不能妨碍贴合与功能，拒绝以加厚和加紧替代评估。已说清的内容无需重写。",
+              "en": "Please add only this point: Require maintained fit/function and reject padding-plus-tightening as an automatic solution. You need not repeat points already covered."
+            },
+            "reference_ids": [
+              "ig-drpi6",
+              "ig-drpi1",
+              "ig-drpi3"
+            ]
+          },
+          {
+            "id": "R2",
+            "criterion": {
+              "zh": "保持必要呼吸支持，复评局部组织与通气/氧合两类结果",
+              "en": "Maintain required support and reassess tissue plus ventilation/oxygenation"
+            },
+            "acceptable": {
+              "zh": "接受皮肤/疼痛变化与密封、漏气、有效通气或氧合检查；同时说明不自行停掉必要呼吸支持。",
+              "en": "Accept tissue/comfort checks plus seal, leakage, ventilation or oxygenation checks while keeping required support."
+            },
+            "incorrect": {
+              "zh": "因皮肤完整就无需复评，或自行长期停机只做皮肤处理，属于错误。",
+              "en": "Dismissing reassessment because skin is intact or unilaterally stopping required support for tissue care is incorrect."
+            },
+            "follow_up": {
+              "zh": "请只补充这一点：保持必要呼吸支持，复评局部组织与通气/氧合两类结果。已说清的内容无需重写。",
+              "en": "Please add only this point: Maintain required support and reassess tissue plus ventilation/oxygenation. You need not repeat points already covered."
+            },
+            "reference_ids": [
+              "ig-drpi2",
+              "ig-drpi6"
+            ]
+          }
+        ],
+        "optional_extensions": {
+          "zh": "可补充材料吸湿性和定期检查；不要求敷料品牌、停机分钟数或自行调整通气参数。",
+          "en": "Moisture handling and inspection are optional. No dressing brand, fixed interruption duration or independent ventilation-setting change is required."
+        },
+        "misconceptions": [
+          {
+            "id": "mdrpi-niv-dressing-M1",
+            "criterion_id": "R1",
+            "statement": {
+              "zh": "垫得越厚并收得越紧就越能预防。",
+              "en": "Thicker padding and tighter straps always prevent injury better."
+            },
+            "feedback": {
+              "zh": "敷料厚度和固定张力需要重新评估，保护组织不能以破坏贴合或增加受压为代价。",
+              "en": "Reassess padding and tension; protection must not worsen fit or contact pressure."
+            }
+          },
+          {
+            "id": "mdrpi-niv-dressing-M2",
+            "criterion_id": "R2",
+            "statement": {
+              "zh": "皮肤还没破，可以先停机很久再慢慢调整。",
+              "en": "Unbroken skin means ventilation can be stopped for a long adjustment."
+            },
+            "feedback": {
+              "zh": "仍需通气时，局部保护要在保持必要呼吸支持的条件下协调实施。",
+              "en": "When ventilation remains necessary, coordinate tissue protection while maintaining support."
+            }
+          }
+        ],
+        "source": {
+          "book": "MDRPI focused practice (project-authored)",
+          "section": "Mask leakage after adding padding",
+          "question_number": "M04",
+          "authors": "MDRPI project; AI-assisted content authoring",
+          "question_url": "https://www.internationalguideline.com/drpi",
+          "answer_url": "https://www.internationalguideline.com/drpi",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "retrieved_at": "2026-10-04",
+          "references": [
+            {
+              "id": "ig-drpi6",
+              "title": "International Guideline: Device-Related Pressure Injuries",
+              "url": "https://www.internationalguideline.com/drpi",
+              "edition": "Fourth edition; published 2025-09-16; accessed 2026-10-04",
+              "locator": "DRPI6: Recommendation and implementation (function, tight fit and thinner dressing)",
+              "checked_at": "2026-10-04",
+              "license": "Copyright NPIAP/EPUAP/PPPIA; cited as evidence, not relicensed"
+            },
+            {
+              "id": "ig-drpi1",
+              "title": "International Guideline: Device-Related Pressure Injuries",
+              "url": "https://www.internationalguideline.com/drpi",
+              "edition": "Fourth edition; published 2025-09-16; accessed 2026-10-04",
+              "locator": "DRPI1: Implementation considerations (fit, edema and manufacturer instructions)",
+              "checked_at": "2026-10-04",
+              "license": "Copyright NPIAP/EPUAP/PPPIA; cited as evidence, not relicensed"
+            },
+            {
+              "id": "ig-drpi3",
+              "title": "International Guideline: Device-Related Pressure Injuries",
+              "url": "https://www.internationalguideline.com/drpi",
+              "edition": "Fourth edition; published 2025-09-16; accessed 2026-10-04",
+              "locator": "DRPI3: Device securements and repositioning; cervical collar consultation",
+              "checked_at": "2026-10-04",
+              "license": "Copyright NPIAP/EPUAP/PPPIA; cited as evidence, not relicensed"
+            },
+            {
+              "id": "ig-drpi2",
+              "title": "International Guideline: Device-Related Pressure Injuries",
+              "url": "https://www.internationalguideline.com/drpi",
+              "edition": "Fourth edition; published 2025-09-16; accessed 2026-10-04",
+              "locator": "DRPI2: Implementation considerations (inspection without interfering with device function)",
+              "checked_at": "2026-10-04",
+              "license": "Copyright NPIAP/EPUAP/PPPIA; cited as evidence, not relicensed"
+            }
+          ],
+          "snapshots": [
+            "mdrpi_source_basis_20261004.json"
+          ],
+          "attribution_note": "The license applies to original project exercise content. External source copyrights and licenses remain separate; URLs identify supporting evidence, not an original publisher question or answer."
+        },
+        "basis_question": "Fictional focused exercise: An adult receives non-invasive ventilation through an oronasal mask. Nasal-bridge skin is intact but uncomfortable. Several padding layers have worsened the fit and increased leakage. A colleague proposes adding more padding and tightening the straps further. Respiratory support is still required; no permitted interruption is supplied.\n\nExplain (1) the limits of that proposal and the condition for preventive dressing use, and (2) the two types of result to verify after adjustment.",
+        "basis_answer": "More padding and tighter straps do not necessarily protect tissue. A preventive dressing must preserve device position and function. Reassess fit, padding thickness and securement tension with the team and manufacturer guidance rather than using extra strap pressure as a substitute for assessment. Verify tissue pressure/comfort and effective sealing, ventilation and oxygenation while preserving required respiratory support."
+      }
+    },
+    {
+      "id": "mdrpi-collar-edema",
+      "title": "颈托与新增水肿：重新检查适配 / Cervical collar fit after swelling",
+      "case": "Fictional focused exercise: An adult wears a cervical collar while cervical injury remains unexcluded. Neck swelling has increased since admission and edge indentations are more obvious. The patient cannot reliably report discomfort. No clearance for removal has been obtained.\n\nExplain (1) why previously appropriate sizing still needs reassessment, and (2) how to arrange inspection without abandoning cervical protection.",
+      "case_zh": "虚构专项练习：一名成人因颈椎损伤尚未排除而佩戴颈托。较入院时颈部软组织水肿增加，颈托边缘压痕更明显，患者无法可靠表达不适。尚未取得允许去除固定的决定。\n\n请说明：①为什么入院时合适的颈托现在仍需重新评估；②如何安排器械下检查而不放弃当前颈椎保护。",
+      "answer": {
+        "zh": "水肿改变组织与器械的配合，原先合适不代表现在张力和压力仍合适；需重新评估边缘接触、尺寸、固定张力和不能表达疼痛带来的观察需求。与有资质团队按颈椎保护流程和制造商要求协调检查、调整或替换，维持所需稳定；未取得解除固定的决定时，不能独自直接去除颈托。记录真实组织变化，不把无法主诉当成没有损伤。",
+        "en": "Swelling can alter fit and contact loading; prior sizing does not establish that current tension is appropriate. Reassess edge contact, sizing and securement, with closer observation when discomfort cannot be reported. Coordinate inspection or adjustment with qualified staff under cervical-protection and manufacturer guidance, preserving required stabilization. Do not remove the collar unilaterally before clearance."
+      },
+      "source": {
+        "book": "MDRPI focused practice (project-authored)",
+        "section": "Cervical collar fit after swelling",
+        "question_number": "M05",
+        "authors": "MDRPI project; AI-assisted content authoring",
+        "question_url": "https://www.internationalguideline.com/drpi",
+        "answer_url": "https://www.internationalguideline.com/drpi",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "retrieved_at": "2026-10-04",
+        "references": [
+          {
+            "id": "ig-drpi1",
+            "title": "International Guideline: Device-Related Pressure Injuries",
+            "url": "https://www.internationalguideline.com/drpi",
+            "edition": "Fourth edition; published 2025-09-16; accessed 2026-10-04",
+            "locator": "DRPI1: Implementation considerations (fit, edema and manufacturer instructions)",
+            "checked_at": "2026-10-04",
+            "license": "Copyright NPIAP/EPUAP/PPPIA; cited as evidence, not relicensed"
+          },
+          {
+            "id": "ig-drpi2",
+            "title": "International Guideline: Device-Related Pressure Injuries",
+            "url": "https://www.internationalguideline.com/drpi",
+            "edition": "Fourth edition; published 2025-09-16; accessed 2026-10-04",
+            "locator": "DRPI2: Implementation considerations (inspection without interfering with device function)",
+            "checked_at": "2026-10-04",
+            "license": "Copyright NPIAP/EPUAP/PPPIA; cited as evidence, not relicensed"
+          },
+          {
+            "id": "ig-drpi3",
+            "title": "International Guideline: Device-Related Pressure Injuries",
+            "url": "https://www.internationalguideline.com/drpi",
+            "edition": "Fourth edition; published 2025-09-16; accessed 2026-10-04",
+            "locator": "DRPI3: Device securements and repositioning; cervical collar consultation",
+            "checked_at": "2026-10-04",
+            "license": "Copyright NPIAP/EPUAP/PPPIA; cited as evidence, not relicensed"
+          }
+        ],
+        "snapshots": [
+          "mdrpi_source_basis_20261004.json"
+        ],
+        "attribution_note": "The license applies to original project exercise content. External source copyrights and licenses remain separate; URLs identify supporting evidence, not an original publisher question or answer."
+      },
+      "category": "mdrpi",
+      "kind": "fictional_case_question",
+      "level": "进阶",
+      "scenario_id": "collar-edema",
+      "has_reference_answer": true,
+      "answer_origin": "project_authored_source_grounded",
+      "review_status": "source_basis_checked_pending_independent_expert_review",
+      "adaptation": "Original fictional teaching vignette and bilingual reference points authored for this project, with source-bound criteria. Not a publisher-supplied answer or independently clinically validated content.",
+      "skill_ids": [
+        "device-fit",
+        "assessment-under-devices"
+      ],
+      "learning_objectives": {
+        "zh": [
+          "识别水肿导致的适配变化",
+          "协调检查并维持固定要求"
+        ],
+        "en": [
+          "Recognize swelling-related changes in fit",
+          "Inspect while preserving required stabilization"
+        ]
+      },
+      "scope": {
+        "population": "Adult with possible cervical injury",
+        "devices": [
+          "Cervical collar"
+        ],
+        "setting": "Cervical injury not cleared",
+        "limits": "No permission for removal or specific inspection technique is supplied; qualified coordination is required."
+      },
+      "hints": {
+        "zh": [
+          {
+            "cue": "比较入院时与现在的软组织状态。",
+            "explanation": "身体条件改变后，原有器械配合关系也可能改变。"
+          },
+          {
+            "cue": "把不能表达不适作为观察条件，而不是正常结果。",
+            "explanation": "不需要先证实开放伤口，才注意新增压痕和张力。"
+          }
+        ],
+        "en": [
+          {
+            "cue": "Compare soft-tissue conditions at admission and now.",
+            "explanation": "Body changes can alter an existing device fit."
+          },
+          {
+            "cue": "Treat inability to report discomfort as an assessment condition, not a normal finding.",
+            "explanation": "An open wound is not required before addressing new indentation or tension."
+          }
+        ]
+      },
+      "hint_pathways": {
+        "R1": {
+          "zh": [
+            {
+              "cue": "比较入院时与现在的软组织状态。",
+              "explanation": "身体条件改变后，原有器械配合关系也可能改变。"
+            },
+            {
+              "cue": "把不能表达不适作为观察条件，而不是正常结果。",
+              "explanation": "不需要先证实开放伤口，才注意新增压痕和张力。"
+            }
+          ],
+          "en": [
+            {
+              "cue": "Compare soft-tissue conditions at admission and now.",
+              "explanation": "Body changes can alter an existing device fit."
+            },
+            {
+              "cue": "Treat inability to report discomfort as an assessment condition, not a normal finding.",
+              "explanation": "An open wound is not required before addressing new indentation or tension."
+            }
+          ]
+        },
+        "R2": {
+          "zh": [
+            {
+              "cue": "先列出题目仍需要保留的固定作用。",
+              "explanation": "局部观察与颈椎保护需要一起安排。"
+            },
+            {
+              "cue": "把检查安排写成协同流程，而不是单人直接摘除。",
+              "explanation": "说明人员协助、流程与稳定条件即可，不补写未给出的解除固定结论。"
+            }
+          ],
+          "en": [
+            {
+              "cue": "Identify the stabilization still required in the vignette.",
+              "explanation": "Plan local inspection together with cervical protection."
+            },
+            {
+              "cue": "Arrange coordinated inspection instead of direct unilateral removal.",
+              "explanation": "State assistance, procedure and stabilization without inventing clearance."
+            }
+          ]
+        }
+      },
+      "rubric": {
+        "version": "2026-10-04-mdrpi-r1",
+        "origin": "project_authored_source_grounded",
+        "review_status": "source_basis_checked_pending_independent_expert_review",
+        "required": [
+          {
+            "id": "R1",
+            "criterion": {
+              "zh": "说明新增水肿会改变适配和受压，原先合适不能保证当前合适",
+              "en": "Explain why new swelling requires reassessment of fit and loading"
+            },
+            "acceptable": {
+              "zh": "可说水肿使颈托更紧、组织接触改变，要重看尺寸/边缘/张力；不要求全部尺寸参数。",
+              "en": "Accept swelling changing tightness/contact and reassessment of size, edges or tension; exact dimensions are unnecessary."
+            },
+            "incorrect": {
+              "zh": "断言入院时尺寸合适便无需重新看，或无法主诉就无风险，属于错误。",
+              "en": "Saying initial fit removes the need for reassessment or inability to report pain removes risk is incorrect."
+            },
+            "follow_up": {
+              "zh": "请只补充这一点：说明新增水肿会改变适配和受压，原先合适不能保证当前合适。已说清的内容无需重写。",
+              "en": "Please add only this point: Explain why new swelling requires reassessment of fit and loading. You need not repeat points already covered."
+            },
+            "reference_ids": [
+              "ig-drpi1",
+              "ig-drpi2"
+            ]
+          },
+          {
+            "id": "R2",
+            "criterion": {
+              "zh": "协调有资质团队检查或调整，并保留未解除的颈椎保护",
+              "en": "Coordinate qualified inspection/adjustment while retaining cervical protection"
+            },
+            "acceptable": {
+              "zh": "接受“按保护流程请团队协助维持稳定后检查/调整”“先确认可否去除”；不要求具体手法。",
+              "en": "Accept team-assisted inspection/adjustment with continued stabilization and checking removal permission; no technique is required."
+            },
+            "incorrect": {
+              "zh": "未经解除固定决定就独自取下颈托检查，属于错误；未说明协同是遗漏/部分覆盖。",
+              "en": "Unilateral collar removal without clearance is incorrect; omitted coordination is missing/partial."
+            },
+            "follow_up": {
+              "zh": "请只补充这一点：协调有资质团队检查或调整，并保留未解除的颈椎保护。已说清的内容无需重写。",
+              "en": "Please add only this point: Coordinate qualified inspection/adjustment while retaining cervical protection. You need not repeat points already covered."
+            },
+            "reference_ids": [
+              "ig-drpi3",
+              "ig-drpi2"
+            ]
+          }
+        ],
+        "optional_extensions": {
+          "zh": "可补充记录局部颜色、温度和压痕；不要求独立完成颈椎损伤诊断或规定换位分钟数。",
+          "en": "Color, temperature and indentation documentation are optional. Diagnosing spinal injury or specifying a fixed repositioning interval is not required."
+        },
+        "misconceptions": [
+          {
+            "id": "mdrpi-collar-edema-M1",
+            "criterion_id": "R1",
+            "statement": {
+              "zh": "尺寸入院时合适，之后就不必再评估。",
+              "en": "A correct initial size never needs reassessment."
+            },
+            "feedback": {
+              "zh": "水肿可能改变适配，原来的尺寸选择不能代替当前接触与张力检查。",
+              "en": "Swelling may change fit; initial sizing does not replace present contact and tension checks."
+            }
+          },
+          {
+            "id": "mdrpi-collar-edema-M2",
+            "criterion_id": "R2",
+            "statement": {
+              "zh": "先自行摘下颈托，检查完再说。",
+              "en": "Remove the collar unilaterally before planning inspection."
+            },
+            "feedback": {
+              "zh": "颈椎损伤未排除时，需要在合适团队和保护流程下安排器械下检查。",
+              "en": "With cervical injury unexcluded, arrange under-device inspection through the appropriate team and protection procedure."
+            }
+          }
+        ],
+        "source": {
+          "book": "MDRPI focused practice (project-authored)",
+          "section": "Cervical collar fit after swelling",
+          "question_number": "M05",
+          "authors": "MDRPI project; AI-assisted content authoring",
+          "question_url": "https://www.internationalguideline.com/drpi",
+          "answer_url": "https://www.internationalguideline.com/drpi",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "retrieved_at": "2026-10-04",
+          "references": [
+            {
+              "id": "ig-drpi1",
+              "title": "International Guideline: Device-Related Pressure Injuries",
+              "url": "https://www.internationalguideline.com/drpi",
+              "edition": "Fourth edition; published 2025-09-16; accessed 2026-10-04",
+              "locator": "DRPI1: Implementation considerations (fit, edema and manufacturer instructions)",
+              "checked_at": "2026-10-04",
+              "license": "Copyright NPIAP/EPUAP/PPPIA; cited as evidence, not relicensed"
+            },
+            {
+              "id": "ig-drpi2",
+              "title": "International Guideline: Device-Related Pressure Injuries",
+              "url": "https://www.internationalguideline.com/drpi",
+              "edition": "Fourth edition; published 2025-09-16; accessed 2026-10-04",
+              "locator": "DRPI2: Implementation considerations (inspection without interfering with device function)",
+              "checked_at": "2026-10-04",
+              "license": "Copyright NPIAP/EPUAP/PPPIA; cited as evidence, not relicensed"
+            },
+            {
+              "id": "ig-drpi3",
+              "title": "International Guideline: Device-Related Pressure Injuries",
+              "url": "https://www.internationalguideline.com/drpi",
+              "edition": "Fourth edition; published 2025-09-16; accessed 2026-10-04",
+              "locator": "DRPI3: Device securements and repositioning; cervical collar consultation",
+              "checked_at": "2026-10-04",
+              "license": "Copyright NPIAP/EPUAP/PPPIA; cited as evidence, not relicensed"
+            }
+          ],
+          "snapshots": [
+            "mdrpi_source_basis_20261004.json"
+          ],
+          "attribution_note": "The license applies to original project exercise content. External source copyrights and licenses remain separate; URLs identify supporting evidence, not an original publisher question or answer."
+        },
+        "basis_question": "Fictional focused exercise: An adult wears a cervical collar while cervical injury remains unexcluded. Neck swelling has increased since admission and edge indentations are more obvious. The patient cannot reliably report discomfort. No clearance for removal has been obtained.\n\nExplain (1) why previously appropriate sizing still needs reassessment, and (2) how to arrange inspection without abandoning cervical protection.",
+        "basis_answer": "Swelling can alter fit and contact loading; prior sizing does not establish that current tension is appropriate. Reassess edge contact, sizing and securement, with closer observation when discomfort cannot be reported. Coordinate inspection or adjustment with qualified staff under cervical-protection and manufacturer guidance, preserving required stabilization. Do not remove the collar unilaterally before clearance."
+      }
+    },
+    {
+      "id": "mdrpi-adhesive-differential",
+      "title": "鼻胃管胶带揭除后破损：先辨成因 / Skin stripping during feeding-tube tape removal",
+      "case": "Fictional focused exercise: During removal of an adult's feeding-tube fixation tape, a nurse observes superficial epidermal stripping along the tape edge. Sustained pressure at that spot was not previously documented. Adjacent nasal skin touching the tube is intact. Injury causation has not yet been fully assessed and the tube remains needed.\n\nExplain (1) whether location near a device alone justifies Stage 2 MDRPI and which cause to consider first, and (2) which causation details and contact-site observations need clarification.",
+      "case_zh": "虚构专项练习：一名成人的鼻胃管固定胶带揭除时，护士观察到胶带边缘对应处发生浅表表皮剥脱。此前没有记录该处持续受压；相邻鼻翼的管路接触处皮肤完整。现有资料尚未完成损伤成因评估，鼻胃管仍用于必要治疗。\n\n请说明：①能否仅因损伤在器械附近，就直接记为2期MDRPI，优先考虑哪种可能；②需要补充哪些成因线索和接触部位观察。",
+      "answer": {
+        "zh": "不能仅因靠近器械且有表皮剥脱，就直接定为2期MDRPI。揭胶带时出现、沿胶带边缘的表现，首先应考虑胶黏剂相关皮肤损伤的可能；成因仍需核对，不能把可能写成已确诊。补充发生时间、揭除前皮肤状态与受压史、损伤范围和深度，并检查管路及固定材料实际接触处的皮肤/黏膜；不因相邻一处完整就推定所有接触点正常。",
+        "en": "Device proximity and epidermal stripping alone do not establish Stage 2 MDRPI. The timing during tape removal and edge distribution first raise possible adhesive-related skin injury, pending assessment. Clarify onset, prior tissue condition and pressure history, lesion distribution/depth and actual tube/securement contact sites, including skin or mucosa as appropriate. One intact adjacent site does not establish that all contact points are normal."
+      },
+      "source": {
+        "book": "MDRPI focused practice (project-authored)",
+        "section": "Skin stripping during feeding-tube tape removal",
+        "question_number": "M06",
+        "authors": "MDRPI project; AI-assisted content authoring",
+        "question_url": "https://cdn.ymaws.com/npiap.com/resource/resmgr/NPIAP-Staging-Poster.pdf",
+        "answer_url": "https://cdn.ymaws.com/npiap.com/resource/resmgr/NPIAP-Staging-Poster.pdf",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "retrieved_at": "2026-10-04",
+        "references": [
+          {
+            "id": "npiap-staging-2016",
+            "title": "NPIAP Pressure Injury and Stages",
+            "url": "https://cdn.ymaws.com/npiap.com/resource/resmgr/NPIAP-Staging-Poster.pdf",
+            "edition": "September 2016",
+            "locator": "PDF pp. 1–2: Stage 1, Stage 2 and Mucosal Membrane Pressure Injury",
+            "checked_at": "2026-10-04",
+            "license": "Copyright NPIAP; cited as evidence, not relicensed"
+          },
+          {
+            "id": "ig-drpi2",
+            "title": "International Guideline: Device-Related Pressure Injuries",
+            "url": "https://www.internationalguideline.com/drpi",
+            "edition": "Fourth edition; published 2025-09-16; accessed 2026-10-04",
+            "locator": "DRPI2: Implementation considerations (inspection without interfering with device function)",
+            "checked_at": "2026-10-04",
+            "license": "Copyright NPIAP/EPUAP/PPPIA; cited as evidence, not relicensed"
+          }
+        ],
+        "snapshots": [
+          "mdrpi_source_basis_20261004.json"
+        ],
+        "attribution_note": "The license applies to original project exercise content. External source copyrights and licenses remain separate; URLs identify supporting evidence, not an original publisher question or answer."
+      },
+      "category": "mdrpi",
+      "kind": "fictional_case_question",
+      "level": "基础",
+      "scenario_id": "adhesive-differential",
+      "has_reference_answer": true,
+      "answer_origin": "project_authored_source_grounded",
+      "review_status": "source_basis_checked_pending_independent_expert_review",
+      "adaptation": "Original fictional teaching vignette and bilingual reference points authored for this project, with source-bound criteria. Not a publisher-supplied answer or independently clinically validated content.",
+      "skill_ids": [
+        "cause-versus-stage",
+        "assessment-under-devices"
+      ],
+      "learning_objectives": {
+        "zh": [
+          "区分器械受压与胶黏剂相关损伤",
+          "补充信息后再形成诊断结论"
+        ],
+        "en": [
+          "Distinguish device pressure from adhesive-related damage",
+          "Clarify missing information before classification"
+        ]
+      },
+      "scope": {
+        "population": "Adult",
+        "devices": [
+          "Nasogastric/feeding tube",
+          "Fixation tape"
+        ],
+        "setting": "Observed tape removal",
+        "limits": "Cause remains unconfirmed. Possible adhesive injury is not declared a confirmed MARSI diagnosis; do not label it Stage 2 solely from superficial loss."
+      },
+      "hints": {
+        "zh": [
+          {
+            "cue": "把发生时间和损伤分布与机械受压史分别看。",
+            "explanation": "器械附近的损伤不一定由器械压力造成。"
+          },
+          {
+            "cue": "区分可能的成因与已经确认的分类。",
+            "explanation": "分期不能代替成因评估，先表明判断范围。"
+          }
+        ],
+        "en": [
+          {
+            "cue": "Consider onset/distribution separately from a sustained-pressure history.",
+            "explanation": "An injury near a device need not be caused by device pressure."
+          },
+          {
+            "cue": "Separate a possible cause from a confirmed classification.",
+            "explanation": "Staging cannot replace causation assessment; state the limits of the inference."
+          }
+        ]
+      },
+      "hint_pathways": {
+        "R1": {
+          "zh": [
+            {
+              "cue": "把发生时间和损伤分布与机械受压史分别看。",
+              "explanation": "器械附近的损伤不一定由器械压力造成。"
+            },
+            {
+              "cue": "区分可能的成因与已经确认的分类。",
+              "explanation": "分期不能代替成因评估，先表明判断范围。"
+            }
+          ],
+          "en": [
+            {
+              "cue": "Consider onset/distribution separately from a sustained-pressure history.",
+              "explanation": "An injury near a device need not be caused by device pressure."
+            },
+            {
+              "cue": "Separate a possible cause from a confirmed classification.",
+              "explanation": "Staging cannot replace causation assessment; state the limits of the inference."
+            }
+          ]
+        },
+        "R2": {
+          "zh": [
+            {
+              "cue": "把待补资料分成发生经过和当前接触组织两类。",
+              "explanation": "前后状态有助于判断损伤如何出现，接触处检查有助于发现同时存在的问题。"
+            },
+            {
+              "cue": "只提出需要确认的信息，不补造检查结果。",
+              "explanation": "一处皮肤完整不能代表所有皮肤或黏膜接触部位。"
+            }
+          ],
+          "en": [
+            {
+              "cue": "Divide missing information into the event history and current contact tissue.",
+              "explanation": "Before/after details clarify onset, while contact-site inspection can reveal coexisting problems."
+            },
+            {
+              "cue": "Identify information to verify without inventing findings.",
+              "explanation": "One intact site does not represent every skin or mucosal contact area."
+            }
+          ]
+        }
+      },
+      "rubric": {
+        "version": "2026-10-04-mdrpi-r1",
+        "origin": "project_authored_source_grounded",
+        "review_status": "source_basis_checked_pending_independent_expert_review",
+        "required": [
+          {
+            "id": "R1",
+            "criterion": {
+              "zh": "不直接判2期MDRPI，考虑胶黏剂损伤可能并保留成因不确定",
+              "en": "Avoid automatic Stage 2 MDRPI and consider an unconfirmed adhesive-related cause"
+            },
+            "acceptable": {
+              "zh": "接受“考虑揭胶带造成的皮肤损伤/可能MARSI，待评估，不直接分2期”；不要求英文缩写。",
+              "en": "Accept possible tape/adhesive-related injury pending assessment rather than automatic Stage 2; no acronym is required."
+            },
+            "incorrect": {
+              "zh": "仅凭器械位置或浅表剥脱就确诊2期，或把所有胶黏剂损伤纳入2期，属于错误。",
+              "en": "Diagnosing Stage 2 solely from proximity/superficial stripping or assigning all adhesive injuries to Stage 2 is incorrect."
+            },
+            "follow_up": {
+              "zh": "请只补充这一点：不直接判2期MDRPI，考虑胶黏剂损伤可能并保留成因不确定。已说清的内容无需重写。",
+              "en": "Please add only this point: Avoid automatic Stage 2 MDRPI and consider an unconfirmed adhesive-related cause. You need not repeat points already covered."
+            },
+            "reference_ids": [
+              "npiap-staging-2016"
+            ]
+          },
+          {
+            "id": "R2",
+            "criterion": {
+              "zh": "补充发生经过、原状态或受压史，并观察实际接触部位",
+              "en": "Clarify onset/prior condition or pressure history and inspect actual contact sites"
+            },
+            "acceptable": {
+              "zh": "需包含成因线索（发生经过、揭除前状态或受压史之一）及损伤/管路接触处观察；不要求列出全部指标。",
+              "en": "Include at least one causal detail such as onset/prior condition/pressure history plus lesion or tube-contact inspection; an exhaustive list is unnecessary."
+            },
+            "incorrect": {
+              "zh": "断言无需成因评估，或相邻鼻翼完整便不用检查其他接触点，才属错误。",
+              "en": "Rejecting causal assessment or dismissing all other contact points because one is intact is incorrect."
+            },
+            "follow_up": {
+              "zh": "请只补充这一点：补充发生经过、原状态或受压史，并观察实际接触部位。已说清的内容无需重写。",
+              "en": "Please add only this point: Clarify onset/prior condition or pressure history and inspect actual contact sites. You need not repeat points already covered."
+            },
+            "reference_ids": [
+              "ig-drpi2",
+              "npiap-staging-2016"
+            ]
+          }
+        ],
+        "optional_extensions": {
+          "zh": "可补充后续局部护理与保护；不要求拔管、处理配方或未提供的损伤持续分钟数。",
+          "en": "Follow-up tissue protection is optional. Tube removal, treatment recipes and an unprovided duration of injury are not required."
+        },
+        "misconceptions": [
+          {
+            "id": "mdrpi-adhesive-differential-M1",
+            "criterion_id": "R1",
+            "statement": {
+              "zh": "器械边上出现任何表皮破损都是2期MDRPI。",
+              "en": "Any epidermal loss near a device is Stage 2 MDRPI."
+            },
+            "feedback": {
+              "zh": "胶黏剂相关损伤不应直接套2期；本题需要先核对成因。",
+              "en": "Adhesive-related damage should not automatically receive Stage 2; first clarify causation."
+            }
+          },
+          {
+            "id": "mdrpi-adhesive-differential-M2",
+            "criterion_id": "R2",
+            "statement": {
+              "zh": "鼻翼完整就说明整条管路都没有风险，不用再查。",
+              "en": "Intact nasal skin establishes that the whole tube has no risk."
+            },
+            "feedback": {
+              "zh": "记录每处实际接触组织的发现，不能由单点正常推定其余部位正常。",
+              "en": "Document actual contact-site findings rather than extrapolating from one normal point."
+            }
+          }
+        ],
+        "source": {
+          "book": "MDRPI focused practice (project-authored)",
+          "section": "Skin stripping during feeding-tube tape removal",
+          "question_number": "M06",
+          "authors": "MDRPI project; AI-assisted content authoring",
+          "question_url": "https://cdn.ymaws.com/npiap.com/resource/resmgr/NPIAP-Staging-Poster.pdf",
+          "answer_url": "https://cdn.ymaws.com/npiap.com/resource/resmgr/NPIAP-Staging-Poster.pdf",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "retrieved_at": "2026-10-04",
+          "references": [
+            {
+              "id": "npiap-staging-2016",
+              "title": "NPIAP Pressure Injury and Stages",
+              "url": "https://cdn.ymaws.com/npiap.com/resource/resmgr/NPIAP-Staging-Poster.pdf",
+              "edition": "September 2016",
+              "locator": "PDF pp. 1–2: Stage 1, Stage 2 and Mucosal Membrane Pressure Injury",
+              "checked_at": "2026-10-04",
+              "license": "Copyright NPIAP; cited as evidence, not relicensed"
+            },
+            {
+              "id": "ig-drpi2",
+              "title": "International Guideline: Device-Related Pressure Injuries",
+              "url": "https://www.internationalguideline.com/drpi",
+              "edition": "Fourth edition; published 2025-09-16; accessed 2026-10-04",
+              "locator": "DRPI2: Implementation considerations (inspection without interfering with device function)",
+              "checked_at": "2026-10-04",
+              "license": "Copyright NPIAP/EPUAP/PPPIA; cited as evidence, not relicensed"
+            }
+          ],
+          "snapshots": [
+            "mdrpi_source_basis_20261004.json"
+          ],
+          "attribution_note": "The license applies to original project exercise content. External source copyrights and licenses remain separate; URLs identify supporting evidence, not an original publisher question or answer."
+        },
+        "basis_question": "Fictional focused exercise: During removal of an adult's feeding-tube fixation tape, a nurse observes superficial epidermal stripping along the tape edge. Sustained pressure at that spot was not previously documented. Adjacent nasal skin touching the tube is intact. Injury causation has not yet been fully assessed and the tube remains needed.\n\nExplain (1) whether location near a device alone justifies Stage 2 MDRPI and which cause to consider first, and (2) which causation details and contact-site observations need clarification.",
+        "basis_answer": "Device proximity and epidermal stripping alone do not establish Stage 2 MDRPI. The timing during tape removal and edge distribution first raise possible adhesive-related skin injury, pending assessment. Clarify onset, prior tissue condition and pressure history, lesion distribution/depth and actual tube/securement contact sites, including skin or mucosa as appropriate. One intact adjacent site does not establish that all contact points are normal."
+      }
+    },
+    {
+      "id": "mdrpi-dark-skin-assessment",
+      "title": "深色皮肤与血氧探头：不能只看红色 / Oximeter assessment in darker skin",
+      "case": "Fictional focused exercise: An adult with darker skin uses a finger oximeter continuously. The contact point is warmer and firmer than the corresponding area of the other hand. No obvious redness is visible. The patient is sedated and cannot report pain. A complete tissue assessment and injury classification are not supplied.\n\nExplain (1) whether absent visible redness excludes device-related injury, and (2) at least two non-color tissue observations and a comparison approach. Do not guess a numbered stage.",
+      "case_zh": "虚构专项练习：一名深色皮肤成人持续使用指夹式血氧探头。与另一手相应部位相比，探头接触点局部更温暖、触感更硬；未见明显红色变化。患者镇静，无法报告疼痛。题目没有提供完整组织评估，也未确认损伤类别。\n\n请说明：①未见明显红色能否排除器械下损伤；②应如何补充评估，至少说明两项颜色之外的组织观察及比较方式。无需猜测数字分期。",
+      "answer": {
+        "zh": "没有明显红色不能排除器械下组织问题，镇静无法报告疼痛也不是无损伤的证据；目前应保留分类不确定。补充触诊温度、硬度/柔软度、局部水肿等至少两项非颜色观察，与邻近未受压部位、对侧或既有基线比较，并检查器械接触范围。记录实际变化，不由肤色或两项线索直接断言某一期。",
+        "en": "Absent visible redness does not exclude tissue damage; inability to report pain under sedation is not a normal finding. Classification remains uncertain. Assess at least two non-color features such as temperature, firmness/softness or localized edema and compare with adjacent unaffected tissue, the opposite side or a documented baseline. Inspect the contact area and document actual changes without inferring a numbered stage from skin tone or two clues alone."
+      },
+      "source": {
+        "book": "MDRPI focused practice (project-authored)",
+        "section": "Oximeter assessment in darker skin",
+        "question_number": "M07",
+        "authors": "MDRPI project; AI-assisted content authoring",
+        "question_url": "https://www.internationalguideline.com/assessment",
+        "answer_url": "https://www.internationalguideline.com/assessment",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "retrieved_at": "2026-10-04",
+        "references": [
+          {
+            "id": "ig-sta1",
+            "title": "International Guideline: Skin and Tissue Assessment",
+            "url": "https://www.internationalguideline.com/assessment",
+            "edition": "Fourth edition; published 2026-05-07; accessed 2026-10-04",
+            "locator": "STA1: Visual/tactile assessment and implementation for medium to dark skin tones",
+            "checked_at": "2026-10-04",
+            "license": "Copyright NPIAP/EPUAP/PPPIA; cited as evidence, not relicensed"
+          },
+          {
+            "id": "ig-drpi2",
+            "title": "International Guideline: Device-Related Pressure Injuries",
+            "url": "https://www.internationalguideline.com/drpi",
+            "edition": "Fourth edition; published 2025-09-16; accessed 2026-10-04",
+            "locator": "DRPI2: Implementation considerations (inspection without interfering with device function)",
+            "checked_at": "2026-10-04",
+            "license": "Copyright NPIAP/EPUAP/PPPIA; cited as evidence, not relicensed"
+          },
+          {
+            "id": "openrn-pressure-2e",
+            "title": "Open RN Nursing Fundamentals 2e: 10.4 Pressure Injuries",
+            "url": "https://wtcs.pressbooks.pub/nursingfundamentals/chapter/10-4-pressure-injuries/",
+            "edition": "2e (2024)",
+            "locator": "Stage 1 Pressure Injuries",
+            "checked_at": "2026-10-04",
+            "license": "CC BY 4.0 (chapter text; image permissions differ)"
+          }
+        ],
+        "snapshots": [
+          "mdrpi_source_basis_20261004.json"
+        ],
+        "attribution_note": "The license applies to original project exercise content. External source copyrights and licenses remain separate; URLs identify supporting evidence, not an original publisher question or answer."
+      },
+      "category": "mdrpi",
+      "kind": "fictional_case_question",
+      "level": "进阶",
+      "scenario_id": "dark-skin-assessment",
+      "has_reference_answer": true,
+      "answer_origin": "project_authored_source_grounded",
+      "review_status": "source_basis_checked_pending_independent_expert_review",
+      "adaptation": "Original fictional teaching vignette and bilingual reference points authored for this project, with source-bound criteria. Not a publisher-supplied answer or independently clinically validated content.",
+      "skill_ids": [
+        "assessment-under-devices",
+        "classification-limits"
+      ],
+      "learning_objectives": {
+        "zh": [
+          "避免仅凭红斑排除损伤",
+          "使用触诊与个体基线比较"
+        ],
+        "en": [
+          "Avoid relying on visible erythema alone",
+          "Use palpation and individual comparisons"
+        ]
+      },
+      "scope": {
+        "population": "Sedated adult with darker skin",
+        "devices": [
+          "Finger pulse oximeter"
+        ],
+        "setting": "Continuous monitoring",
+        "limits": "No confirmed stage. Inability to report pain is not evidence of absent damage; retain monitoring during any clinically coordinated device adjustment."
+      },
+      "hints": {
+        "zh": [
+          {
+            "cue": "把观察不到的颜色与已经触到的组织变化区分。",
+            "explanation": "不同肤色下视觉线索可能不同，不能忽略触诊差异。"
+          },
+          {
+            "cue": "考虑患者能否可靠提供疼痛信息。",
+            "explanation": "信息未取得与评估结果正常不是同一件事。"
+          }
+        ],
+        "en": [
+          {
+            "cue": "Separate absent visible color change from the palpable tissue findings.",
+            "explanation": "Visible cues differ across skin tones; palpable changes still matter."
+          },
+          {
+            "cue": "Consider whether the patient can provide a reliable pain report.",
+            "explanation": "Unavailable information is distinct from a normal assessment."
+          }
+        ]
+      },
+      "hint_pathways": {
+        "R1": {
+          "zh": [
+            {
+              "cue": "把观察不到的颜色与已经触到的组织变化区分。",
+              "explanation": "不同肤色下视觉线索可能不同，不能忽略触诊差异。"
+            },
+            {
+              "cue": "考虑患者能否可靠提供疼痛信息。",
+              "explanation": "信息未取得与评估结果正常不是同一件事。"
+            }
+          ],
+          "en": [
+            {
+              "cue": "Separate absent visible color change from the palpable tissue findings.",
+              "explanation": "Visible cues differ across skin tones; palpable changes still matter."
+            },
+            {
+              "cue": "Consider whether the patient can provide a reliable pain report.",
+              "explanation": "Unavailable information is distinct from a normal assessment."
+            }
+          ]
+        },
+        "R2": {
+          "zh": [
+            {
+              "cue": "从触诊和组织形态里选择观察，不局限于颜色。",
+              "explanation": "局部差异需要结合个人未受压部位或既有基线。"
+            },
+            {
+              "cue": "给这些观察选一个可比较的参照。",
+              "explanation": "写出两项观察和比较方式即可，不需推断损伤深度。"
+            }
+          ],
+          "en": [
+            {
+              "cue": "Choose palpable or tissue-shape observations beyond color.",
+              "explanation": "Interpret local differences against the person's unaffected tissue or baseline."
+            },
+            {
+              "cue": "Choose an appropriate comparator for those observations.",
+              "explanation": "Two observations and a comparison method suffice; inferred depth is unnecessary."
+            }
+          ]
+        }
+      },
+      "rubric": {
+        "version": "2026-10-04-mdrpi-r2",
+        "origin": "project_authored_source_grounded",
+        "review_status": "source_basis_checked_pending_independent_expert_review",
+        "required": [
+          {
+            "id": "R1",
+            "criterion": {
+              "zh": "说明无明显红色不能排除问题，不把无法表达疼痛当作正常",
+              "en": "Explain why absent redness and inability to report pain do not exclude damage"
+            },
+            "acceptable": {
+              "zh": "可说“深色皮肤不能只靠红斑判断”“镇静没说痛不代表没损伤”；均保持现有分类不确定。",
+              "en": "Accept not relying on redness in darker skin and recognizing that no pain report under sedation does not prove absence of damage; preserve classification uncertainty."
+            },
+            "incorrect": {
+              "zh": "只因没看见红色、或没说痛，就断言无损伤，属于错误；未提到其中一个线索为部分覆盖。",
+              "en": "Using absent redness or pain reporting to assert no injury is incorrect; omitting one supplied clue is partial."
+            },
+            "follow_up": {
+              "zh": "请只补充这一点：说明无明显红色不能排除问题，不把无法表达疼痛当作正常。已说清的内容无需重写。",
+              "en": "Please add only this point: Explain why absent redness and inability to report pain do not exclude damage. You need not repeat points already covered."
+            },
+            "reference_ids": [
+              "ig-sta1",
+              "ig-drpi2"
+            ]
+          },
+          {
+            "id": "R2",
+            "criterion": {
+              "zh": "单独核对评估方法：至少两项非颜色观察，并与未受压部位或基线比较",
+              "en": "Independently assess the proposed method: two non-color observations and an unaffected-site/baseline comparison"
+            },
+            "acceptable": {
+              "zh": "温度、硬度/柔软度、肿胀/水肿等任两项，加与邻近未受压、对侧或既有基线比较即可。即使前一句对有无损伤的结论错误，本句正确的观察与比较仍覆盖R2；该结论只在R1评价。",
+              "en": "Any two of temperature, firmness/softness and edema PLUS comparison with adjacent unaffected tissue, the opposite side or baseline meet this point. For example, palpate temperature and firmness and compare with unaffected skin or the other hand. An incorrect preceding no-injury conclusion belongs to R1; it does not invalidate a correctly stated assessment method in R2."
+            },
+            "incorrect": {
+              "zh": "本项只在学生明确拒绝所需触诊或比较时判错。R1中错误的无损伤结论不等于R2拒绝触诊；应读完实际评估句。只提一项或未比较为部分覆盖。",
+              "en": "Mark R2 incorrect only for an explicit rejection of the required palpation/comparison. A wrong no-injury conclusion in R1 is not a rejection when a separate clause explicitly proposes palpation and comparison. Read the actual assessment clause. One feature or no comparator is partial."
+            },
+            "follow_up": {
+              "zh": "请只补充非颜色观察和比较方式；已经说清的分期判断无需重复。",
+              "en": "Please add only the non-color observations and comparison approach; do not repeat the classification discussion."
+            },
+            "reference_ids": [
+              "ig-sta1",
+              "openrn-pressure-2e"
+            ]
+          }
+        ],
+        "optional_extensions": {
+          "zh": "可补充在保证监测的条件下重新评估探头部位；不要求判定1期、深部损伤或使用仪器测定。",
+          "en": "Appropriate probe reassessment while preserving monitoring is optional. Stage 1/DTPI diagnosis or instrument-based measurement is not required."
+        },
+        "misconceptions": [
+          {
+            "id": "mdrpi-dark-skin-assessment-M1",
+            "criterion_id": "R1",
+            "statement": {
+              "zh": "没有明显红色也没有喊痛，就能排除损伤。",
+              "en": "No visible redness or complaint of pain excludes injury."
+            },
+            "feedback": {
+              "zh": "缺乏明显红斑或疼痛主诉不能排除问题，需结合组织评估。",
+              "en": "Absence of visible erythema or a pain report does not exclude damage; assess the tissue."
+            }
+          },
+          {
+            "id": "mdrpi-dark-skin-assessment-M2",
+            "criterion_id": "R2",
+            "statement": {
+              "zh": "只需等待皮肤变红，无需触诊或比较。",
+              "en": "Wait for redness; palpation and comparison are unnecessary."
+            },
+            "feedback": {
+              "zh": "温度、组织硬度及水肿等可补充视觉观察，并需结合未受压组织或基线。",
+              "en": "Temperature, firmness and edema supplement visual inspection and should be compared with unaffected tissue or baseline."
+            }
+          }
+        ],
+        "source": {
+          "book": "MDRPI focused practice (project-authored)",
+          "section": "Oximeter assessment in darker skin",
+          "question_number": "M07",
+          "authors": "MDRPI project; AI-assisted content authoring",
+          "question_url": "https://www.internationalguideline.com/assessment",
+          "answer_url": "https://www.internationalguideline.com/assessment",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "retrieved_at": "2026-10-04",
+          "references": [
+            {
+              "id": "ig-sta1",
+              "title": "International Guideline: Skin and Tissue Assessment",
+              "url": "https://www.internationalguideline.com/assessment",
+              "edition": "Fourth edition; published 2026-05-07; accessed 2026-10-04",
+              "locator": "STA1: Visual/tactile assessment and implementation for medium to dark skin tones",
+              "checked_at": "2026-10-04",
+              "license": "Copyright NPIAP/EPUAP/PPPIA; cited as evidence, not relicensed"
+            },
+            {
+              "id": "ig-drpi2",
+              "title": "International Guideline: Device-Related Pressure Injuries",
+              "url": "https://www.internationalguideline.com/drpi",
+              "edition": "Fourth edition; published 2025-09-16; accessed 2026-10-04",
+              "locator": "DRPI2: Implementation considerations (inspection without interfering with device function)",
+              "checked_at": "2026-10-04",
+              "license": "Copyright NPIAP/EPUAP/PPPIA; cited as evidence, not relicensed"
+            },
+            {
+              "id": "openrn-pressure-2e",
+              "title": "Open RN Nursing Fundamentals 2e: 10.4 Pressure Injuries",
+              "url": "https://wtcs.pressbooks.pub/nursingfundamentals/chapter/10-4-pressure-injuries/",
+              "edition": "2e (2024)",
+              "locator": "Stage 1 Pressure Injuries",
+              "checked_at": "2026-10-04",
+              "license": "CC BY 4.0 (chapter text; image permissions differ)"
+            }
+          ],
+          "snapshots": [
+            "mdrpi_source_basis_20261004.json"
+          ],
+          "attribution_note": "The license applies to original project exercise content. External source copyrights and licenses remain separate; URLs identify supporting evidence, not an original publisher question or answer."
+        },
+        "basis_question": "Fictional focused exercise: An adult with darker skin uses a finger oximeter continuously. The contact point is warmer and firmer than the corresponding area of the other hand. No obvious redness is visible. The patient is sedated and cannot report pain. A complete tissue assessment and injury classification are not supplied.\n\nExplain (1) whether absent visible redness excludes device-related injury, and (2) at least two non-color tissue observations and a comparison approach. Do not guess a numbered stage.",
+        "basis_answer": "Absent visible redness does not exclude tissue damage; inability to report pain under sedation is not a normal finding. Classification remains uncertain. Assess at least two non-color features such as temperature, firmness/softness or localized edema and compare with adjacent unaffected tissue, the opposite side or a documented baseline. Inspect the contact area and document actual changes without inferring a numbered stage from skin tone or two clues alone."
+      }
+    },
+    {
+      "id": "mdrpi-neonatal-applicability",
+      "title": "新生儿鼻塞式CPAP：识别证据适用范围 / Applying evidence to neonatal nasal CPAP",
+      "case": "Fictional focused exercise: A neonate requires CPAP via nasal prongs. At handover, someone proposes applying an adult endotracheal-tube holder repositioning interval to every neonate, including stopping CPAP for a fixed period each time. Neonatal stability, permission to interrupt support, prong model and manufacturer instructions are not supplied.\n\nExplain (1) whether the adult evidence directly supports this neonatal interruption plan, and why, and (2) what conditions need checking before an applicable plan is made.",
+      "case_zh": "虚构专项练习：一名新生儿需要鼻塞式CPAP。交班时有人根据成人气管插管固定装置的换位资料，建议所有新生儿也照搬同一间隔，并每次停掉CPAP一段固定时间。题目没有提供新生儿稳定性评估、允许中断呼吸支持的安排、鼻塞型号或制造商要求。\n\n请说明：①这条成人资料能否直接支持所提新生儿停机方案，理由是什么；②形成适用计划前还需要核对哪些条件。",
+      "answer": {
+        "zh": "成人气管插管固定装置资料不能直接支持所有新生儿鼻塞式CPAP的统一停机方案：人群、器械和治疗情境不同，换位间隔也不等于安全停机时长。先核对新生儿实际状态和对呼吸支持的依赖、鼻塞尺寸/接触组织及制造商要求，并由新生儿团队根据适用资料和本地流程安排检查与减压，保持必要支持；现有信息不能补出统一间隔或停机分钟数。",
+        "en": "Adult ETT-holder evidence does not directly justify a universal neonatal nasal-CPAP interruption plan. Population, device and treatment context differ; a repositioning interval is not a safe interruption duration. Check the neonate's condition and dependence on support, actual prong fit/contact sites and manufacturer guidance. The neonatal team should use applicable evidence and local procedures while maintaining necessary support; no universal interval or interruption duration can be supplied from these data."
+      },
+      "source": {
+        "book": "MDRPI focused practice (project-authored)",
+        "section": "Applying evidence to neonatal nasal CPAP",
+        "question_number": "M08",
+        "authors": "MDRPI project; AI-assisted content authoring",
+        "question_url": "https://www.internationalguideline.com/drpi",
+        "answer_url": "https://www.internationalguideline.com/drpi",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "retrieved_at": "2026-10-04",
+        "references": [
+          {
+            "id": "ig-drpi4",
+            "title": "International Guideline: Device-Related Pressure Injuries",
+            "url": "https://www.internationalguideline.com/drpi",
+            "edition": "Fourth edition; published 2025-09-16; accessed 2026-10-04",
+            "locator": "DRPI4: Adult evidence clarifier and implementation (optimal ETT repositioning frequency unclear)",
+            "checked_at": "2026-10-04",
+            "license": "Copyright NPIAP/EPUAP/PPPIA; cited as evidence, not relicensed"
+          },
+          {
+            "id": "ig-drpi1",
+            "title": "International Guideline: Device-Related Pressure Injuries",
+            "url": "https://www.internationalguideline.com/drpi",
+            "edition": "Fourth edition; published 2025-09-16; accessed 2026-10-04",
+            "locator": "DRPI1: Implementation considerations (fit, edema and manufacturer instructions)",
+            "checked_at": "2026-10-04",
+            "license": "Copyright NPIAP/EPUAP/PPPIA; cited as evidence, not relicensed"
+          },
+          {
+            "id": "ig-drpi2",
+            "title": "International Guideline: Device-Related Pressure Injuries",
+            "url": "https://www.internationalguideline.com/drpi",
+            "edition": "Fourth edition; published 2025-09-16; accessed 2026-10-04",
+            "locator": "DRPI2: Implementation considerations (inspection without interfering with device function)",
+            "checked_at": "2026-10-04",
+            "license": "Copyright NPIAP/EPUAP/PPPIA; cited as evidence, not relicensed"
+          }
+        ],
+        "snapshots": [
+          "mdrpi_source_basis_20261004.json"
+        ],
+        "attribution_note": "The license applies to original project exercise content. External source copyrights and licenses remain separate; URLs identify supporting evidence, not an original publisher question or answer."
+      },
+      "category": "mdrpi",
+      "kind": "fictional_case_question",
+      "level": "进阶",
+      "scenario_id": "neonatal-applicability",
+      "has_reference_answer": true,
+      "answer_origin": "project_authored_source_grounded",
+      "review_status": "source_basis_checked_pending_independent_expert_review",
+      "adaptation": "Original fictional teaching vignette and bilingual reference points authored for this project, with source-bound criteria. Not a publisher-supplied answer or independently clinically validated content.",
+      "skill_ids": [
+        "treatment-continuity",
+        "evidence-applicability"
+      ],
+      "learning_objectives": {
+        "zh": [
+          "检查人群、器械和操作条件是否匹配",
+          "辨别换位间隔与停机时长"
+        ],
+        "en": [
+          "Check population, device and procedural applicability",
+          "Distinguish repositioning intervals from interruption duration"
+        ]
+      },
+      "scope": {
+        "population": "Neonate",
+        "devices": [
+          "Nasal-prong CPAP"
+        ],
+        "setting": "Necessary neonatal respiratory support",
+        "limits": "This is an applicability exercise, not an instruction to stop CPAP. Adult ETT evidence must not be transferred into a fixed neonatal schedule."
+      },
+      "hints": {
+        "zh": [
+          {
+            "cue": "把资料的人群、器械与当前练习逐项对照。",
+            "explanation": "相近的压力预防目标并不能消除适用条件差异。"
+          },
+          {
+            "cue": "再区分间隔和每次中断的时长。",
+            "explanation": "同一个时间数字可能描述不同动作，不能自动互换。"
+          }
+        ],
+        "en": [
+          {
+            "cue": "Compare the evidence population and device with this vignette.",
+            "explanation": "A shared prevention goal does not remove applicability differences."
+          },
+          {
+            "cue": "Distinguish the interval between events from the duration of each interruption.",
+            "explanation": "A time value may describe a different action and is not automatically interchangeable."
+          }
+        ]
+      },
+      "hint_pathways": {
+        "R1": {
+          "zh": [
+            {
+              "cue": "把资料的人群、器械与当前练习逐项对照。",
+              "explanation": "相近的压力预防目标并不能消除适用条件差异。"
+            },
+            {
+              "cue": "再区分间隔和每次中断的时长。",
+              "explanation": "同一个时间数字可能描述不同动作，不能自动互换。"
+            }
+          ],
+          "en": [
+            {
+              "cue": "Compare the evidence population and device with this vignette.",
+              "explanation": "A shared prevention goal does not remove applicability differences."
+            },
+            {
+              "cue": "Distinguish the interval between events from the duration of each interruption.",
+              "explanation": "A time value may describe a different action and is not automatically interchangeable."
+            }
+          ]
+        },
+        "R2": {
+          "zh": [
+            {
+              "cue": "列出题目尚未提供、会影响计划执行的条件。",
+              "explanation": "器械要求和患者对治疗的依赖要一起考虑。"
+            },
+            {
+              "cue": "把需要专业团队判断的治疗安排明确留下。",
+              "explanation": "先写核对和协调内容，不能把缺失条件补成已允许。"
+            }
+          ],
+          "en": [
+            {
+              "cue": "List missing conditions that affect whether the plan can be carried out.",
+              "explanation": "Consider device requirements together with dependence on treatment."
+            },
+            {
+              "cue": "Identify treatment decisions that need the clinical team.",
+              "explanation": "Describe checking and coordination without turning missing conditions into permission."
+            }
+          ]
+        }
+      },
+      "rubric": {
+        "version": "2026-10-04-mdrpi-r1",
+        "origin": "project_authored_source_grounded",
+        "review_status": "source_basis_checked_pending_independent_expert_review",
+        "required": [
+          {
+            "id": "R1",
+            "criterion": {
+              "zh": "拒绝直接外推，指出人群/器械差异及换位间隔不等于停机时长",
+              "en": "Reject direct extrapolation and distinguish repositioning interval from interruption duration"
+            },
+            "acceptable": {
+              "zh": "需明确成人气管插管与新生儿鼻塞CPAP不同，并说明不能由换位间隔推导停机时长；不要求研究统计量。",
+              "en": "Identify adult ETT versus neonatal nasal CPAP differences and explain that repositioning intervals do not establish interruption duration; statistics are unnecessary."
+            },
+            "incorrect": {
+              "zh": "断言所有器械人群通用该时间，或用换位间隔直接规定CPAP停机时长，属于错误。",
+              "en": "Claiming one schedule applies to all devices/populations or using a repositioning interval to prescribe CPAP interruption is incorrect."
+            },
+            "follow_up": {
+              "zh": "请只补充这一点：拒绝直接外推，指出人群/器械差异及换位间隔不等于停机时长。已说清的内容无需重写。",
+              "en": "Please add only this point: Reject direct extrapolation and distinguish repositioning interval from interruption duration. You need not repeat points already covered."
+            },
+            "reference_ids": [
+              "ig-drpi4",
+              "ig-drpi1"
+            ]
+          },
+          {
+            "id": "R2",
+            "criterion": {
+              "zh": "核对新生儿状态、实际鼻塞要求并协调维持必要呼吸支持",
+              "en": "Check neonatal status and actual prong requirements while preserving necessary support"
+            },
+            "acceptable": {
+              "zh": "接受临床稳定性/支持依赖，加实际器械尺寸或制造商要求，并由新生儿团队协调；不要求具体品牌。",
+              "en": "Accept condition/support-dependence plus actual fit or manufacturer instructions and neonatal-team coordination; no brand is required."
+            },
+            "incorrect": {
+              "zh": "无需核对状态就自行停CPAP，或补造允许停机的事实，属于错误。",
+              "en": "Stopping CPAP without checking the condition or inventing permission for interruption is incorrect."
+            },
+            "follow_up": {
+              "zh": "请只补充这一点：核对新生儿状态、实际鼻塞要求并协调维持必要呼吸支持。已说清的内容无需重写。",
+              "en": "Please add only this point: Check neonatal status and actual prong requirements while preserving necessary support. You need not repeat points already covered."
+            },
+            "reference_ids": [
+              "ig-drpi2",
+              "ig-drpi1"
+            ]
+          }
+        ],
+        "optional_extensions": {
+          "zh": "可提出获取新生儿适用资料；不要求编造间隔、停机分钟数、通气参数或使用成人风险分数。",
+          "en": "Obtaining neonatal evidence is optional. Invented intervals, interruption durations, ventilation settings and adult risk scores are not required."
+        },
+        "misconceptions": [
+          {
+            "id": "mdrpi-neonatal-applicability-M1",
+            "criterion_id": "R1",
+            "statement": {
+              "zh": "成人插管资料规定的间隔就等于新生儿CPAP的安全停机时间。",
+              "en": "The adult ETT interval is the safe CPAP interruption duration for neonates."
+            },
+            "feedback": {
+              "zh": "换位间隔与停机时长不同；人群和器械不匹配时需重新核对适用依据。",
+              "en": "Repositioning intervals differ from interruption durations; verify applicability across populations and devices."
+            }
+          },
+          {
+            "id": "mdrpi-neonatal-applicability-M2",
+            "criterion_id": "R2",
+            "statement": {
+              "zh": "未提供稳定性资料也可以直接按固定时长停CPAP。",
+              "en": "A fixed CPAP interruption is appropriate even without stability information."
+            },
+            "feedback": {
+              "zh": "必要支持不能依据不匹配资料自行中断；先核对实际状态、器械要求和团队计划。",
+              "en": "Do not interrupt necessary support based on mismatched evidence; check the condition, device requirements and team plan."
+            }
+          }
+        ],
+        "source": {
+          "book": "MDRPI focused practice (project-authored)",
+          "section": "Applying evidence to neonatal nasal CPAP",
+          "question_number": "M08",
+          "authors": "MDRPI project; AI-assisted content authoring",
+          "question_url": "https://www.internationalguideline.com/drpi",
+          "answer_url": "https://www.internationalguideline.com/drpi",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "retrieved_at": "2026-10-04",
+          "references": [
+            {
+              "id": "ig-drpi4",
+              "title": "International Guideline: Device-Related Pressure Injuries",
+              "url": "https://www.internationalguideline.com/drpi",
+              "edition": "Fourth edition; published 2025-09-16; accessed 2026-10-04",
+              "locator": "DRPI4: Adult evidence clarifier and implementation (optimal ETT repositioning frequency unclear)",
+              "checked_at": "2026-10-04",
+              "license": "Copyright NPIAP/EPUAP/PPPIA; cited as evidence, not relicensed"
+            },
+            {
+              "id": "ig-drpi1",
+              "title": "International Guideline: Device-Related Pressure Injuries",
+              "url": "https://www.internationalguideline.com/drpi",
+              "edition": "Fourth edition; published 2025-09-16; accessed 2026-10-04",
+              "locator": "DRPI1: Implementation considerations (fit, edema and manufacturer instructions)",
+              "checked_at": "2026-10-04",
+              "license": "Copyright NPIAP/EPUAP/PPPIA; cited as evidence, not relicensed"
+            },
+            {
+              "id": "ig-drpi2",
+              "title": "International Guideline: Device-Related Pressure Injuries",
+              "url": "https://www.internationalguideline.com/drpi",
+              "edition": "Fourth edition; published 2025-09-16; accessed 2026-10-04",
+              "locator": "DRPI2: Implementation considerations (inspection without interfering with device function)",
+              "checked_at": "2026-10-04",
+              "license": "Copyright NPIAP/EPUAP/PPPIA; cited as evidence, not relicensed"
+            }
+          ],
+          "snapshots": [
+            "mdrpi_source_basis_20261004.json"
+          ],
+          "attribution_note": "The license applies to original project exercise content. External source copyrights and licenses remain separate; URLs identify supporting evidence, not an original publisher question or answer."
+        },
+        "basis_question": "Fictional focused exercise: A neonate requires CPAP via nasal prongs. At handover, someone proposes applying an adult endotracheal-tube holder repositioning interval to every neonate, including stopping CPAP for a fixed period each time. Neonatal stability, permission to interrupt support, prong model and manufacturer instructions are not supplied.\n\nExplain (1) whether the adult evidence directly supports this neonatal interruption plan, and why, and (2) what conditions need checking before an applicable plan is made.",
+        "basis_answer": "Adult ETT-holder evidence does not directly justify a universal neonatal nasal-CPAP interruption plan. Population, device and treatment context differ; a repositioning interval is not a safe interruption duration. Check the neonate's condition and dependence on support, actual prong fit/contact sites and manufacturer guidance. The neonatal team should use applicable evidence and local procedures while maintaining necessary support; no universal interval or interruption duration can be supplied from these data."
+      }
+    }
+  ]
+}

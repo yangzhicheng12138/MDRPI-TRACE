@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f5f7f6">
+  <title>出题工作室 · MDRPI</title>
+  <link rel="icon" type="image/svg+xml" sizes="any" href="/ui/assets/brand-care-t.svg">
+  <link rel="stylesheet" href="/question-studio/question-studio.css?v=20261116-brand">
+  <script type="module" src="/question-studio/question-studio.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#blueprint">跳到出题要求</a>
+  <header class="topbar"><a class="brand" href="/ui/"><img class="brand-mark" src="/ui/assets/brand-care-t.svg" alt="" width="38" height="38"><span>MDRPI <small>教学工作台</small></span></a><a class="back-link" href="/ui/">返回对话 <span aria-hidden="true">↗</span></a></header>
+  <main class="shell">
+    <section class="intro"><div><span class="eyebrow">QUESTION STUDIO · 开发工作区</span><h1>从可靠材料，走向好问题。</h1><p>指定学习目标，结合已有材料与联网证据出题，再由独立智能体审核。</p></div><span class="development-tag">开发题目 · 不自动入库</span></section>
+    <div class="workspace">
+      <aside class="setup">
+        <form id="blueprint" class="panel">
+          <div class="panel-heading"><span class="step-number">01</span><div><h2>设置出题要求</h2><p>先确定学生需要学会什么。</p></div></div>
+          <label class="field">出题主题<input name="topic" required minlength="1" maxlength="120" value="无创通气面罩相关压力性损伤" placeholder="例如：面罩相关压力性损伤"></label>
+          <label class="field">学习目标<textarea name="learning_objective" required minlength="1" maxlength="400" rows="3" placeholder="例如：根据局部皮肤线索进行判断，并提出兼顾减压与通气效果的措施。">识别器械相关压力损伤风险，提出兼顾局部组织保护与器械治疗的护理措施。</textarea></label>
+          <div class="field-pair"><label class="field">适用人群<select name="population"><option value="adult">成人</option><option value="pediatric">儿童</option><option value="neonatal">新生儿</option></select></label><label class="field">器械<select name="device_type" required disabled><option value="">正在加载…</option></select></label></div>
+          <div class="field-pair"><label class="field">预期难度<select name="difficulty"><option>基础</option><option selected>进阶</option><option>复杂</option></select></label><label class="field">题型<select name="question_type"><option value="short_answer">简答题</option><option value="single_choice">单项选择题</option></select></label></div>
+          <label class="field count-field">题目数量<select name="count"><option value="1">1 道 · 建议先试一道</option><option value="2">2 道</option><option value="3">3 道</option><option value="4">4 道</option><option value="5">5 道</option></select></label>
+          <fieldset class="material-field"><legend>选择已有材料 <span>必选</span></legend><p class="field-note">仅展示已登记的开发材料；检索时仍会核对人群和器械适用性。</p><div id="materials" class="materials" aria-live="polite"><p class="muted">正在加载材料…</p></div></fieldset>
+          <label class="field">补充要求 <span class="optional">可选</span><textarea name="requirements" maxlength="2000" rows="2" placeholder="例如：重点考查鉴别，不在题干中直接提示答案。"></textarea></label>
+          <div id="form-error" class="error" role="alert" hidden></div>
+          <button id="generate" class="button primary" type="submit" disabled><span>生成并审核题目</span><span aria-hidden="true">→</span></button>
+          <p class="submit-note">包含本地检索、联网取证、出题和独立审核。出题与修订可能需要数分钟，可稍后从最近任务继续查看。预期难度仍需学生试做验证。</p>
+        </form>
+        <section class="panel history-panel"><div class="history-heading"><h2>最近任务</h2><button class="text-button" id="refresh-jobs" type="button">刷新</button></div><div id="jobs" class="job-list"><p class="muted">正在加载…</p></div></section>
+      </aside>
+      <section class="results" aria-label="出题结果">
+        <div class="panel empty-state" id="empty"><div class="empty-illustration" aria-hidden="true"><span>?</span><i></i><b>✓</b></div><span class="eyebrow">EVIDENCE → QUESTION → REVIEW</span><h2>让每道题都有依据。</h2><p>从左侧选择材料并设置目标。完成后，可以查看题目、参考答案、评分点和审核记录。</p><div class="workflow"><span><b>1</b>检索与取证</span><span><b>2</b>生成题包</span><span><b>3</b>独立审核</span></div></div>
+        <article class="panel job-detail" id="job-detail" hidden>
+          <div class="job-heading"><div><span class="eyebrow">当前出题任务</span><h2 id="job-title"></h2><p id="job-meta" class="muted"></p></div><span id="job-status" class="status-pill"></span></div>
+          <div class="progress" id="progress" aria-live="polite"><div class="progress-line"><span id="progress-label"></span><span id="progress-count"></span></div><progress id="progress-meter" max="100" value="0"></progress></div>
+          <div id="job-error" class="error" role="status" hidden></div><div id="job-summary" class="summary" hidden></div>
+          <details class="batch-plan" id="batch-plan" open hidden>
+            <summary><span class="batch-plan-icon" aria-hidden="true">▦</span><span><strong>整套命题安排</strong><small id="batch-plan-caption"></small></span><span class="batch-plan-chevron" aria-hidden="true">⌄</span></summary>
+            <div class="batch-plan-body" id="batch-plan-body"></div>
+          </details>
+          <details class="question-details" id="job-evidence" hidden><summary>本轮检索与证据</summary><div class="details-body" id="job-evidence-body"></div></details>
+          <div id="questions" class="questions"></div>
+          <div class="job-footer"><span>独立 AI 审核通过的题目仍属于开发材料。</span><a id="export" class="button secondary" download>下载题包 JSON ↓</a></div>
+        </article>
+        <p class="workspace-note">本工作区不会自动修改正式题库，也不会将难度标注视为经过学生验证的结论。</p>
+      </section>
+    </div>
+  </main>
+  <noscript>请启用 JavaScript 使用出题工作室。</noscript>
+</body>
+</html>

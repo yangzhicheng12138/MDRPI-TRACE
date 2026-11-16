@@ -1,0 +1,1865 @@
+{
+  "version": "catalog_taxonomy_20261013_choice_supplement",
+  "modules": {
+    "specialty": "MDRPI专项案例训练",
+    "foundation": "基础知识练习"
+  },
+  "populations": {
+    "adult": "成人",
+    "pediatric": "儿童",
+    "neonatal": "新生儿"
+  },
+  "devices": {
+    "niv_mask": "无创通气面罩",
+    "nasogastric_tube": "鼻胃管",
+    "endotracheal_tube": "气管插管",
+    "pulse_oximeter": "血氧探头",
+    "cervical_collar": "颈托",
+    "nasal_cannula": "鼻导管",
+    "nasal_prong_cpap": "鼻塞式CPAP",
+    "fixation_tape": "固定胶带",
+    "nasojejunal_tube": "鼻空肠管",
+    "nasal_tube_fixation_device": "鼻部固定装置",
+    "bite_block": "牙垫",
+    "tracheostomy_tube": "气管切开套管",
+    "cast": "石膏固定",
+    "thoracolumbosacral_brace": "胸腰骶支具",
+    "hip_abduction_brace": "髋关节外展支具",
+    "blood_pressure_cuff": "血压袖带",
+    "vascular_access_device": "血管通路与接头",
+    "ecg_electrode": "心电监测电极",
+    "temperature_probe": "温度探头",
+    "orogastric_tube": "口胃管",
+    "urinary_catheter": "导尿管",
+    "general_mdrpi": "综合器械与通用护理"
+  },
+  "difficulties": [
+    "基础",
+    "进阶",
+    "复杂"
+  ],
+  "difficulty_aliases": {
+    "综合": "进阶"
+  },
+  "module_mapping": {
+    "mdrpi": "specialty",
+    "original": "specialty",
+    "skin": "foundation",
+    "devices": "foundation"
+  },
+  "specialty_items": {
+    "mask": {
+      "populations": [
+        "adult"
+      ],
+      "devices": [
+        "niv_mask"
+      ],
+      "basis": "modes/teaching.py:CASES.mask.case",
+      "source_sha256": "992885c7d6a748694c75599a9a8781e3cd385e7feae324c551cd215e1e20a0d4"
+    },
+    "tube": {
+      "populations": [
+        "adult"
+      ],
+      "devices": [
+        "nasogastric_tube"
+      ],
+      "basis": "modes/teaching.py:CASES.tube.case",
+      "source_sha256": "284900c740b2b2820b26964b046d64626bde618bd2b9ea18effb164435fa3609"
+    },
+    "complex": {
+      "populations": [
+        "adult"
+      ],
+      "devices": [
+        "endotracheal_tube",
+        "cervical_collar"
+      ],
+      "basis": "modes/teaching.py:CASES.complex.case",
+      "source_sha256": "4fe6ef1429d86f3b92ddddf00a4199c5036f9decaa4ff72ee92949437a44f2d6"
+    },
+    "mdrpi-cannula-blanching": {
+      "populations": [
+        "adult"
+      ],
+      "devices": [
+        "nasal_cannula"
+      ],
+      "basis": "data/teaching_bank/mdrpi_specialty.json:mdrpi-cannula-blanching.scope",
+      "source_sha256": "756ab5418f327079e4d4e68b7eaacd03742caa1a270867f48d64ea0838fd4b4a"
+    },
+    "mdrpi-probe-nonblanching": {
+      "populations": [
+        "adult"
+      ],
+      "devices": [
+        "pulse_oximeter"
+      ],
+      "basis": "data/teaching_bank/mdrpi_specialty.json:mdrpi-probe-nonblanching.scope",
+      "source_sha256": "1ce81325b559ccc4dc046bda8737fa31bcbdb4fd7f6b1caa4c592a030c9a0b62"
+    },
+    "mdrpi-lip-mucosa": {
+      "populations": [
+        "adult"
+      ],
+      "devices": [
+        "endotracheal_tube"
+      ],
+      "basis": "data/teaching_bank/mdrpi_specialty.json:mdrpi-lip-mucosa.scope",
+      "source_sha256": "a1a7282c0444d911d9fbf28540ed5b973220fb4cb6e9b030ed6b710b82aecf02"
+    },
+    "mdrpi-niv-dressing": {
+      "populations": [
+        "adult"
+      ],
+      "devices": [
+        "niv_mask"
+      ],
+      "basis": "data/teaching_bank/mdrpi_specialty.json:mdrpi-niv-dressing.scope",
+      "source_sha256": "3c3dfbf69b1786416ffdb6de6f6b10f3cdca6288473946857c0225f637ccc36d"
+    },
+    "mdrpi-collar-edema": {
+      "populations": [
+        "adult"
+      ],
+      "devices": [
+        "cervical_collar"
+      ],
+      "basis": "data/teaching_bank/mdrpi_specialty.json:mdrpi-collar-edema.scope",
+      "source_sha256": "33891eff0645a4dcd757dd6ac4d6a112075b5a8ee6a6cafbba9bde274ee0804f"
+    },
+    "mdrpi-adhesive-differential": {
+      "populations": [
+        "adult"
+      ],
+      "devices": [
+        "nasogastric_tube",
+        "fixation_tape"
+      ],
+      "basis": "data/teaching_bank/mdrpi_specialty.json:mdrpi-adhesive-differential.scope",
+      "source_sha256": "9a7123c2aeaff63d99335524ecf223361168487de3b824f7674386aae0dae1ee"
+    },
+    "mdrpi-dark-skin-assessment": {
+      "populations": [
+        "adult"
+      ],
+      "devices": [
+        "pulse_oximeter"
+      ],
+      "basis": "data/teaching_bank/mdrpi_specialty.json:mdrpi-dark-skin-assessment.scope",
+      "source_sha256": "83501c6200e5b946efc39d3f966b41efb953dc78cfa57505543aba6002e6a961"
+    },
+    "mdrpi-neonatal-applicability": {
+      "populations": [
+        "neonatal"
+      ],
+      "devices": [
+        "nasal_prong_cpap"
+      ],
+      "basis": "data/teaching_bank/mdrpi_specialty.json:mdrpi-neonatal-applicability.scope",
+      "source_sha256": "3f707ea88ccf89bdc9f22373b110321347be3226101b447ad7a9af3630317a68"
+    }
+  },
+  "note": "目录注释来自已有病例的明确人群/器械信息，不改变题面、评分、审核状态或旧分类。30例标准病例已按第二版原件导入，其分类绑定源题面哈希；专家评分细则及标准答案未在原件中提供。",
+  "display_annotations": {
+    "openrn-fund10-2": {
+      "populations": [
+        "adult"
+      ],
+      "devices": [
+        "general_mdrpi"
+      ],
+      "topic": "risk",
+      "basis": "原教材题面/答案及已核对概念；明确成年人或成人教材语境。通用卡只跨年龄展示定义，Braden成人量表卡不外推儿童/新生儿。",
+      "source_sha256": "56afe6e0d8309110acc0185c3db42643192a023fba99c571956d0cebcb4ca8ac"
+    },
+    "openrn-skills14-1": {
+      "populations": [
+        "adult"
+      ],
+      "devices": [
+        "general_mdrpi"
+      ],
+      "topic": "assessment",
+      "basis": "原教材题面/答案及已核对概念；明确成年人或成人教材语境。通用卡只跨年龄展示定义，Braden成人量表卡不外推儿童/新生儿。",
+      "source_sha256": "f6add5b5cff92d95617d69430171b62654ca2c7bf760b1d8b38859bfb97a2d88"
+    },
+    "openrn-skills20-1a": {
+      "populations": [
+        "adult"
+      ],
+      "devices": [
+        "general_mdrpi"
+      ],
+      "topic": "risk",
+      "basis": "原教材题面/答案及已核对概念；明确成年人或成人教材语境。通用卡只跨年龄展示定义，Braden成人量表卡不外推儿童/新生儿。",
+      "source_sha256": "1c6c4e056912ae1a2be0309dc1fff61f361cbaacea2e55e1da74fab3bc7bc2d3"
+    },
+    "openrn-skills20-1b": {
+      "populations": [
+        "adult"
+      ],
+      "devices": [
+        "general_mdrpi"
+      ],
+      "topic": "risk",
+      "basis": "原教材题面/答案及已核对概念；明确成年人或成人教材语境。通用卡只跨年龄展示定义，Braden成人量表卡不外推儿童/新生儿。",
+      "source_sha256": "baf40d49834fff4fe3fb4dd0fbee64b5d6cb2d9dab95b99f07318545b4d465a2"
+    },
+    "openrn-skills17-1": {
+      "populations": [
+        "adult"
+      ],
+      "devices": [
+        "general_mdrpi"
+      ],
+      "topic": "device_care",
+      "basis": "原教材题面/答案及已核对概念；明确成年人或成人教材语境。通用卡只跨年龄展示定义，Braden成人量表卡不外推儿童/新生儿。",
+      "source_sha256": "29f1659160da6cbb853ee42246eb868c5ee2b003ae023234205e5ba50351ee11"
+    },
+    "openrn-skills21-1": {
+      "populations": [
+        "adult"
+      ],
+      "devices": [
+        "urinary_catheter"
+      ],
+      "topic": "device_care",
+      "basis": "原教材题面/答案及已核对概念；明确成年人或成人教材语境。通用卡只跨年龄展示定义，Braden成人量表卡不外推儿童/新生儿。",
+      "source_sha256": "c12daed56de7a37f4f9fec16a8ae4821f2016b4d26681ae9b861490d7cea257b"
+    },
+    "openrn-skills21-2": {
+      "populations": [
+        "adult"
+      ],
+      "devices": [
+        "urinary_catheter"
+      ],
+      "topic": "device_care",
+      "basis": "原教材题面/答案及已核对概念；明确成年人或成人教材语境。通用卡只跨年龄展示定义，Braden成人量表卡不外推儿童/新生儿。",
+      "source_sha256": "1d8d7c036c8adc98514739db182d846207b698698006505f4b34b690d8bf5663"
+    },
+    "openrn-skills21-3": {
+      "populations": [
+        "adult"
+      ],
+      "devices": [
+        "general_mdrpi"
+      ],
+      "topic": "device_care",
+      "basis": "原教材题面/答案及已核对概念；明确成年人或成人教材语境。通用卡只跨年龄展示定义，Braden成人量表卡不外推儿童/新生儿。",
+      "source_sha256": "05cd8919696d1e0fd833ae28602aca214d77d062adfa24d1e92d1e8481591ef7"
+    },
+    "openrn-skills21-4": {
+      "populations": [
+        "adult"
+      ],
+      "devices": [
+        "urinary_catheter"
+      ],
+      "topic": "device_care",
+      "basis": "原教材题面/答案及已核对概念；明确成年人或成人教材语境。通用卡只跨年龄展示定义，Braden成人量表卡不外推儿童/新生儿。",
+      "source_sha256": "1e68b8e0e448f157408e7afb0fb85a4beca904f2bcab34568cc4c1ac8ae3cd4d"
+    },
+    "openrn-skills21-5": {
+      "populations": [
+        "adult"
+      ],
+      "devices": [
+        "general_mdrpi"
+      ],
+      "topic": "device_care",
+      "basis": "原教材题面/答案及已核对概念；明确成年人或成人教材语境。通用卡只跨年龄展示定义，Braden成人量表卡不外推儿童/新生儿。",
+      "source_sha256": "56c3ce3d7f8940adda41d188a1fa36751af31a732389f10e5ef3398e6ea22f14"
+    },
+    "openrn-skills21-6": {
+      "populations": [
+        "adult"
+      ],
+      "devices": [
+        "general_mdrpi"
+      ],
+      "topic": "device_care",
+      "basis": "原教材题面/答案及已核对概念；明确成年人或成人教材语境。通用卡只跨年龄展示定义，Braden成人量表卡不外推儿童/新生儿。",
+      "source_sha256": "0c368c1e86ce7db8b999427e282e7f3f32ca29270bf20b1ef2877c42601dcbb0"
+    },
+    "openrn-skills22-1": {
+      "populations": [
+        "adult"
+      ],
+      "devices": [
+        "tracheostomy_tube"
+      ],
+      "topic": "device_care",
+      "basis": "原教材题面/答案及已核对概念；明确成年人或成人教材语境。通用卡只跨年龄展示定义，Braden成人量表卡不外推儿童/新生儿。",
+      "source_sha256": "b2a27f4786e08bbf4b89c0d4d6e7af03bd9fba7528e8d246356e77a938123a39"
+    },
+    "openrn-skills22-2": {
+      "populations": [
+        "adult"
+      ],
+      "devices": [
+        "tracheostomy_tube"
+      ],
+      "topic": "device_care",
+      "basis": "原教材题面/答案及已核对概念；明确成年人或成人教材语境。通用卡只跨年龄展示定义，Braden成人量表卡不外推儿童/新生儿。",
+      "source_sha256": "0deaf41679dcd47a13d8a6c51b0015b8a328c2088fba674a86d03c225f4ca129"
+    },
+    "openrn-skills11-1": {
+      "populations": [
+        "adult"
+      ],
+      "devices": [
+        "general_mdrpi"
+      ],
+      "topic": "device_care",
+      "basis": "原教材题面/答案及已核对概念；明确成年人或成人教材语境。通用卡只跨年龄展示定义，Braden成人量表卡不外推儿童/新生儿。",
+      "source_sha256": "bbec6ab2fb6ac0368010557d3541ea7ed9aa08a889e8430fd916cf69d2249d68"
+    },
+    "openrn-skin-card-4": {
+      "populations": [
+        "adult"
+      ],
+      "devices": [
+        "general_mdrpi"
+      ],
+      "topic": "risk",
+      "basis": "原教材题面/答案及已核对概念；明确成年人或成人教材语境。通用卡只跨年龄展示定义，Braden成人量表卡不外推儿童/新生儿。",
+      "source_sha256": "fe8b853d397cf8da33738b752de46e0f5bce19b8556f1410f7bff4a56b6845f7"
+    },
+    "openrn-skin-card-5": {
+      "populations": [
+        "adult",
+        "pediatric",
+        "neonatal"
+      ],
+      "devices": [
+        "general_mdrpi"
+      ],
+      "topic": "classification",
+      "basis": "原教材题面/答案及已核对概念；明确成年人或成人教材语境。通用卡只跨年龄展示定义，Braden成人量表卡不外推儿童/新生儿。",
+      "source_sha256": "3ae937a8e8b03cf8f00d8ec29fc4b089bd74d670d1d4ee2326ec8287918f1bc6"
+    },
+    "openrn-skin-card-10": {
+      "populations": [
+        "adult",
+        "pediatric",
+        "neonatal"
+      ],
+      "devices": [
+        "general_mdrpi"
+      ],
+      "topic": "mechanism",
+      "basis": "原教材题面/答案及已核对概念；明确成年人或成人教材语境。通用卡只跨年龄展示定义，Braden成人量表卡不外推儿童/新生儿。",
+      "source_sha256": "f483c684c0052628d5acae60c8b6f8cf35a341f65b95c0d8aa78f3ec4b7fbd4b"
+    },
+    "openrn-skin-card-12": {
+      "populations": [
+        "adult",
+        "pediatric",
+        "neonatal"
+      ],
+      "devices": [
+        "general_mdrpi"
+      ],
+      "topic": "mechanism",
+      "basis": "原教材题面/答案及已核对概念；明确成年人或成人教材语境。通用卡只跨年龄展示定义，Braden成人量表卡不外推儿童/新生儿。",
+      "source_sha256": "f298cec349a4a6ce72887e2087321a64ae15b7cda4391293bce37c0390c9e031"
+    },
+    "openrn-skin-card-13": {
+      "populations": [
+        "adult",
+        "pediatric",
+        "neonatal"
+      ],
+      "devices": [
+        "general_mdrpi"
+      ],
+      "topic": "mechanism",
+      "basis": "原教材题面/答案及已核对概念；明确成年人或成人教材语境。通用卡只跨年龄展示定义，Braden成人量表卡不外推儿童/新生儿。",
+      "source_sha256": "af66064b49d5784375c1a14ee38b0a1a90999b1f392f896de00e942e3cdf1ffa"
+    },
+    "openrn-skin-card-16": {
+      "populations": [
+        "adult",
+        "pediatric",
+        "neonatal"
+      ],
+      "devices": [
+        "general_mdrpi"
+      ],
+      "topic": "mechanism",
+      "basis": "原教材题面/答案及已核对概念；明确成年人或成人教材语境。通用卡只跨年龄展示定义，Braden成人量表卡不外推儿童/新生儿。",
+      "source_sha256": "1e5f821c1cfdd3f6c441f21ce96df50ca11a4aa946a44e4f147f7cdd70720167"
+    },
+    "openrn-skin-card-18": {
+      "populations": [
+        "adult",
+        "pediatric",
+        "neonatal"
+      ],
+      "devices": [
+        "general_mdrpi"
+      ],
+      "topic": "mechanism",
+      "basis": "原教材题面/答案及已核对概念；明确成年人或成人教材语境。通用卡只跨年龄展示定义，Braden成人量表卡不外推儿童/新生儿。",
+      "source_sha256": "e74d877d6332dde9ac6e5673e79f482a57169846d8048f3adadd8e78e9e78fe7"
+    },
+    "openrn-skin-card-22": {
+      "populations": [
+        "adult",
+        "pediatric",
+        "neonatal"
+      ],
+      "devices": [
+        "general_mdrpi"
+      ],
+      "topic": "mechanism",
+      "basis": "原教材题面/答案及已核对概念；明确成年人或成人教材语境。通用卡只跨年龄展示定义，Braden成人量表卡不外推儿童/新生儿。",
+      "source_sha256": "475a5dbfec4b0300871cd6a864bc8b7af9901cac4de2ab8e19d967f6777e77fa"
+    },
+    "openrn-skin-card-24": {
+      "populations": [
+        "adult",
+        "pediatric",
+        "neonatal"
+      ],
+      "devices": [
+        "general_mdrpi"
+      ],
+      "topic": "mechanism",
+      "basis": "原教材题面/答案及已核对概念；明确成年人或成人教材语境。通用卡只跨年龄展示定义，Braden成人量表卡不外推儿童/新生儿。",
+      "source_sha256": "8c15a135adf2b69008a70f7b0550214e3d1349359857d1898e9489aacfe941a2"
+    },
+    "openrn-skin-card-32": {
+      "populations": [
+        "adult",
+        "pediatric",
+        "neonatal"
+      ],
+      "devices": [
+        "general_mdrpi"
+      ],
+      "topic": "mechanism",
+      "basis": "原教材题面/答案及已核对概念；明确成年人或成人教材语境。通用卡只跨年龄展示定义，Braden成人量表卡不外推儿童/新生儿。",
+      "source_sha256": "c388d4939f998578f27d393e96105bdd7fc365fcba88d56ebff1d8108ee3fcc0"
+    },
+    "openrn-skin-card-34": {
+      "populations": [
+        "adult",
+        "pediatric",
+        "neonatal"
+      ],
+      "devices": [
+        "general_mdrpi"
+      ],
+      "topic": "classification",
+      "basis": "原教材题面/答案及已核对概念；明确成年人或成人教材语境。通用卡只跨年龄展示定义，Braden成人量表卡不外推儿童/新生儿。",
+      "source_sha256": "6153c6feab02dedcc9a9dcafc8253a6b8a4229a30c1be71884d2234423e5b3f2"
+    },
+    "openrn-skin-card-35": {
+      "populations": [
+        "adult",
+        "pediatric",
+        "neonatal"
+      ],
+      "devices": [
+        "general_mdrpi"
+      ],
+      "topic": "classification",
+      "basis": "原教材题面/答案及已核对概念；明确成年人或成人教材语境。通用卡只跨年龄展示定义，Braden成人量表卡不外推儿童/新生儿。",
+      "source_sha256": "7d9295ba28a36a265eeb8dee52be31803f71691566c0c40e6638f7ef516e7bae"
+    },
+    "openrn-skin-card-36": {
+      "populations": [
+        "adult",
+        "pediatric",
+        "neonatal"
+      ],
+      "devices": [
+        "general_mdrpi"
+      ],
+      "topic": "classification",
+      "basis": "原教材题面/答案及已核对概念；明确成年人或成人教材语境。通用卡只跨年龄展示定义，Braden成人量表卡不外推儿童/新生儿。",
+      "source_sha256": "86138cc1b061911d83718fb1cf237973588c8ddb1a44b7746fd0bfdd3b7734e1"
+    },
+    "openrn-skin-card-37": {
+      "populations": [
+        "adult",
+        "pediatric",
+        "neonatal"
+      ],
+      "devices": [
+        "general_mdrpi"
+      ],
+      "topic": "classification",
+      "basis": "原教材题面/答案及已核对概念；明确成年人或成人教材语境。通用卡只跨年龄展示定义，Braden成人量表卡不外推儿童/新生儿。",
+      "source_sha256": "c90026c539852a9041e5671d288594842ec91b37902e59c6d9c8ee91a4b995af"
+    },
+    "openrn-skin-card-39": {
+      "populations": [
+        "adult",
+        "pediatric",
+        "neonatal"
+      ],
+      "devices": [
+        "general_mdrpi"
+      ],
+      "topic": "mechanism",
+      "basis": "原教材题面/答案及已核对概念；明确成年人或成人教材语境。通用卡只跨年龄展示定义，Braden成人量表卡不外推儿童/新生儿。",
+      "source_sha256": "9fba43082537640db63de6fa2ee5e8de25a698b4a59e7834340b4ed5a00a8159"
+    },
+    "openrn-skin-card-41": {
+      "populations": [
+        "adult",
+        "pediatric",
+        "neonatal"
+      ],
+      "devices": [
+        "general_mdrpi"
+      ],
+      "topic": "classification",
+      "basis": "原教材题面/答案及已核对概念；明确成年人或成人教材语境。通用卡只跨年龄展示定义，Braden成人量表卡不外推儿童/新生儿。",
+      "source_sha256": "fa5ec3f18fef0262b030ffa5a883ef8ae1ae1d91821efe0261f926b6b20f25ed"
+    },
+    "mdrpi-draft-device-inventory": {
+      "populations": [
+        "adult"
+      ],
+      "devices": [
+        "nasal_cannula",
+        "pulse_oximeter"
+      ],
+      "topic": "device_care",
+      "basis": "Scenario population and source applicability: ig-drpi-2025; Explicit device named in project question and source device-related context",
+      "source_sha256": "14bdfb3e2a3280f2234fc003ea6c6cbf8a7cfaf31b161b868bc37a8b7cc4344b"
+    },
+    "mdrpi-draft-baseline-comparison": {
+      "populations": [
+        "adult"
+      ],
+      "devices": [
+        "niv_mask"
+      ],
+      "topic": "device_care",
+      "basis": "Scenario population and source applicability: ig-drpi-2025; Explicit device named in project question and source device-related context",
+      "source_sha256": "88294e3e8551002ad8ac377c85c875e0b5aed015e7a5697cc77ce088274e344f"
+    },
+    "mdrpi-draft-turning-tubing": {
+      "populations": [
+        "adult"
+      ],
+      "devices": [
+        "nasogastric_tube"
+      ],
+      "topic": "device_care",
+      "basis": "Scenario population and source applicability: ig-drpi-2025; Explicit device named in project question and source device-related context",
+      "source_sha256": "4f7d06a5322ec5f33ed0057f726358abaa507be355821bd018745549a1032a4f"
+    },
+    "mdrpi-draft-carer-observation": {
+      "populations": [
+        "adult"
+      ],
+      "devices": [
+        "nasal_cannula"
+      ],
+      "topic": "device_care",
+      "basis": "Scenario population and source applicability: ig-assessment-2026; Explicit device named in project question and source device-related context",
+      "source_sha256": "1b630fc42ad13689fa39b92828cb97df91c0339ea77684eb4fe326c451355b6b"
+    },
+    "mdrpi-draft-neonatal-fit": {
+      "populations": [
+        "neonatal"
+      ],
+      "devices": [
+        "nasal_prong_cpap"
+      ],
+      "topic": "device_care",
+      "basis": "Scenario population and source applicability: ig-drpi-2025; Explicit device named in project question and source device-related context",
+      "source_sha256": "20740c2c097e1b3c3b559285236d4c054f5d99eb1ba39f010d5cbd83f9bd7dce"
+    },
+    "mdrpi-draft-child-probe-report": {
+      "populations": [
+        "pediatric"
+      ],
+      "devices": [
+        "pulse_oximeter"
+      ],
+      "topic": "device_care",
+      "basis": "Scenario population and source applicability: ig-drpi-2025; Explicit device named in project question and source device-related context",
+      "source_sha256": "aa4b4c8fce4b505c2778412caaa0c131f12ae3e5d6cc7ad59ae10047f3cabad2"
+    },
+    "mdrpi-draft-interface-moisture": {
+      "populations": [
+        "adult"
+      ],
+      "devices": [
+        "niv_mask"
+      ],
+      "topic": "device_care",
+      "basis": "Scenario population and source applicability: ig-drpi-2025; Explicit device named in project question and source device-related context",
+      "source_sha256": "a31a9aacacb53b9053be6dfbc59e5993b99eac3d3f19f9b1547fc981b7035fd3"
+    },
+    "mdrpi-draft-dressing-followup": {
+      "populations": [
+        "adult"
+      ],
+      "devices": [
+        "niv_mask"
+      ],
+      "topic": "device_care",
+      "basis": "Scenario population and source applicability: ig-drpi-2025; Explicit device named in project question and source device-related context",
+      "source_sha256": "3970e02e7abdbeb86ba678c1ef55fd199400d51f42e98462a39037b9c6f36201"
+    },
+    "mdrpi-draft-ett-evidence-scope": {
+      "populations": [
+        "adult"
+      ],
+      "devices": [
+        "endotracheal_tube"
+      ],
+      "topic": "device_care",
+      "basis": "Scenario population and source applicability: ig-drpi-2025; Explicit device named in project question and source device-related context",
+      "source_sha256": "bdc9ea00bad4d47367ad6052911c31e54b557eba8b4ee4103751f85960f86fe2"
+    },
+    "mdrpi-draft-collar-indication-review": {
+      "populations": [
+        "adult"
+      ],
+      "devices": [
+        "cervical_collar"
+      ],
+      "topic": "device_care",
+      "basis": "Scenario population and source applicability: ig-drpi-2025; Explicit device named in project question and source device-related context",
+      "source_sha256": "a8fb03b271e0750de9b929a75191a386b94100980d50f1ffadfbcd128defae2a"
+    },
+    "mdrpi-draft-mucosal-recording": {
+      "populations": [
+        "adult"
+      ],
+      "devices": [
+        "endotracheal_tube"
+      ],
+      "topic": "device_care",
+      "basis": "Scenario population and source applicability: npiap-staging-2016; Explicit device named in project question and source device-related context",
+      "source_sha256": "cc07594ed3fe00f27c9fa28a6f6161c13626e55e666fe34df12cbb95ffc96e32"
+    },
+    "mdrpi-draft-risk-versus-stage": {
+      "populations": [
+        "adult"
+      ],
+      "devices": [
+        "nasogastric_tube"
+      ],
+      "topic": "device_care",
+      "basis": "Scenario population and source applicability: openrn-pressure-2e; Explicit device named in project question and source device-related context",
+      "source_sha256": "ea9284260d3e31236cb39542b4e82196da10dd1bf621969d5acc137a5aa5b0db"
+    },
+    "exp250-ad01": {
+      "populations": [
+        "adult"
+      ],
+      "devices": [
+        "niv_mask"
+      ],
+      "topic": "assessment",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "b871040f12b64e9b386f3758dcd3050a0fe82ddb071b742e7b0975bcbb61343c"
+    },
+    "exp250-ad02": {
+      "populations": [
+        "adult"
+      ],
+      "devices": [
+        "niv_mask",
+        "fixation_tape"
+      ],
+      "topic": "classification",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "38d9d2ad36da9b72d1c35313f5dd79a54dbb99bf14d73a354561319ccafcb4e2"
+    },
+    "exp250-ad03": {
+      "populations": [
+        "adult"
+      ],
+      "devices": [
+        "niv_mask"
+      ],
+      "topic": "prevention",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "f9045a930d3f4d8a6047ce09eba43407fa857ec8a7b3b041dd6f2e38efa4efd1"
+    },
+    "exp250-ad04": {
+      "populations": [
+        "adult"
+      ],
+      "devices": [
+        "nasal_cannula"
+      ],
+      "topic": "mechanism",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "da357cc9f9e038dc7fa753d4fcc557982c108f4f186f52a674344632d078b10e"
+    },
+    "exp250-ad05": {
+      "populations": [
+        "adult"
+      ],
+      "devices": [
+        "nasal_cannula"
+      ],
+      "topic": "classification",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "1a40f3f2d508ec11ce33e746bf112f18a98cf4d9a9c8a5e9f87bd653e634ff5d"
+    },
+    "exp250-ad06": {
+      "populations": [
+        "adult"
+      ],
+      "devices": [
+        "nasal_cannula"
+      ],
+      "topic": "assessment",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "ae0d5b93ea330c372c52104d3d267100f0430e8dda0d50a96748440b187c160b"
+    },
+    "exp250-ad07": {
+      "populations": [
+        "adult"
+      ],
+      "devices": [
+        "nasogastric_tube"
+      ],
+      "topic": "device_care",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "24f4c6346729f30b106c6992a1301c14321c13d3e896677f9d9163f42a0f397d"
+    },
+    "exp250-ad08": {
+      "populations": [
+        "adult"
+      ],
+      "devices": [
+        "nasojejunal_tube",
+        "nasal_tube_fixation_device"
+      ],
+      "topic": "prevention",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "a0e5198a693211b0d81a8f4d54987be563e8f94dd7f3abea9005e1310f7af0ef"
+    },
+    "exp250-ad09": {
+      "populations": [
+        "adult"
+      ],
+      "devices": [
+        "nasogastric_tube",
+        "nasal_tube_fixation_device"
+      ],
+      "topic": "classification",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "87d80e6cacbb97c3481aa720ac4f15687849107c741457a65cf7bebb51545e43"
+    },
+    "exp250-ad10": {
+      "populations": [
+        "adult"
+      ],
+      "devices": [
+        "endotracheal_tube",
+        "fixation_tape"
+      ],
+      "topic": "classification",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "dc9e0a4e059e6c2d4712f821b6045b6d0a5cd12d234d415abc811b8f662b5717"
+    },
+    "exp250-ad11": {
+      "populations": [
+        "adult"
+      ],
+      "devices": [
+        "endotracheal_tube",
+        "bite_block"
+      ],
+      "topic": "classification",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "abfa36eb1569eabbe73d12524648b1f59c10ea313a802f6faadb8b9ff9bad02b"
+    },
+    "exp250-ad12": {
+      "populations": [
+        "adult"
+      ],
+      "devices": [
+        "endotracheal_tube"
+      ],
+      "topic": "evidence",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "bd1fced841ecb1bf16bb0cfc289447ae7c28ea9b3a6d8872535ad956acb12278"
+    },
+    "exp250-ad13": {
+      "populations": [
+        "adult"
+      ],
+      "devices": [
+        "tracheostomy_tube"
+      ],
+      "topic": "documentation",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "dcea69ec150f5b570563bcc0a439cf939b6511ebb4dc8c94a41a838996abb7f4"
+    },
+    "exp250-ad14": {
+      "populations": [
+        "adult"
+      ],
+      "devices": [
+        "tracheostomy_tube",
+        "fixation_tape"
+      ],
+      "topic": "classification",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "e5b0e2852dfd0e461cd6bac938df43606de29fcbb01eee62cee88e8fa51272d6"
+    },
+    "exp250-ad15": {
+      "populations": [
+        "adult"
+      ],
+      "devices": [
+        "tracheostomy_tube"
+      ],
+      "topic": "device_care",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "bc50c489b970841c8b17d93087c89021a65d8249690950f3310a71bd460291b5"
+    },
+    "exp250-ad16": {
+      "populations": [
+        "adult"
+      ],
+      "devices": [
+        "pulse_oximeter"
+      ],
+      "topic": "assessment",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "af8662065dc6720837462f524dcb4673e0a9ee839f1518b60311ae0ff9f9a0d1"
+    },
+    "exp250-ad17": {
+      "populations": [
+        "adult"
+      ],
+      "devices": [
+        "pulse_oximeter"
+      ],
+      "topic": "assessment",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "b4715fe69615d04f12c433266a06ce51f7916400fac3d8b2554a12f25b92ef29"
+    },
+    "exp250-ad18": {
+      "populations": [
+        "adult"
+      ],
+      "devices": [
+        "pulse_oximeter"
+      ],
+      "topic": "assessment",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "69a9138df6b3ff45914aded530d66d2da2a27a9f64d6d8bca4413962d02636ed"
+    },
+    "exp250-ad19": {
+      "populations": [
+        "adult"
+      ],
+      "devices": [
+        "thoracolumbosacral_brace"
+      ],
+      "topic": "prevention",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "d34cf2e6cd0b2acaa214cca2dce2cde0217b53a2e0683d7a800e6a4eb7f48d31"
+    },
+    "exp250-ad20": {
+      "populations": [
+        "adult"
+      ],
+      "devices": [
+        "cast"
+      ],
+      "topic": "device_care",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "8e172d1d0eb6f350040bb5defb39a93401c25bcb5607163a4eb8163a131cbd60"
+    },
+    "exp250-ad21": {
+      "populations": [
+        "adult"
+      ],
+      "devices": [
+        "cervical_collar"
+      ],
+      "topic": "device_care",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "d6fb6623252167de2fc7ddf3cead2b0bd69ccff298b085ab5d1c962af083050f"
+    },
+    "exp250-ad22": {
+      "populations": [
+        "adult"
+      ],
+      "devices": [
+        "blood_pressure_cuff"
+      ],
+      "topic": "assessment",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "db66d88942234f9d0fc5dd6fb8e577288d324111f7b7b09969212504237a1cd1"
+    },
+    "exp250-ad23": {
+      "populations": [
+        "adult"
+      ],
+      "devices": [
+        "urinary_catheter",
+        "fixation_tape"
+      ],
+      "topic": "classification",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "9159c3960e516e7f56d317b63f52d27de34ba602f8063456e08a959f3ae4d225"
+    },
+    "exp250-ad24": {
+      "populations": [
+        "adult"
+      ],
+      "devices": [
+        "vascular_access_device",
+        "blood_pressure_cuff"
+      ],
+      "topic": "risk",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "f0b473d861b49c2dd588d442c145a79e9aef780a0f1a060a4661c9c62d36f11f"
+    },
+    "exp250-pd01": {
+      "populations": [
+        "pediatric"
+      ],
+      "devices": [
+        "niv_mask"
+      ],
+      "topic": "special_population",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "71360477dace1130c78fff69c3056b90716d523d0dcf6a9a5be37261218a81e2"
+    },
+    "exp250-pd02": {
+      "populations": [
+        "pediatric"
+      ],
+      "devices": [
+        "niv_mask"
+      ],
+      "topic": "classification",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "168c2d5265570f0d97bc30c6b9425fc9180e7da454989fb66eb2103e64d6550c"
+    },
+    "exp250-pd03": {
+      "populations": [
+        "pediatric"
+      ],
+      "devices": [
+        "niv_mask"
+      ],
+      "topic": "special_population",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "d48c539a5618e1db769e6f3559719bd0fe3f2e12b77bbb6cb16f0436c348541f"
+    },
+    "exp250-pd04": {
+      "populations": [
+        "pediatric"
+      ],
+      "devices": [
+        "nasal_cannula"
+      ],
+      "topic": "assessment",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "85dd44de6827f59ce687a4507b619fb09c3fbfa030f2018c048178e7b534effc"
+    },
+    "exp250-pd05": {
+      "populations": [
+        "pediatric"
+      ],
+      "devices": [
+        "nasal_cannula",
+        "fixation_tape"
+      ],
+      "topic": "prevention",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "17723b386fe557af507ac61cad7bb0e6dc5f1348075822f4007084935b314445"
+    },
+    "exp250-pd06": {
+      "populations": [
+        "pediatric"
+      ],
+      "devices": [
+        "nasal_cannula",
+        "niv_mask"
+      ],
+      "topic": "special_population",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "dc75200b7e393ec87b2eb331900f011ad98dc60f96d184026b0ee86d5b3ad873"
+    },
+    "exp250-pd07": {
+      "populations": [
+        "pediatric"
+      ],
+      "devices": [
+        "nasogastric_tube"
+      ],
+      "topic": "device_care",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "70aa801265f672f3611fa82a00135d63073ebb6613b400848cea68761881bd59"
+    },
+    "exp250-pd08": {
+      "populations": [
+        "pediatric"
+      ],
+      "devices": [
+        "nasogastric_tube",
+        "nasojejunal_tube"
+      ],
+      "topic": "special_population",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "49a58292f682f1a999a944a4ad000a5ef9b5601b3b9748648f61272bfc48c6fb"
+    },
+    "exp250-pd09": {
+      "populations": [
+        "pediatric"
+      ],
+      "devices": [
+        "nasogastric_tube"
+      ],
+      "topic": "device_care",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "a4f3130a3e02c2423db031e9ea84f933eb2e9731b86d755bf062ee2d7f7aa955"
+    },
+    "exp250-pd10": {
+      "populations": [
+        "pediatric"
+      ],
+      "devices": [
+        "endotracheal_tube",
+        "bite_block"
+      ],
+      "topic": "assessment",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "34db20116a2d31f44cbcb2b242673f8dfc7dcb8831b8223841fcc76f269c5642"
+    },
+    "exp250-pd11": {
+      "populations": [
+        "pediatric"
+      ],
+      "devices": [
+        "endotracheal_tube"
+      ],
+      "topic": "evidence",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "69674a6b72d0246668714592d970038396b8716f2ca3548f91962517b6b5ea82"
+    },
+    "exp250-pd12": {
+      "populations": [
+        "pediatric"
+      ],
+      "devices": [
+        "endotracheal_tube",
+        "bite_block"
+      ],
+      "topic": "device_care",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "892ef65368940e5d3134680bf7da7ddd2dff25b1510eb5f31949f304ef9a2081"
+    },
+    "exp250-pd13": {
+      "populations": [
+        "pediatric"
+      ],
+      "devices": [
+        "tracheostomy_tube"
+      ],
+      "topic": "special_population",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "2cc34adf4680469a094053433b460c74c7902a796d3bf2fa0fb0f2d4e9a0307b"
+    },
+    "exp250-pd14": {
+      "populations": [
+        "pediatric"
+      ],
+      "devices": [
+        "tracheostomy_tube"
+      ],
+      "topic": "classification",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "14b5fba1f5932c63fa8a30b2266cbb4dca208d1ab7c3e74c48795f41fcdb5133"
+    },
+    "exp250-pd15": {
+      "populations": [
+        "pediatric"
+      ],
+      "devices": [
+        "tracheostomy_tube"
+      ],
+      "topic": "device_care",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "585d4bfd92c0221f538882f1a6609034c8d4d324d03f57f52f13c2c8786aa9f6"
+    },
+    "exp250-pd16": {
+      "populations": [
+        "pediatric"
+      ],
+      "devices": [
+        "pulse_oximeter"
+      ],
+      "topic": "special_population",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "caf0923a0ef91b954ebd3da3501371b8c8706585192af791d9d436bb9b319024"
+    },
+    "exp250-pd17": {
+      "populations": [
+        "pediatric"
+      ],
+      "devices": [
+        "pulse_oximeter",
+        "fixation_tape"
+      ],
+      "topic": "classification",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "6d95aaf8b9fc83a2d3f40b5fddbef5b3d32d7a778f3b6a11e4be66d5351fa24d"
+    },
+    "exp250-pd18": {
+      "populations": [
+        "pediatric"
+      ],
+      "devices": [
+        "pulse_oximeter"
+      ],
+      "topic": "assessment",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "1898d3a78bf6faab1196795abbe5f4fa03ed7e1106e019f34e49db8af73a0e57"
+    },
+    "exp250-pd19": {
+      "populations": [
+        "pediatric"
+      ],
+      "devices": [
+        "thoracolumbosacral_brace"
+      ],
+      "topic": "special_population",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "a14122abeeeb736d83a7d8000921740826000c529f0fa65a7dd9610fafe24a14"
+    },
+    "exp250-pd20": {
+      "populations": [
+        "pediatric"
+      ],
+      "devices": [
+        "cast"
+      ],
+      "topic": "device_care",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "627686ede893da05271662285730877cb2bd85b00197322c3bd182b18404f76c"
+    },
+    "exp250-pd21": {
+      "populations": [
+        "pediatric"
+      ],
+      "devices": [
+        "cast"
+      ],
+      "topic": "risk",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "7375269c88fdeeede70a9bad574f5f05fb3059f4dcbd47fa43e12f607d735740"
+    },
+    "exp250-pd22": {
+      "populations": [
+        "pediatric"
+      ],
+      "devices": [
+        "blood_pressure_cuff"
+      ],
+      "topic": "special_population",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "ca1c5fcdde3f41d6fd4b22f214d6ee07b11a3f36d9437a7bc961f20a790ed59f"
+    },
+    "exp250-pd23": {
+      "populations": [
+        "pediatric"
+      ],
+      "devices": [
+        "vascular_access_device"
+      ],
+      "topic": "assessment",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "a1ad2a4cad3a6d1a6cc2143068c498d0f9e98dc75b4c901efd4428282584d7cb"
+    },
+    "exp250-pd24": {
+      "populations": [
+        "pediatric"
+      ],
+      "devices": [
+        "blood_pressure_cuff",
+        "vascular_access_device",
+        "ecg_electrode"
+      ],
+      "topic": "risk",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "8591a5e235ca40b5b8351668f0245181f94f4143fc9d1e367b434a659b259230"
+    },
+    "exp250-nn01": {
+      "populations": [
+        "neonatal"
+      ],
+      "devices": [
+        "nasal_prong_cpap"
+      ],
+      "topic": "assessment",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "5ba7b0566e04e127b57d1c71f4606196115c053edf95f6f7ecc7ee1d8688b2dc"
+    },
+    "exp250-nn02": {
+      "populations": [
+        "neonatal"
+      ],
+      "devices": [
+        "nasal_prong_cpap"
+      ],
+      "topic": "classification",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "7fa8c8fd574a3d9d05c100e2231e7419d13ae6aeb379914031dd449725c8285c"
+    },
+    "exp250-nn03": {
+      "populations": [
+        "neonatal"
+      ],
+      "devices": [
+        "nasal_prong_cpap",
+        "niv_mask"
+      ],
+      "topic": "device_care",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "c5e163f184dc42abe3626046f6a1e4019811875bdf2eba311dcef01fde49d60a"
+    },
+    "exp250-nn04": {
+      "populations": [
+        "neonatal"
+      ],
+      "devices": [
+        "orogastric_tube"
+      ],
+      "topic": "device_care",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "c9de2056cfae84f2e2ee7fed640090ee12f5ca8f81b4bb939ce93cdc41123635"
+    },
+    "exp250-nn05": {
+      "populations": [
+        "neonatal"
+      ],
+      "devices": [
+        "orogastric_tube",
+        "fixation_tape"
+      ],
+      "topic": "classification",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "f610a9017f89facd4a3040ab1fbf1662dc93de3bfdc9f933eae99fbbcc9048a4"
+    },
+    "exp250-nn06": {
+      "populations": [
+        "neonatal"
+      ],
+      "devices": [
+        "nasal_prong_cpap",
+        "nasogastric_tube"
+      ],
+      "topic": "device_care",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "9f603779ca76cd00b8efdf5579ce4b5f386c7fd45e1f7feabd13c656b7b42cd7"
+    },
+    "exp250-nn07": {
+      "populations": [
+        "neonatal"
+      ],
+      "devices": [
+        "endotracheal_tube",
+        "fixation_tape"
+      ],
+      "topic": "assessment",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "6000d1622dfa55d33815adc1764bcd1ab1e9441ed5c46a62736a32a34edfefc5"
+    },
+    "exp250-nn08": {
+      "populations": [
+        "neonatal"
+      ],
+      "devices": [
+        "endotracheal_tube"
+      ],
+      "topic": "prevention",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "4795e2037ebfbb38f4c85502b9990481bb70597be05be0c9c434a98cba77b37b"
+    },
+    "exp250-nn09": {
+      "populations": [
+        "neonatal"
+      ],
+      "devices": [
+        "endotracheal_tube",
+        "fixation_tape"
+      ],
+      "topic": "device_care",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "aaf796e9a516b558f56de94beb9e639627e85ee51ad97f97099b5669a717a4a0"
+    },
+    "exp250-nn10": {
+      "populations": [
+        "neonatal"
+      ],
+      "devices": [
+        "pulse_oximeter"
+      ],
+      "topic": "assessment",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "0b3a957cf8ff31e40b339f309175db64ed832e59d0e5b5cf5f01a776550c568d"
+    },
+    "exp250-nn11": {
+      "populations": [
+        "neonatal"
+      ],
+      "devices": [
+        "pulse_oximeter"
+      ],
+      "topic": "mechanism",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "f0cb3d49cc916d4f20913dd59540e45c73f743c6bdc11c8ab18e477c7ab6818e"
+    },
+    "exp250-nn12": {
+      "populations": [
+        "neonatal"
+      ],
+      "devices": [
+        "pulse_oximeter"
+      ],
+      "topic": "risk",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "38e5f859e91f6fc3ac8e72084173da4a38481ff206525184c09e638db15292e0"
+    },
+    "exp250-nn13": {
+      "populations": [
+        "neonatal"
+      ],
+      "devices": [
+        "blood_pressure_cuff"
+      ],
+      "topic": "assessment",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "8cc110cb04f752a736731624711848bf50e72d12eb065e69930c7be0ff8b99f0"
+    },
+    "exp250-nn14": {
+      "populations": [
+        "neonatal"
+      ],
+      "devices": [
+        "blood_pressure_cuff",
+        "vascular_access_device"
+      ],
+      "topic": "classification",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "bd267f55f7cfdd13883db83b16d521f4cdca544419f0eaf34ea765f49885a6f8"
+    },
+    "exp250-nn15": {
+      "populations": [
+        "neonatal"
+      ],
+      "devices": [
+        "blood_pressure_cuff"
+      ],
+      "topic": "risk",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "bfe79b75d3f2aa89f43db8623999c0a00b255b99c745e421b7b808355c59e834"
+    },
+    "exp250-nn16": {
+      "populations": [
+        "neonatal"
+      ],
+      "devices": [
+        "vascular_access_device"
+      ],
+      "topic": "prevention",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "172b4ef8a6cdf633e3a35a1f9ab16b2433bb2d152adeca3ad6283f87b83c67b1"
+    },
+    "exp250-nn17": {
+      "populations": [
+        "neonatal"
+      ],
+      "devices": [
+        "vascular_access_device"
+      ],
+      "topic": "classification",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "da9162ef4e530cea06abc8feffd69a4bae92ec7c674d35650ef8c54fbde3e88d"
+    },
+    "exp250-nn18": {
+      "populations": [
+        "neonatal"
+      ],
+      "devices": [
+        "vascular_access_device",
+        "fixation_tape"
+      ],
+      "topic": "device_care",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "90de9dd08389d9bbfd0b95f9a66a8202dcd12ccc38f252dd772e249621b6d3f6"
+    },
+    "exp250-nn19": {
+      "populations": [
+        "neonatal"
+      ],
+      "devices": [
+        "ecg_electrode"
+      ],
+      "topic": "assessment",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "44dd2dda99a67b170abf79178dd70ad9e21642915f954f924ff7bc7c24a860a8"
+    },
+    "exp250-nn20": {
+      "populations": [
+        "neonatal"
+      ],
+      "devices": [
+        "ecg_electrode"
+      ],
+      "topic": "classification",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "fa7444c4551b74a0b112d1b03bad0c813ca11f2815781b04da2f607f7bd8577e"
+    },
+    "exp250-nn21": {
+      "populations": [
+        "neonatal"
+      ],
+      "devices": [
+        "ecg_electrode",
+        "pulse_oximeter"
+      ],
+      "topic": "evidence",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "1941b57a4e08b7c25fc13804cc2719a342377b459fd2169fe2156e57105258a4"
+    },
+    "exp250-nn22": {
+      "populations": [
+        "neonatal"
+      ],
+      "devices": [
+        "temperature_probe"
+      ],
+      "topic": "assessment",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "0e021d353d1b7b15204f0c4f46a757877a98b71c3161a66f429a8ce02f23290c"
+    },
+    "exp250-nn23": {
+      "populations": [
+        "neonatal"
+      ],
+      "devices": [
+        "temperature_probe",
+        "fixation_tape"
+      ],
+      "topic": "classification",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "8cf11c41db9a20c8a7903f075c7198912eb4de7eb472d99aa745745b05d2f44d"
+    },
+    "exp250-nn24": {
+      "populations": [
+        "neonatal"
+      ],
+      "devices": [
+        "temperature_probe"
+      ],
+      "topic": "classification",
+      "basis": "Codex对本例题面及本例核心推理目标的分类核对；答案/评分内容不改写。",
+      "source_sha256": "3924dc8e05cd022e887b495c28f002c820385229611034a728772ffa6a46acb2"
+    }
+  },
+  "foundation_topics": {
+    "skin_anatomy_physiology": "皮肤解剖与生理",
+    "wound_healing": "伤口愈合过程与影响因素",
+    "wound_assessment": "伤口评估与记录",
+    "pressure_injury_classification": "压力性损伤分类",
+    "pressure_injury_prevention_management": "压力性损伤预防与管理",
+    "wound_infection": "伤口感染预防与治疗",
+    "support_surfaces": "减压支撑面",
+    "lower_extremity_ulcers": "下肢溃疡",
+    "iad": "失禁相关性皮炎（IAD）",
+    "wound_dressings": "伤口敷料与合理选择",
+    "enteral_nutrition": "肠内营养与管饲护理",
+    "urinary_care": "导尿与排尿护理",
+    "ostomy_care": "造口护理与患者教育",
+    "airway_respiratory_care": "呼吸评估与气道护理",
+    "neurovascular_safety": "肢体神经血管评估与固定安全",
+    "evidence_appraisal": "循证护理与研究解读",
+    "quality_improvement": "护理质量改进与效果评价",
+    "learning_assessment": "临床推理学习与评价",
+    "privacy_ethics": "患者隐私与教学资料使用"
+  },
+  "foundation_topics_en": {
+    "skin_anatomy_physiology": "Skin (Anatomy, Physiology)",
+    "wound_healing": "Wound Healing Processes and Factors Affecting Healing",
+    "wound_assessment": "Wound Assessment and Documentation",
+    "pressure_injury_classification": "Classification of Pressure Injuries",
+    "pressure_injury_prevention_management": "Approaches for Pressure Injury Prevention and Management",
+    "wound_infection": "Methods for Preventing and Treating Wound Infections",
+    "support_surfaces": "Pressure-Relieving Support Surfaces",
+    "lower_extremity_ulcers": "Lower Extremity Ulcers",
+    "iad": "Incontinence-Associated Dermatitis (IAD)",
+    "wound_dressings": "Wound Dressings and Proper Selection",
+    "enteral_nutrition": "Enteral Nutrition and Tube Feeding Care",
+    "urinary_care": "Urinary Catheterization and Voiding Care",
+    "ostomy_care": "Ostomy Care and Patient Education",
+    "airway_respiratory_care": "Respiratory Assessment and Airway Care",
+    "neurovascular_safety": "Limb Neurovascular Assessment and Immobilization Safety",
+    "evidence_appraisal": "Evidence-Based Nursing and Research Appraisal",
+    "quality_improvement": "Nursing Quality Improvement and Outcome Evaluation",
+    "learning_assessment": "Clinical Reasoning Learning and Assessment",
+    "privacy_ethics": "Patient Privacy and Use of Teaching Materials"
+  },
+  "foundation_topic_source": {
+    "source_type": "local_pdf_table",
+    "source_file": "Gurler 等 - 2026 - Secure and accessible AI in nursing education A modular agentic chatbot framework comparing ChatGPT.pdf",
+    "source_sha256": "d844eb8fdaa8225402b019b666bab4f57bfd018e516fe73e15486de09a7fcf5e",
+    "title": "Secure and accessible AI in nursing education: A modular agentic chatbot framework comparing ChatGPT-4o with an open-source LLM for chronic wound care",
+    "url": "https://doi.org/10.1016/j.nepr.2026.104789",
+    "pdf_page": 4,
+    "table": "Table 1",
+    "educational_topics": [
+      {
+        "id": "skin_anatomy_physiology",
+        "name_en": "Skin (Anatomy, Physiology)"
+      },
+      {
+        "id": "wound_healing",
+        "name_en": "Wound Healing Processes and Factors Affecting Healing"
+      },
+      {
+        "id": "wound_assessment",
+        "name_en": "Wound Assessment and Documentation"
+      },
+      {
+        "id": "pressure_injury_classification",
+        "name_en": "Classification of Pressure Injuries"
+      },
+      {
+        "id": "pressure_injury_prevention_management",
+        "name_en": "Approaches for Pressure Injury Prevention and Management"
+      },
+      {
+        "id": "wound_infection",
+        "name_en": "Methods for Preventing and Treating Wound Infections"
+      },
+      {
+        "id": "support_surfaces",
+        "name_en": "Pressure-Relieving Support Surfaces"
+      },
+      {
+        "id": "lower_extremity_ulcers",
+        "name_en": "Lower Extremity Ulcers"
+      },
+      {
+        "id": "iad",
+        "name_en": "Incontinence-Associated Dermatitis (IAD)"
+      },
+      {
+        "id": "wound_dressings",
+        "name_en": "Wound Dressings and Proper Selection"
+      }
+    ],
+    "supplement": {
+      "source_type": "project",
+      "topics": [
+        "enteral_nutrition",
+        "urinary_care",
+        "ostomy_care",
+        "airway_respiratory_care",
+        "neurovascular_safety",
+        "evidence_appraisal",
+        "quality_improvement",
+        "learning_assessment",
+        "privacy_ethics"
+      ],
+      "superseded_topic": "related_nursing",
+      "basis": "原项目补充粗类related_nursing中的26题，经逐题阅读实际题干和公开答案，按单一主要教育考点拆分为9个项目补充教育主题。九主题及其英文名、描述由项目设置，并非论文Table 1教育主题；原表10主题及其111题映射保留。原related_nursing仅作为历史分类兼容标识。"
+    },
+    "classification_rule": "逐题阅读实际题干及公开答案，以题目要求回答的主要教育考点赋予一个主主题；同时涉及多主题时在basis记录边界。题干场景、器械名称或皮肤关键词不能替代考点判断。完整保留表1十主题，包括零题主题；项目补充类不冒充表1主题。分类仅为目录与学习组织，不是临床内容复核或题目来源归属。",
+    "item_signature": "SHA256(json.dumps({case, case_zh, scope}, ensure_ascii=False, sort_keys=True).encode())；与modes/catalog.py现有题面签名一致。",
+    "kind": "paper_table",
+    "supplemental_topics": [
+      "enteral_nutrition",
+      "urinary_care",
+      "ostomy_care",
+      "airway_respiratory_care",
+      "neurovascular_safety",
+      "evidence_appraisal",
+      "quality_improvement",
+      "learning_assessment",
+      "privacy_ethics"
+    ],
+    "superseded_topic": "related_nursing"
+  },
+  "foundation_items": {
+    "openrn-fund10-2": {
+      "topic": "pressure_injury_prevention_management",
+      "source_sha256": "56afe6e0d8309110acc0185c3db42643192a023fba99c571956d0cebcb4ca8ac",
+      "basis": "依据完整题干与公开答案：题目要求分析压力性损伤易感因素，重点为活动、感觉、失禁和营养风险，而非尿路感染治疗或IAD诊断。对应本地论文PDF第4页Table 1教育主题「Approaches for Pressure Injury Prevention and Management」。"
+    },
+    "openrn-skills14-1": {
+      "topic": "skin_anatomy_physiology",
+      "source_sha256": "f6add5b5cff92d95617d69430171b62654ca2c7bf760b1d8b38859bfb97a2d88",
+      "basis": "依据完整题干与公开答案：题目要求在腹泻患者入院时评估皮肤状态与水合，公开答案重点为皮肤弹性及回弹与水合的关系；未描述伤口或失禁性皮炎。对应本地论文PDF第4页Table 1教育主题「Skin (Anatomy, Physiology)」。"
+    },
+    "openrn-skills20-1a": {
+      "topic": "wound_healing",
+      "source_sha256": "1c6c4e056912ae1a2be0309dc1fff61f361cbaacea2e55e1da74fab3bc7bc2d3",
+      "basis": "依据完整题干与公开答案：虽然病例有足部溃疡，问题实际要求分析糖尿病、糖皮质激素、超重和生活应激等不愈合因素，未考查下肢溃疡分型或专门治疗。对应本地论文PDF第4页Table 1教育主题「Wound Healing Processes and Factors Affecting Healing」。"
+    },
+    "openrn-skills20-1b": {
+      "topic": "wound_healing",
+      "source_sha256": "baf40d49834fff4fe3fb4dd0fbee64b5d6cb2d9dab95b99f07318545b4d465a2",
+      "basis": "依据完整题干与公开答案：题目要求补充影响愈合的饮食、蛋白质、吸烟与饮酒评估；足部溃疡是背景，主考点为愈合影响因素。对应本地论文PDF第4页Table 1教育主题「Wound Healing Processes and Factors Affecting Healing」。"
+    },
+    "openrn-skills17-1": {
+      "topic": "enteral_nutrition",
+      "source_sha256": "29f1659160da6cbb853ee42246eb868c5ee2b003ae023234205e5ba50351ee11",
+      "basis": "依据完整题干与公开答案：主考点为管饲时饱胀的反应与输注调整，未考查伤口或压力性损伤护理。项目补充教育主题「肠内营养与管饲护理」：根据管饲时饱胀的实际反应减慢或停止输注，直接考查肠内营养输注耐受与调整。该主题由项目按实际教育考点设置，不是论文Table 1条目。"
+    },
+    "openrn-skills21-1": {
+      "topic": "urinary_care",
+      "source_sha256": "c12daed56de7a37f4f9fec16a8ae4821f2016b4d26681ae9b861490d7cea257b",
+      "basis": "依据完整题干与公开答案：主考点为导尿球囊充盈疼痛时的置管安全处理，未考查伤口或压力性损伤。项目补充教育主题「导尿与排尿护理」：围绕球囊充盈时疼痛的停止注液、排空与位置核查，直接考查导尿操作安全。该主题由项目按实际教育考点设置，不是论文Table 1条目。"
+    },
+    "openrn-skills21-2": {
+      "topic": "urinary_care",
+      "source_sha256": "1d8d7c036c8adc98514739db182d846207b698698006505f4b34b690d8bf5663",
+      "basis": "依据完整题干与公开答案：主考点为股骨骨折患者导尿的安全体位及人员协助，未考查伤口或压力性损伤。项目补充教育主题「导尿与排尿护理」：股骨骨折是体位限制背景，实际要求回答如何获得协助并安全完成导尿，不是肢体神经血管异常判断。该主题由项目按实际教育考点设置，不是论文Table 1条目。"
+    },
+    "openrn-skills21-3": {
+      "topic": "ostomy_care",
+      "source_sha256": "05cd8919696d1e0fd833ae28602aca214d77d062adfa24d1e92d1e8481591ef7",
+      "basis": "依据完整题干与公开答案：主考点为新造口患者的身体形象、心理支持与自我护理教育，未描述造口周围伤口或IAD。项目补充教育主题「造口护理与患者教育」：实际要求帮助新造口患者表达感受、适应身体形象并参与自我护理，属于造口患者教育。该主题由项目按实际教育考点设置，不是论文Table 1条目。"
+    },
+    "openrn-skills21-4": {
+      "topic": "urinary_care",
+      "source_sha256": "1e68b8e0e448f157408e7afb0fb85a4beca904f2bcab34568cc4c1ac8ae3cd4d",
+      "basis": "依据完整题干与公开答案：主考点为测量残余尿量所需的导尿管类型，未考查伤口护理。项目补充教育主题「导尿与排尿护理」：实际任务为测量排尿后残余尿量所需的导尿管类型，属于排尿评估与导尿器械选择。该主题由项目按实际教育考点设置，不是论文Table 1条目。"
+    },
+    "openrn-skills21-5": {
+      "topic": "ostomy_care",
+      "source_sha256": "56c3ce3d7f8940adda41d188a1fa36751af31a732389f10e5ef3398e6ea22f14",
+      "basis": "依据完整题干与公开答案：主考点为术后造口正常外观及相应记录，造口评估不等同于伤口评估，未描述损伤。项目补充教育主题「造口护理与患者教育」：实际要求识别湿润鲜红造口的正常外观并记录，属于造口评估而非已有伤口评价。该主题由项目按实际教育考点设置，不是论文Table 1条目。"
+    },
+    "openrn-skills21-6": {
+      "topic": "ostomy_care",
+      "source_sha256": "0c368c1e86ce7db8b999427e282e7f3f32ca29270bf20b1ef2877c42601dcbb0",
+      "basis": "依据完整题干与公开答案：主考点为造口袋更换频率及生活护理教育，未描述伤口或皮炎。项目补充教育主题「造口护理与患者教育」：实际要求识别造口袋系统更换的教育误区，属于造口用品管理与患者教育。该主题由项目按实际教育考点设置，不是论文Table 1条目。"
+    },
+    "openrn-skills22-1": {
+      "topic": "airway_respiratory_care",
+      "source_sha256": "b2a27f4786e08bbf4b89c0d4d6e7af03bd9fba7528e8d246356e77a938123a39",
+      "basis": "依据完整题干与公开答案：主考点为气管切开病房的气道应急备用用品，未考查接触组织损伤或伤口护理。项目补充教育主题「呼吸评估与气道护理」：实际要求备齐替换气切套管、简易呼吸器和吸引用品，属于气道应急准备。该主题由项目按实际教育考点设置，不是论文Table 1条目。"
+    },
+    "openrn-skills22-2": {
+      "topic": "airway_respiratory_care",
+      "source_sha256": "0deaf41679dcd47a13d8a6c51b0015b8a328c2088fba674a86d03c225f4ca129",
+      "basis": "依据完整题干与公开答案：主考点为气切患者咳嗽时的氧合评估、吸痰及给氧顺序，未考查伤口或压力性损伤。项目补充教育主题「呼吸评估与气道护理」：实际要求排列气切患者氧合检查、吸痰、给氧及呼吸音评估，属于呼吸与气道护理。该主题由项目按实际教育考点设置，不是论文Table 1条目。"
+    },
+    "openrn-skills11-1": {
+      "topic": "airway_respiratory_care",
+      "source_sha256": "bbec6ab2fb6ac0368010557d3541ea7ed9aa08a889e8430fd916cf69d2249d68",
+      "basis": "依据完整题干与公开答案：主考点为呼吸困难的氧合评估、氧疗和安全教育顺序，未考查伤口护理。项目补充教育主题「呼吸评估与气道护理」：实际要求排列呼吸困难的评估、氧疗、复查与氧疗教育，属于呼吸护理任务。该主题由项目按实际教育考点设置，不是论文Table 1条目。"
+    },
+    "openrn-skin-card-4": {
+      "topic": "pressure_injury_prevention_management",
+      "source_sha256": "fe8b853d397cf8da33738b752de46e0f5bce19b8556f1410f7bff4a56b6845f7",
+      "basis": "依据完整题干与公开答案：识别Braden量表及其评估、记录压力性损伤风险的用途，对应表1预防主题中的风险评估工具。对应本地论文PDF第4页Table 1教育主题「Approaches for Pressure Injury Prevention and Management」。"
+    },
+    "openrn-skin-card-5": {
+      "topic": "pressure_injury_classification",
+      "source_sha256": "3ae937a8e8b03cf8f00d8ec29fc4b089bd74d670d1d4ee2326ec8287918f1bc6",
+      "basis": "依据完整题干与公开答案：识别深部组织压力性损伤及其持续深红、栗色或紫色表现，主考点为压力性损伤分类。对应本地论文PDF第4页Table 1教育主题「Classification of Pressure Injuries」。"
+    },
+    "openrn-skin-card-10": {
+      "topic": "wound_assessment",
+      "source_sha256": "f483c684c0052628d5acae60c8b6f8cf35a341f65b95c0d8aa78f3ec4b7fbd4b",
+      "basis": "依据完整题干与公开答案：识别伤口中干燥、厚、皮革样坏死组织即焦痂，主考点为创面组织观察；并非感染诊断或治疗。对应本地论文PDF第4页Table 1教育主题「Wound Assessment and Documentation」。"
+    },
+    "openrn-skin-card-12": {
+      "topic": "pressure_injury_prevention_management",
+      "source_sha256": "f298cec349a4a6ce72887e2087321a64ae15b7cda4391293bce37c0390c9e031",
+      "basis": "依据完整题干与公开答案：识别皮肤与硬物摩擦及其损伤机制，属于预防压力相关组织损伤时需要考虑的机械风险。对应本地论文PDF第4页Table 1教育主题「Approaches for Pressure Injury Prevention and Management」。"
+    },
+    "openrn-skin-card-13": {
+      "topic": "wound_healing",
+      "source_sha256": "af66064b49d5784375c1a14ee38b0a1a90999b1f392f896de00e942e3cdf1ffa",
+      "basis": "依据完整题干与公开答案：识别愈合伤口的新生结缔组织和脆弱新生毛细血管即肉芽组织，主考点为愈合过程。对应本地论文PDF第4页Table 1教育主题「Wound Healing Processes and Factors Affecting Healing」。"
+    },
+    "openrn-skin-card-16": {
+      "topic": "skin_anatomy_physiology",
+      "source_sha256": "1e5f821c1cfdd3f6c441f21ce96df50ca11a4aa946a44e4f147f7cdd70720167",
+      "basis": "依据完整题干与公开答案：识别表皮和／或真皮改变所指的皮肤完整性受损，主考点为皮肤层次与完整性的基础概念，未给出压力分期。对应本地论文PDF第4页Table 1教育主题「Skin (Anatomy, Physiology)」。"
+    },
+    "openrn-skin-card-18": {
+      "topic": "wound_assessment",
+      "source_sha256": "e74d877d6332dde9ac6e5673e79f482a57169846d8048f3adadd8e78e9e78fe7",
+      "basis": "依据完整题干与公开答案：识别过度潮湿后湿软、起皱或变白的浸渍，主考点为组织表现；未指定失禁病因，不直接归IAD。对应本地论文PDF第4页Table 1教育主题「Wound Assessment and Documentation」。"
+    },
+    "openrn-skin-card-22": {
+      "topic": "wound_assessment",
+      "source_sha256": "475a5dbfec4b0300871cd6a864bc8b7af9901cac4de2ab8e19d967f6777e77fa",
+      "basis": "依据完整题干与公开答案：识别按压不变白的不可褪色红斑，主考点为局部褪色反应观察；该单一体征不等同于完整分期判断。对应本地论文PDF第4页Table 1教育主题「Wound Assessment and Documentation」。"
+    },
+    "openrn-skin-card-24": {
+      "topic": "pressure_injury_classification",
+      "source_sha256": "8c15a135adf2b69008a70f7b0550214e3d1349359857d1898e9489aacfe941a2",
+      "basis": "依据完整题干与公开答案：识别压力性损伤的定义和局部组织损伤特征，属于压力性损伤实体与分类的基础概念。对应本地论文PDF第4页Table 1教育主题「Classification of Pressure Injuries」。"
+    },
+    "openrn-skin-card-32": {
+      "topic": "pressure_injury_prevention_management",
+      "source_sha256": "c388d4939f998578f27d393e96105bdd7fc365fcba88d56ebff1d8108ee3fcc0",
+      "basis": "依据完整题干与公开答案：识别组织层相对滑移的剪切力及血管受损机制，属于预防压力相关组织损伤的机械风险知识。对应本地论文PDF第4页Table 1教育主题「Approaches for Pressure Injury Prevention and Management」。"
+    },
+    "openrn-skin-card-34": {
+      "topic": "pressure_injury_classification",
+      "source_sha256": "6153c6feab02dedcc9a9dcafc8253a6b8a4229a30c1be71884d2234423e5b3f2",
+      "basis": "依据完整题干与公开答案：识别完整皮肤上的局限不可褪色红斑所对应的1期压力性损伤。对应本地论文PDF第4页Table 1教育主题「Classification of Pressure Injuries」。"
+    },
+    "openrn-skin-card-35": {
+      "topic": "pressure_injury_classification",
+      "source_sha256": "7d9295ba28a36a265eeb8dee52be31803f71691566c0c40e6638f7ef516e7bae",
+      "basis": "依据完整题干与公开答案：识别真皮暴露的部分皮层缺失所对应的2期压力性损伤。对应本地论文PDF第4页Table 1教育主题「Classification of Pressure Injuries」。"
+    },
+    "openrn-skin-card-36": {
+      "topic": "pressure_injury_classification",
+      "source_sha256": "86138cc1b061911d83718fb1cf237973588c8ddb1a44b7746fd0bfdd3b7734e1",
+      "basis": "依据完整题干与公开答案：识别脂肪可见而更深结构未暴露所对应的3期压力性损伤。对应本地论文PDF第4页Table 1教育主题「Classification of Pressure Injuries」。"
+    },
+    "openrn-skin-card-37": {
+      "topic": "pressure_injury_classification",
+      "source_sha256": "c90026c539852a9041e5671d288594842ec91b37902e59c6d9c8ee91a4b995af",
+      "basis": "依据完整题干与公开答案：识别肌腱、肌肉、骨等深部结构暴露所对应的4期压力性损伤。对应本地论文PDF第4页Table 1教育主题「Classification of Pressure Injuries」。"
+    },
+    "openrn-skin-card-39": {
+      "topic": "wound_assessment",
+      "source_sha256": "9fba43082537640db63de6fa2ee5e8de25a698b4a59e7834340b4ed5a00a8159",
+      "basis": "依据完整题干与公开答案：识别从伤口向皮肤下延伸的窦道，主考点为创面范围及通道评估。对应本地论文PDF第4页Table 1教育主题「Wound Assessment and Documentation」。"
+    },
+    "openrn-skin-card-41": {
+      "topic": "pressure_injury_classification",
+      "source_sha256": "fa5ec3f18fef0262b030ffa5a883ef8ae1ae1d91821efe0261f926b6b20f25ed",
+      "basis": "依据完整题干与公开答案：识别腐肉或焦痂遮挡深度所对应的不可分期压力性损伤。对应本地论文PDF第4页Table 1教育主题「Classification of Pressure Injuries」。"
+    }
+  },
+  "foundation_supplemental_topics": {
+    "enteral_nutrition": {
+      "label": "肠内营养与管饲护理",
+      "name_en": "Enteral Nutrition and Tube Feeding Care",
+      "description": "覆盖管饲过程的耐受观察、患者反应和输注调整。以营养通路护理为主要考点；器械接触组织的减压与损伤预防仍按原伤口护理主题分类。"
+    },
+    "urinary_care": {
+      "label": "导尿与排尿护理",
+      "name_en": "Urinary Catheterization and Voiding Care",
+      "description": "覆盖导尿管选择、置管不适处理、安全体位及人员协助。以排尿评估和导尿操作为主要考点；失禁引起的皮炎预防与管理属于原IAD主题。"
+    },
+    "ostomy_care": {
+      "label": "造口护理与患者教育",
+      "name_en": "Ostomy Care and Patient Education",
+      "description": "覆盖造口外观观察、造口袋管理、自我护理教育及身体形象适应。以造口本身的护理与患者教育为主要考点；明确造口周围伤口或皮炎的问题按其实际伤口考点分类。"
+    },
+    "airway_respiratory_care": {
+      "label": "呼吸评估与气道护理",
+      "name_en": "Respiratory Assessment and Airway Care",
+      "description": "覆盖呼吸困难和氧合的当前评估、气切备用用品、吸痰、给氧及呼吸监测判断。以呼吸支持和气道安全为主要考点；器械接触组织的损伤观察与预防仍归原伤口护理主题。"
+    },
+    "neurovascular_safety": {
+      "label": "肢体神经血管评估与固定安全",
+      "name_en": "Limb Neurovascular Assessment and Immobilization Safety",
+      "description": "覆盖石膏或固定条件下的疼痛、感觉、活动、灌注等神经血管观察及紧急升级。以肢体神经血管安全为主要考点；单纯接触点压力性损伤观察与预防归原相应主题。"
+    },
+    "evidence_appraisal": {
+      "label": "循证护理与研究解读",
+      "name_en": "Evidence-Based Nursing and Research Appraisal",
+      "description": "覆盖证据确定性、研究质量、效应及置信区间、发生率指标和人群情境适用性。以理解研究及建议能否用于当前决策为主要考点；本地实施落实或改进效果测量归护理质量改进主题。"
+    },
+    "quality_improvement": {
+      "label": "护理质量改进与效果评价",
+      "name_en": "Nursing Quality Improvement and Outcome Evaluation",
+      "description": "覆盖护理措施落实、过程比例、临床结局及本地改进观察的因果与外推限制。区分过程达标和临床获益；外部研究方法解读归循证主题，学生学习表现归学习评价主题。"
+    },
+    "learning_assessment": {
+      "label": "临床推理学习与评价",
+      "name_en": "Clinical Reasoning Learning and Assessment",
+      "description": "覆盖六步临床推理学习框架、学生作答与教师讲解的证据区分，以及题目和评分版本可比性。以教学过程及学习表现评价为主要考点；不把学习框架作为延误临床急救的处置顺序。"
+    },
+    "privacy_ethics": {
+      "label": "患者隐私与教学资料使用",
+      "name_en": "Patient Privacy and Use of Teaching Materials",
+      "description": "覆盖教学照片和病历资料的许可、身份信息核查、用途及安全分享范围。以患者资料的合规教学使用为主要考点；伤口所见本身的临床记录内容归原伤口评估与记录主题。"
+    }
+  },
+  "choice_content_rebind": {
+    "batch": "choice_hint_review_20261013",
+    "previous_version": "catalog_taxonomy_20261012_available_topics",
+    "item_ids": [
+      "exp250-k031",
+      "exp250-k032",
+      "exp250-k033",
+      "exp250-k034",
+      "exp250-k035",
+      "exp250-k036",
+      "exp250-k037",
+      "exp250-k038",
+      "exp250-k039",
+      "exp250-k040",
+      "exp250-k041",
+      "exp250-k042",
+      "exp250-k043",
+      "exp250-k044",
+      "exp250-k045",
+      "exp250-k046",
+      "exp250-k047",
+      "exp250-k048",
+      "exp250-k049",
+      "exp250-k050"
+    ],
+    "reason": "原知识分类考点不变；逐题复核后将分类绑定到本次已审核题面，保持类别与适用范围。"
+  },
+  "choice_supplement_classification": {
+    "batch": "choice_supplement_20261013",
+    "classified_at": "2026-10-13T16:05:17.665358+00:00",
+    "previous_version": "catalog_taxonomy_20261013_reviewed_choices",
+    "item_ids": [
+      "mcplus-20261013-001",
+      "mcplus-20261013-002",
+      "mcplus-20261013-003",
+      "mcplus-20261013-004",
+      "mcplus-20261013-005",
+      "mcplus-20261013-006",
+      "mcplus-20261013-007",
+      "mcplus-20261013-008",
+      "mcplus-20261013-009",
+      "mcplus-20261013-010",
+      "mcplus-20261013-011",
+      "mcplus-20261013-012",
+      "mcplus-20261013-013",
+      "mcplus-20261013-014",
+      "mcplus-20261013-015",
+      "mcplus-20261013-016",
+      "mcplus-20261013-017",
+      "mcplus-20261013-018",
+      "mcplus-20261013-019",
+      "mcplus-20261013-020",
+      "mcplus-20261013-021",
+      "mcplus-20261013-022",
+      "mcplus-20261013-023",
+      "mcplus-20261013-024",
+      "mcplus-20261013-025",
+      "mcplus-20261013-026",
+      "mcplus-20261013-027",
+      "mcplus-20261013-028",
+      "mcplus-20261013-029",
+      "mcplus-20261013-030"
+    ],
+    "reason": "逐题按主要教育考点归入既有知识分类，不改变原250题的分类与内容。"
+  }
+}

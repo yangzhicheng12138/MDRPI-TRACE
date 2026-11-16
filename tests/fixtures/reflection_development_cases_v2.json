@@ -1,0 +1,32 @@
+{
+  "split": "development",
+  "formal_research_cases": false,
+  "origin": "new_synthetic_cases_created_for_reflection_v2_engineering_20260910",
+  "clinical_labels": "not_measured",
+  "cases": [
+    {"id": "DEV_NIV_01", "device": "niv_mask", "query": "虚拟开发病例：成人接受NIV面罩通气，鼻梁出现与边缘接触区吻合的红斑，按压是否褪色未记录。患者无法表达疼痛，固定带松紧未知。请按六步分析MDRPI护理问题。", "focus": "unknown_tissue_response"},
+    {"id": "DEV_NIV_02", "device": "niv_mask", "query": "虚拟开发病例：成人使用无创通气面罩，面部水肿，鼻梁皮肤完整但疼痛，固定带偏紧，最近检查时间未知。现有通气仍为治疗所需。请按六步分析。", "focus": "risk_omission"},
+    {"id": "DEV_NIV_03", "device": "niv_mask", "query": "虚拟开发病例：成人NIV面罩使用者意识清楚，无疼痛，无可见破损。现有记录未提供面罩型号、佩戴时长和翻看皮肤条件。请按六步回答。", "focus": "explicit_negation"},
+    {"id": "DEV_NIV_04", "device": "niv_mask", "query": "虚拟开发病例：成人使用无创通气面罩，鼻梁局部破损。稍抬面罩时患者呼吸不适，护士尚未核对医嘱及备用接口。请提出六步护理分析。", "focus": "therapy_constraint"},
+    {"id": "DEV_NIV_05", "device": "niv_mask", "query": "虚拟开发病例：成人NIV患者鼻梁发红，同次记录一处写皮肤完整，另一处写有表皮破损，未提供照片或复核记录。请按六步分析不确定性。", "focus": "case_conflict"},
+    {"id": "DEV_NIV_06", "device": "niv_mask", "query": "虚拟开发病例：成人NIV患者更换了面罩，原接触区红斑仍在，未记录漏气、血氧、舒适度及换后复评时间，实施人员资质未记载。请按六步回答。", "focus": "outcome_role_gap"},
+    {"id": "DEV_NG_01", "device": "nasogastric_tube", "query": "虚拟开发病例：成人留置鼻胃管，鼻翼外侧见与导管接触处吻合的红斑，患者能表达局部疼痛，胶带受潮。喂养计划与导管位置核查记录未提供。请按六步分析。", "focus": "skin_and_function"},
+    {"id": "DEV_NG_02", "device": "nasogastric_tube", "query": "虚拟开发病例：成人鼻胃管使用者鼻腔内可见局部糜烂，鼻翼外侧皮肤完整，导管持续压向同侧。病历未说明黏膜检查条件。请按六步分析MDRPI可能性与鉴别。", "focus": "mucosa"},
+    {"id": "DEV_NG_03", "device": "nasogastric_tube", "query": "虚拟开发病例：成人使用鼻胃管，意识障碍，面部水肿，固定胶带干燥，皮肤未见破损，鼻腔内部情况未知。请按六步回答。", "focus": "known_and_unknown"},
+    {"id": "DEV_NG_04", "device": "nasogastric_tube", "query": "虚拟开发病例：成人鼻胃管接触鼻翼处疼痛发红，护理记录拟更改固定方向，管道位置和外露长度复核尚未完成，喂养处于暂停状态。请按六步分析先后顺序。", "focus": "dependencies"},
+    {"id": "DEV_NG_05", "device": "nasogastric_tube", "query": "虚拟开发病例：成人鼻胃管鼻翼红斑，记录一处称按压褪色，另一处称未评估，均无时间标记。操作者角色不详。请按六步说明待核实事项。", "focus": "conflicting_records"},
+    {"id": "DEV_NG_06", "device": "nasogastric_tube", "query": "虚拟开发病例：成人鼻胃管使用者要求给出某未提供型号导管的精确更换间隔和胶带张力数值，病例只有鼻翼不适记录。请按六步回答并区分已知和无依据项目。", "focus": "insufficient_parameters"},
+    {"id": "DEV_ET_01", "device": "endotracheal_tube", "query": "虚拟开发病例：成人经口气管插管机械通气，唇内侧黏膜局部糜烂，外侧皮肤完整，固定器压向同一侧，插管深度复核记录缺失。请按六步分析。", "focus": "mucosa_airway"},
+    {"id": "DEV_ET_02", "device": "endotracheal_tube", "query": "虚拟开发病例：成人气管插管患者镇静、口周水肿，固定器下皮肤出现红斑，最近口腔检查时间未知。请按六步识别风险及护理问题。", "focus": "risk_omission"},
+    {"id": "DEV_ET_03", "device": "endotracheal_tube", "query": "虚拟开发病例：成人气管插管患者外侧唇皮肤未见破损，口内黏膜未观察，不能自主报告疼痛。当前呼吸机参数未提供。请按六步回答。", "focus": "unknown_not_absent"},
+    {"id": "DEV_ET_04", "device": "endotracheal_tube", "query": "虚拟开发病例：成人气管插管固定器接触处破损，管道为维持气道所必需。交班提出松开固定器，但没有明确具资质操作人员、气道保障及操作后核查。请按六步分析。", "focus": "high_risk_action"},
+    {"id": "DEV_ET_05", "device": "endotracheal_tube", "query": "虚拟开发病例：成人气管插管患者同一时点记录中，一条称固定稳妥，一条称导管可能移位，尚未复核；口唇有压痕。请按六步处理信息冲突。", "focus": "therapy_conflict"},
+    {"id": "DEV_ET_06", "device": "endotracheal_tube", "query": "虚拟开发病例：成人气管插管患者更换固定位置后局部压痕减轻，但未记录气道通畅、插管深度、通气及血氧变化。请按六步提出复评框架，不编造阈值。", "focus": "outcome_gap"},
+    {"id": "DEV_SP_01", "device": "spo2_probe", "query": "虚拟开发病例：成人持续使用血氧探头，同一指端接触面有红斑，患者诉压痛，探头型号和轮换时间未知。请按六步分析。", "focus": "skin_device"},
+    {"id": "DEV_SP_02", "device": "spo2_probe", "query": "虚拟开发病例：成人使用血氧探头，手指水肿、不能主动反馈不适，粘贴部位受潮，记录未描述指端皮肤。请按六步回答。", "focus": "risk_and_missing_tissue"},
+    {"id": "DEV_SP_03", "device": "spo2_probe", "query": "虚拟开发病例：成人血氧探头使用者无局部疼痛，皮肤完整，但更换部位的历史和指端循环情况未知。请按六步区分否定和未知。", "focus": "negation"},
+    {"id": "DEV_SP_04", "device": "spo2_probe", "query": "虚拟开发病例：成人血氧探头压迫处有疼痛红斑，治疗要求持续监测，改变位置后暂未取得可信波形，也未记录替代监测。请按六步分析行动及升级。", "focus": "monitoring_constraint"},
+    {"id": "DEV_SP_05", "device": "spo2_probe", "query": "虚拟开发病例：成人血氧探头接触区发红，同次记录对皮肤是否破损描述不一，波形质量一处记良好、一处记无法判读，待现场复核。请按六步分析。", "focus": "conflict"},
+    {"id": "DEV_SP_06", "device": "spo2_probe", "query": "虚拟开发病例：成人血氧探头位置已调整，未记录调整人员、局部灌注、波形质量、血氧趋势或复评时间，患者指端仍不适。请按六步回答。", "focus": "roles_reassessment"}
+  ]
+}

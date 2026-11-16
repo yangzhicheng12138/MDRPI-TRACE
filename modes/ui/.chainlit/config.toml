@@ -1,0 +1,23 @@
+[project]
+enable_telemetry = false
+session_timeout = 3600
+user_session_timeout = 86400
+
+[features]
+unsafe_allow_html = false
+latex = false
+edit_message = false
+
+[features.spontaneous_file_upload]
+enabled = true
+accept = { "application/pdf" = [".pdf"], "application/vnd.openxmlformats-officedocument.wordprocessingml.document" = [".docx"], "application/vnd.openxmlformats-officedocument.presentationml.presentation" = [".pptx"], "text/plain" = [".txt"], "text/markdown" = [".md"], "text/csv" = [".csv"], "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" = [".xlsx"], "image/png" = [".png"], "image/jpeg" = [".jpg", ".jpeg"], "image/webp" = [".webp"] }
+max_files = 5
+max_size_mb = 20
+
+[UI]
+name = "MDRPI"
+description = "普通问答 · 教学练习"
+default_theme = "light"
+
+[meta]
+generated_by = "2.12.0"

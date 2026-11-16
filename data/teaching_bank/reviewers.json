@@ -1,0 +1,71 @@
+{
+  "codex-ai-review": {
+    "name": "Codex",
+    "kind": "ai",
+    "owner_authorized": true,
+    "active": true,
+    "authorized_by": "project_owner",
+    "authorized_at": "2026-10-10T03:39:30.860579+00:00",
+    "authorization_record": "负责人本轮明确要求：题库与案例由Codex审核即可，无需专家审核。",
+    "populations": [
+      "adult",
+      "pediatric",
+      "neonatal"
+    ],
+    "device_types": [
+      "niv_mask",
+      "nasogastric_tube",
+      "endotracheal_tube",
+      "pulse_oximeter",
+      "cervical_collar",
+      "nasal_cannula",
+      "nasal_prong_cpap",
+      "fixation_tape",
+      "nasojejunal_tube",
+      "nasal_tube_fixation_device",
+      "bite_block",
+      "tracheostomy_tube",
+      "cast",
+      "thoracolumbosacral_brace",
+      "hip_abduction_brace"
+    ]
+  },
+  "codex-ai-bank-expansion": {
+    "name": "Codex",
+    "kind": "ai",
+    "owner_authorized": true,
+    "active": true,
+    "authorized_by": "project_owner",
+    "authorized_at": "2026-10-10T15:01:57.853237+00:00",
+    "authorization_record": "负责人明确要求题库扩充到200–300题、各类型覆盖，沿用题库及案例由Codex审核的授权。",
+    "populations": [
+      "adult",
+      "pediatric",
+      "neonatal"
+    ],
+    "device_types": [
+      "niv_mask",
+      "nasogastric_tube",
+      "endotracheal_tube",
+      "pulse_oximeter",
+      "cervical_collar",
+      "nasal_cannula",
+      "nasal_prong_cpap",
+      "fixation_tape",
+      "nasojejunal_tube",
+      "nasal_tube_fixation_device",
+      "bite_block",
+      "tracheostomy_tube",
+      "cast",
+      "thoracolumbosacral_brace",
+      "hip_abduction_brace",
+      "blood_pressure_cuff",
+      "vascular_access_device",
+      "ecg_electrode",
+      "temperature_probe",
+      "orogastric_tube",
+      "urinary_catheter",
+      "general_mdrpi"
+    ]
+  }
+}
