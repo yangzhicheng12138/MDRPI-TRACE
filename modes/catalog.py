@@ -119,7 +119,7 @@ def catalog_facets(rows, *, module="specialty", population=None, device_type=Non
     result = {"version": data["version"],
             "modules": [{"id": key, "label": label, "count": sum(row["training_module"] == key for row in rows)} for key, label in data["modules"].items()],
             "populations": [{"id": key, "label": label, "count": sum(key in row["populations"] for row in people),
-                             "source_example": data["population_source_examples"][key]} for key, label in data["populations"].items()] if module == "specialty" else [],
+                             "source_example": data.get("population_source_examples", {}).get(key, "")} for key, label in data["populations"].items()] if module == "specialty" else [],
             "devices": [{"id": key, "label": label, "count": sum(key in row["device_types"] for row in devices)}
                         for key, label in data["devices"].items() if any(key in row["device_types"] for row in device_scope)] if module == "specialty" else [],
             "difficulties": [{"id": value, "label": value, "count": sum(row["difficulty"] == value for row in difficulties)} for value in data["difficulties"]],
